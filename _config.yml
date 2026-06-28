@@ -1,0 +1,32 @@
+# --- Site settings ---
+title: Your Name
+description: A personal blog and reading log.
+author: Your Name
+
+# Set these to match your custom subdomain.
+# If serving from blog.example.com, baseurl is empty.
+url: "https://blog.example.com"
+baseurl: ""
+
+# --- Build settings ---
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+# Posts are excerpted on the home page using this separator if you add one.
+# Otherwise the home page just lists titles + dates.
+
+# --- Navigation ---
+# Edit this list to change the nav bar. Order is preserved.
+nav:
+  - title: Home
+    url: /
+  - title: About
+    url: /about/
+  - title: Books
+    url: /books/
+
+# Files Jekyll should not copy into the build.
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
