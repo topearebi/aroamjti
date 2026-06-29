@@ -4,7 +4,7 @@ description: Documenting my days, that I may learn from them someday.
 author: Temitope Arebi
 
 # Set these to match your custom subdomain.
-# If serving from blog.example.com, baseurl is empty.
+# If serving from blog.example.com at the root, baseurl is empty.
 url: "https://aroamjti.topearebi.com"
 baseurl: ""
 
@@ -12,8 +12,21 @@ baseurl: ""
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
 
-# Posts are excerpted on the home page using this separator if you add one.
-# Otherwise the home page just lists titles + dates.
+# --- Pagination (jekyll-paginate) ---
+# Paginates the home page (index.html) only. Change `paginate` to adjust
+# how many posts appear per page. `paginate_path` controls the URL of pages
+# 2, 3, 4 ... (page 1 stays at "/").
+paginate: 25
+paginate_path: "/page:num/"
+
+# --- Plugins (all GitHub Pages-supported) ---
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-sitemap
+
+# --- Feed (jekyll-feed) ---
+# Generates /feed.xml automatically. No feed.xml file needed in the repo.
 
 # --- Navigation ---
 # Edit this list to change the nav bar. Order is preserved.
@@ -25,8 +38,9 @@ nav:
   - title: Books
     url: /books/
 
-# Files Jekyll should not copy into the build.
+# --- Exclude from build output ---
 exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+  - bear_to_jekyll.py
