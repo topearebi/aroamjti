@@ -11,10 +11,12 @@ Your eyes are fire
 Coal black, ringed by sparks. Live wire
 You ignite my desire
 Every look fans it higher
+
 Your lips are divine
 Your tongue the taste of auld lang syne
 Yet your words be so hard to define
-You squeeze , you tease. And you can, because you're fine
+You squeeze , you tease. And you can, because you're so fine
+
 Will you never be mine?
 You are serpentine
 My sweet sweet valentine
