@@ -1,11 +1,11 @@
 # --- Site settings ---
-title: Your Name
-description: A personal blog and reading log.
-author: Your Name
+title: A Record Of A Mortal's Journey To Immortality
+description: Documenting my days, in the hope that I may learn from them someday.
+author: Temitope Arebi
 
 # Set these to match your custom subdomain.
 # If serving from blog.example.com at the root, baseurl is empty.
-url: "https://blog.example.com"
+url: "https://aroamjti.topearebi.com"
 baseurl: ""
 
 # --- Build settings ---
