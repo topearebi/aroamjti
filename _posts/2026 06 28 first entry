@@ -1,0 +1,13 @@
+---
+layout: post
+title: "First Entry"
+date: 2026-06-28
+---
+
+This is your first post. Write in Markdown below the dashes.
+
+Everything between the `---` lines at the top is front matter — metadata Jekyll
+reads. The `title` and `date` are what show up on the home page list.
+
+To add a new post, drop a file in `_posts/` named `YYYY-MM-DD-some-title.md`
+with the same front matter pattern.
