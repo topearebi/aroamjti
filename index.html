@@ -2,10 +2,28 @@
 layout: default
 ---
 <ul class="post-list">
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
   <li>
     <time class="post-list-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
     <a class="post-list-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
   </li>
   {% endfor %}
 </ul>
+
+{% if paginator.total_pages > 1 %}
+<nav class="pagination" aria-label="Blog pages">
+  {% if paginator.previous_page %}
+    <a class="pagination-prev" href="{{ paginator.previous_page_path | relative_url }}">&larr; Newer</a>
+  {% else %}
+    <span class="pagination-prev is-disabled">&larr; Newer</span>
+  {% endif %}
+
+  <span class="pagination-status">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+
+  {% if paginator.next_page %}
+    <a class="pagination-next" href="{{ paginator.next_page_path | relative_url }}">Older &rarr;</a>
+  {% else %}
+    <span class="pagination-next is-disabled">Older &rarr;</span>
+  {% endif %}
+</nav>
+{% endif %}
