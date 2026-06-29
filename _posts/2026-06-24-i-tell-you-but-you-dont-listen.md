@@ -16,7 +16,7 @@ You understand but you don't act
 
 You act but you do it wrong
 
-You don't wrong but you won't admit it
+You do it wrong but you won't admit it
 
 You admit it but you won't change
 
