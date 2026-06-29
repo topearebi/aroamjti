@@ -37,6 +37,8 @@ nav:
     url: /about/
   - title: Books
     url: /books/
+  - title: Blogroll
+    url: /blogroll/
 
 # --- Exclude from build output ---
 exclude:
