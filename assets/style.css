@@ -1,0 +1,120 @@
+/* --- Reset & base --- */
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  font-family: Charter, Georgia, Cambria, "Times New Roman", serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #1a1a1a;
+  background: #fdfdfc;
+  margin: 0;
+  padding: 0 1.25rem;
+}
+
+main {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 1rem 0 3rem;
+}
+
+a { color: #1a1a1a; text-decoration: underline; text-underline-offset: 2px; }
+a:hover { color: #555; }
+
+/* --- Header / nav --- */
+.site-header {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 2rem 0 1.25rem;
+  border-bottom: 1px solid #e5e5e2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+}
+
+.site-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+.site-nav a {
+  text-decoration: none;
+  margin-left: 1.25rem;
+  color: #555;
+}
+.site-nav a:first-child { margin-left: 0; }
+.site-nav a:hover { color: #1a1a1a; }
+
+/* --- Home post list --- */
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+.post-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.35rem 0;
+}
+.post-list-date {
+  color: #999;
+  font-variant-numeric: tabular-nums;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+  min-width: 6.5rem;
+}
+.post-list-link { text-decoration: none; }
+.post-list-link:hover { text-decoration: underline; }
+
+/* --- Post --- */
+.post-title { margin-bottom: 0.25rem; line-height: 1.2; }
+.post-meta { color: #999; margin-top: 0; font-size: 0.95rem; }
+.post-content { margin-top: 2rem; }
+.post-content img { max-width: 100%; height: auto; }
+.post-content pre {
+  background: #f4f4f1;
+  padding: 1rem;
+  overflow-x: auto;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+.post-content code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.9em;
+}
+.post-content blockquote {
+  border-left: 3px solid #ddd;
+  margin-left: 0;
+  padding-left: 1rem;
+  color: #555;
+}
+
+/* --- Books page: bold = great --- */
+/* A book title in **bold** renders as <strong>, which we make scannable. */
+main strong {
+  font-weight: 700;
+}
+/* Optional: a marker on great titles. Uncomment to add a star.
+.post-content li strong::before { content: "\2605 "; color: #c89b3c; } */
+
+/* --- Footer --- */
+.site-footer {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 2rem 0;
+  border-top: 1px solid #e5e5e2;
+  color: #999;
+  font-size: 0.9rem;
+}
+
+/* --- Accessibility --- */
+:focus-visible { outline: 2px solid #1a1a1a; outline-offset: 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
