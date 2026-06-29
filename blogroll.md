@@ -11,6 +11,14 @@ carry one, some don't.
 
 <ul class="linkroll">
 
+
+  <li class="link">
+    <a class="link-title" href="https://publish.obsidian.md/discretecs/START+HERE" rel="noopener">Discrete Structures for Computer ⁵Science</a>
+    <span class="link-source">example.com</span>
+    <p class="link-note">I'm a fan of anything that relates to the democratisation of knowledge and this is an entire university course in notes.</p>
+    <span class="link-tags">#mind</span>
+  </li>
+
   <li class="link">
     <a class="link-title" href="https://example.com/an-essay" rel="noopener">The title of an essay worth reading</a>
     <span class="link-source">example.com</span>
@@ -23,10 +31,7 @@ carry one, some don't.
     <span class="link-source">example.com</span>
     <p class="link-note">A note on what makes it valuable.</p>
     <span class="link-tags">#machine</span>
-  </li>
-
-  <li class="link">
-    <a class="link-title" href="https://example.com/untagged" rel="noopener">Something that defies a tidy category</a>
+  </li>⁵ category</a>
     <span class="link-source">example.com</span>
     <p class="link-note">No tag needed — it just earned its place.</p>
   </li>
