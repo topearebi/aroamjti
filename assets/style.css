@@ -176,3 +176,55 @@ hr { border: none; border-top: 1px solid var(--hairline); margin: calc(var(--spa
   font-size: var(--step--1);
   color: var(--accent);
 }
+
+/* ============================================================
+   Site subtitle (home page only)
+   ============================================================ */
+.site-identity { display: flex; flex-direction: column; gap: 0.25rem; }
+.site-subtitle {
+  margin: 0;
+  color: var(--ink-muted);
+  font-size: var(--step--1);
+  font-style: italic;
+  max-width: 28rem;
+  line-height: 1.4;
+}
+
+/* ============================================================
+   Footer social links — icon only, inherit text colour
+   ============================================================ */
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.1rem;
+  align-items: center;
+}
+.social-links a {
+  display: inline-flex;
+  color: var(--ink-muted);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+.social-links a:hover { color: var(--accent); }
+.social-links svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  display: block;
+}
+.site-copyright { margin: 0; }
+
+@media (max-width: 32rem) {
+  .site-footer { flex-direction: column; align-items: flex-start; gap: 1.25rem; }
+}
