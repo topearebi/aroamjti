@@ -22,8 +22,8 @@ social:
     url: "https://linkedin.com/in/topearebi"
   - name: Tumblr
     url: "https://lostrous.tumblr.com"
-  - name: Discord
-    url: "https://discord.gg/YOUR_INVITE"
+  # - name: Discord
+  #   url: "https://discord.gg/YOUR_INVITE"
   - name: Email
     url: "mailto:hi@topearebi.com"
   - name: RSS
