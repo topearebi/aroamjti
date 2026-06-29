@@ -7,4 +7,9 @@ tags: [love-the-end, archive]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
 
-I see her in my dreams every night She stalks me in my sleepIn my dreams we never fightThe us from my dreams I'd like to keepBut what if that's all we'll ever bePerfect only in our dreamsWhat does that mean for me
+I see her in my dreams every night 
+She stalks me in my sleepIn my dreams we never fight
+The us from my dreams I'd like to keep
+But what if that's all we'll ever be
+Perfect only in our dreams
+What does that mean for me
