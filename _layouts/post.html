@@ -8,6 +8,7 @@ layout: default
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
       {% if page.updated %}<span class="post-updated">(updated {{ page.updated | date: "%B %-d, %Y" }})</span>{% endif %}
     </p>
+    {% if page.date_note %}<p class="post-datenote">{{ page.date_note }}</p>{% endif %}
   </header>
 
   <div class="post-content">
