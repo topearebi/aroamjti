@@ -6,7 +6,6 @@ type: poetry
 tags: [death-and-the-end, archive]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
-
 I've always wondered
 what it would be like to fly
 Then one day, I decided to stop wondering
