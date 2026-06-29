@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aroamjti.topearebi.com/sitemap.xml
