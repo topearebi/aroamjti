@@ -25,6 +25,8 @@ Titles in **bold** are books that are great in my opinion. I usually pick a book
 - A Perfectly Fine Book — Another Author
 - **An Unlinked But Great Book** — Author Name
 - A Standard Read — Author Name
+- Andy Weir
+
 
 ## 2025
 
