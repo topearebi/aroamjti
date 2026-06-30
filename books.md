@@ -20,12 +20,12 @@ Titles in **bold** are books that are great in my opinion. I usually pick a book
 
 ## 2026
 
-**June**
+February
 - **The Title of a Great Book** — Author Name
 - A Perfectly Fine Book — Another Author
 - **An Unlinked But Great Book** — Author Name
 - A Standard Read — Author Name
-- Andy Weir
+- **Hail Mary - Andy Weir**
 
 
 ## 2025
