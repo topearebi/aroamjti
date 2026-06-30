@@ -6,13 +6,12 @@ type: poetry
 tags: [musings, archive]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
-
 They come in pieces. This flock
 Each is different yet they're all the same stock
 They smell dissimilar.
 Taste peculiar
 But feel the same
-Benecxath my fingers they're all a game
+Beneath my fingers they're all a game
 They all respond
 Giving limited freedom
 At first

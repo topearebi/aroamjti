@@ -6,7 +6,6 @@ type: poetry
 tags: [musings, archive]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
-
 I once thought differently about life
 I thought it was all about honour and glory
 Thought I should be grateful to the world

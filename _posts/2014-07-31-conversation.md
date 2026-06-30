@@ -6,7 +6,6 @@ type: poetry
 tags: [the-conversations, archive]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
-
 "What do you want from me?" she asked
 "Nothing" I said.  "I just want you"
 "Why me?" She asked. "I'm not worth it" she said

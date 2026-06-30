@@ -6,7 +6,6 @@ type: poetry
 tags: [random, archive]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
-
 There are some mistakes you can't help but make
 Some actions you can't help but take
 Times when you are forced to certain actions

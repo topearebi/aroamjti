@@ -6,7 +6,6 @@ type: poetry
 tags: [the-conversations, archive]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
-
 How are you?
 I'm gud. You?
 I don't know how I am

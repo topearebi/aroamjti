@@ -6,7 +6,6 @@ type: poetry
 tags: [musings, archive]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
-
 Can we ever truly know what it means?
 Can we ever fully grasp this concept?
 This oh-so-beautiful thing called love

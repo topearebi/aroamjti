@@ -6,7 +6,6 @@ type: poetry
 tags: [pain, archive]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
-
 You're lonely and it's cold
 But there's no way home but your own
 This one you made
