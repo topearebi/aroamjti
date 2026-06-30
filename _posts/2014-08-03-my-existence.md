@@ -6,7 +6,6 @@ type: poetry
 tags: [musings, archive]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
-
 Everyone needs a reason to exist
 So why do I exist?
 I ask myself

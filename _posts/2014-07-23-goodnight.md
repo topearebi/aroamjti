@@ -6,7 +6,6 @@ type: poetry
 tags: [love-the-beginning, archive]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
-
 Goodnight to you
 Tho its half past two
 Its already morning
