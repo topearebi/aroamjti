@@ -58,6 +58,7 @@ Titles in **bold** are ones I found profound or moving — not just good. Recent
 **Jean le Flambeur** — Hannu Rajaniemi
   - The Quantum Thief
   - The Fractal Prince
+  - The Causal Angel
 
 **Legend** — Marie Lu
   - Champion
