@@ -54,3 +54,49 @@ Never where - Neil Gaiman
 
 2018
 Sapiens - Yuval Noah Harari
+
+2014
+The Lion, the Witch and the Wardrobe - C.S. Lewis
+American Gods - Neil Gaiman
+The Lost Hero - Rick Riordan
+Oliver Twist - Charles Dickens
+Gulliver's Travels - Jonathan Swift
+Ivanhoe - Walter Scott
+Robinson Crusoe - Daniel Defoe
+Treasure Island - Robert Louis Stevenson
+The Adventures of Huckleberry Finn - Mark Twain
+Lord of the Flies - William Golding
+The Importance of Being Earnest - Oscar Wilde
+Romeo and Juliet - William Shakespeare
+To Kill a Mockingbird - Harper Lee
+Pride and Prejudice - Jane Austen
+A Game of Thrones - George R.R. Martin
+Harry Potter and the Sorcerer's Stone - J.K. Rowling
+Artemis Fowl - Eoin Colfer
+The Opal Deception - Eoin Colfer
+Eragon - Christopher Paolini
+I Am Number Four - Pittacus Lore
+Alcatraz Versus the Evil Librarians - Brandon Sanderson
+Easy - Tammara Webber
+Fifty Shades of Grey - E.L. James
+Black Beauty - Anna Sewell
+The Adventures of Tom Sawyer - Mark Twain
+The Golden Compass - Philip Pullman
+The Time Paradox - Eoin Colfer
+The Sea of Monsters - Rick Riordan
+Harry Potter and the Order of the Phoenix - J.K. Rowling
+The Hunger Games - Suzanne Collins
+Fifty Shades Freed - E.L. James
+Twilight - Stephenie Meyer
+The Lightning Thief - Rick Riordan
+The Subtle Knife - Philip Pullman
+Champion - Marie Lu
+Fight Club - Chuck Palahniuk
+Feed - Mira Grant
+Legend - Marie Lu
+Prodigy - Marie Lu
+Dead Babies - Martin Amis
+Stone of Tears - Terry Goodkind
+Wizard's First Rule - Terry Goodkind
+The Fractal Prince - Hannu Rajaniemi
+The Quantum Thief - Hannu Rajaniemi
