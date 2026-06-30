@@ -6,7 +6,6 @@ type: poetry
 tags: [random, archive]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
-
 He is forever without form.
 Unpredictable.
 Unreliable. He can stand out or blend in.

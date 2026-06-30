@@ -6,7 +6,6 @@ type: poetry
 tags: [random, archive]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
-
 They requested she wear white
 Tho she couldn't fathom why
 They said that's how weddings go

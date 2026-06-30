@@ -6,7 +6,6 @@ type: poetry
 tags: [random, archive]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
-
 Every man is as important as the next man is in need of him
 Nobody is wanted, only needed
 And when needs have been fulfilled

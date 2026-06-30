@@ -6,7 +6,6 @@ type: poetry
 tags: [random, archive]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
-
 They are all the same
 They all say they are different
 They all say there's none other like them

@@ -6,7 +6,6 @@ type: poetry
 tags: [random, archive]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
-
 Why does man need a creator?
 We are constantly haunted by an inferiority complex
 Some say we were made from chaos

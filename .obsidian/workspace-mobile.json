@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2014-08-19-fire-to-tears.md",
+                "file": "_posts/2014-09-04-thou-art.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2014-08-19-fire-to-tears"
+              "title": "2014-09-04-thou-art"
             }
           }
         ]
@@ -112,7 +112,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "_posts/2014-08-19-fire-to-tears.md",
+            "file": "_posts/2014-09-04-thou-art.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -170,6 +170,20 @@
   },
   "active": "7e9e5964b02d7bf4",
   "lastOpenFiles": [
+    "_posts/2014-09-02-the-shapeshifter.md",
+    "_posts/2014-09-01-the-many-coloured-wedding-dress.md",
+    "_posts/2014-08-31-the-devils-hunt.md",
+    "_posts/2014-08-30-she-of-the-world-i-of-my-words.md",
+    "_posts/2014-08-29-shadows-in-space-2.md",
+    "_posts/2014-08-27-reason.md",
+    "_posts/2014-08-28-selfish-desire.md",
+    "_posts/2014-08-26-shadows-in-space-1.md",
+    "_posts/2014-08-25-law-of-survival.md",
+    "_posts/2014-08-24-nature.md",
+    "_posts/2014-08-22-light-and-dark.md",
+    "_posts/2014-08-21-inferiority-complex.md",
+    "_posts/2014-08-20-indifference.md",
+    "_posts/2014-08-19-fire-to-tears.md",
     "_posts/2014-08-18-black.md",
     "_posts/2014-08-17-apologies-to-my-muse-wip.md",
     "_posts/2014-08-16-good-and-evil-judgement.md",
@@ -181,20 +195,6 @@
     "_posts/2014-08-09-about.md",
     "_posts/2014-08-08-hopeless-helpless.md",
     "_posts/2014-08-07-zone-out.md",
-    "_posts/2014-08-06-what-hope-is-there.md",
-    "_posts/2014-08-04-same-old-shit.md",
-    "_posts/2014-08-05-the-truth-about-life.md",
-    "_posts/2014-08-03-my-existence.md",
-    "_posts/2014-08-02-sigh-conversation-3.md",
-    "_posts/2014-08-01-how-are-you-conversation-2.md",
-    "_posts/2014-07-31-conversation.md",
-    "_posts/2014-07-30-nothingness.md",
-    "_posts/2014-07-29-tattoo.md",
-    "_posts/2014-07-28-sad.md",
-    "_posts/2014-07-27-how-great-is-my-pain.md",
-    "_posts/2014-07-26-catharsis.md",
-    "_posts/2014-07-25-glassy-heart.md",
-    "_posts/2014-07-24-you-are-ugly-yet.md",
-    "_posts/2014-07-23-goodnight.md"
+    "_posts/2014-08-06-what-hope-is-there.md"
   ]
 }
