@@ -15,9 +15,9 @@ Titles in **bold** are ones I found profound or moving — not just good. Recent
 - **Project Hail Mary** — Andy Weir
 
 **2025**
-- *(reading log resumes here)*
-
-## Archive
+- **The White Tiger - Aravind Adiga**
+- The 5am Club - Robin Sharma
+- **The Rosie Project - Graeme Simsion**
 
 ### Series
 
