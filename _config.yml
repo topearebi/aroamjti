@@ -44,7 +44,6 @@ paginate_path: "/page:num/"
 plugins:
   - jekyll-paginate
   - jekyll-feed
-  - jekyll-sitemap
 
 # --- Feed (jekyll-feed) ---
 # Generates /feed.xml automatically. No feed.xml file needed in the repo.
