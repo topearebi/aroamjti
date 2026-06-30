@@ -6,7 +6,6 @@ type: poetry
 tags: [love-the-end, archive]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
-
 Don't think I didn't see it coming I did
 So I prepared myself for it
 Only way I know how

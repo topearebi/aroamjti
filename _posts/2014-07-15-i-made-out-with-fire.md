@@ -6,7 +6,6 @@ type: poetry
 tags: [love-the-beginning, archive]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
-
 She kissed me
 So I kissed her back
 Or did I kiss her cos I already desperately wanted to?
