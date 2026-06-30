@@ -14,7 +14,7 @@ carry one, some don't.
 
   <li class="link">
     <a class="link-title" href="https://publish.obsidian.md/discretecs/START+HERE" rel="noopener">Discrete Structures for Computer ⁵Science</a>
-    <span class="link-source">example.com</span>
+    <span class="link-source">publish.obsidian.md</span>
     <p class="link-note">I'm a fan of anything that relates to the democratisation of knowledge and this is an entire university course in notes.</p>
     <span class="link-tags">#mind</span>
   </li>
@@ -31,9 +31,6 @@ carry one, some don't.
     <span class="link-source">example.com</span>
     <p class="link-note">A note on what makes it valuable.</p>
     <span class="link-tags">#machine</span>
-  </li>⁵ category</a>
-    <span class="link-source">example.com</span>
-    <p class="link-note">No tag needed — it just earned its place.</p>
   </li>
 
 </ul>
