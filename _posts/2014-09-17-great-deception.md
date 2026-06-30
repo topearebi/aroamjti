@@ -6,7 +6,6 @@ type: poetry
 tags: [faith, archive]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
-
 We all take life seriously
 Considering our options
 Thinking things through

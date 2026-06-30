@@ -6,7 +6,6 @@ type: poetry
 tags: [faith, archive]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
-
 But do they preach that we stay true to our nature or to abstain from it?
 Whichever, whatever their answer, the obviously right, stands obvious
 Should not a man stay true to himself and indulge in all his wants and desires

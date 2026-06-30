@@ -6,7 +6,7 @@ tags: [prose, archive]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
 
-Lemme tell you dis story. I'm going to make it up as I go. Leave common sense out of it
+Let me tell you this story. I'm going to make it up as I go. Leave common sense out of it
 
 Once upon a time, there were 2 lovers. Heaven and earth. They were destined to be together. It was obvious. Their love was so strong that they were always together. Everytime. And that's why at the beginning of the world, there was no life. Because there was no space between them for anything to grow. That is how tight they held onto each other
 

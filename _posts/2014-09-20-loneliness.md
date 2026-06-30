@@ -6,7 +6,6 @@ type: poetry
 tags: [numb, archive]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
-
 As I stood over that which I once had loved
 My flames ever consuming that which I once cherished
 The dark tears I shed unable to quell what I had wrought

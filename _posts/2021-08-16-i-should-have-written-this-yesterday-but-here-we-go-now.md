@@ -3,7 +3,6 @@ layout: post
 title: I should have written this yesterday but here we go now
 date: 2021-08-16 04:28:00 +0000
 ---
-
 I am starting a personal challenge to myself to write every day or at least as much as possible for the foreseeable future. I could do one of those 30 or 60-day writing challenges but this isn't a vanity metric. This is an actual attempt to be better and more consistent than I have ever been in my life.
 
 Perhaps it is, unreasonable, to expect that the mere repetition of a certain action can cause a profound change in the nature of a person. But it is definitely true that for years the one consistent piece of advice that has been touted as the linchpin to the success or rather, the realisation of any endeavour is basically to "do the thing". Do the thing as much and as often as possible.
