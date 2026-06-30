@@ -18,6 +18,7 @@ Titles in **bold** are ones I found profound or moving — not just good. Recent
 - **The White Tiger - Aravind Adiga**
 - The 5am Club - Robin Sharma
 - **The Rosie Project - Graeme Simsion**
+- Permutation City - Greg Egan
 
 ### Series
 
