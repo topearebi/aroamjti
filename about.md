@@ -5,4 +5,4 @@ permalink: /about/
 ---
 # About
 
-Journaling
+Journaling 
