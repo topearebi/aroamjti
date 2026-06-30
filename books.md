@@ -7,7 +7,7 @@ permalink: /books/
 
 My library manager: [Calibre](https://calibre-ebook.com) · my reader: [Readest](https://readest.com) · my progress log: [Hardcover](https://hardcover.app)
 
-Titles in **bold** are ones I found profound or moving — not just good. Recent reads are dated; older ones are grouped by series or author, since I no longer have reliable dates for them.
+Titles in **bold** are ones I found profound or moving — not just good. Recent reads are dated; older ones are grouped by series or author where relevant.
 
 ## Recent
 
