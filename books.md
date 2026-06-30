@@ -66,44 +66,44 @@ February
 
 **2016**
 - The Son of Neptune - Rick Riordan
-The Red Pyramid - Rick Riordan
-The Mark of Athena - Rick Riordan
-The House of Hades - Rick Riordan
-The Throne of Fire - Rick Riordan
-The Serpent's Shadow - Rick Riordan
-Eleanor & Park - Rainbow Rowell
-The Twilight Saga - Stephenie Meyer
-The Collected Poems - Langston Hughes
-Necropolis - Anthony Horowitz
-The Secret Lives of Baba Segi's Wives - Lola Shoneyin
-Breaking Dawn - Stephenie Meyer
-The Staff of Serapis - Rick Riordan
-Percy Jackson and the Sword of Hades - Rick Riordan
-The Son of Sobek - Rick Riordan
-The Demigod Diaries - Rick Riordan
-The Demigod Files - Rick Riordan
-The Blood of Olympus - Rick Riordan
-Harry Potter and the Prisoner of Azkaban - J.K. Rowling
-Harry Potter and the Deathly Hallows - J.K. Rowling
-Harry Potter and the Chamber of Secrets - J.K. Rowling
-Harry Potter and the Goblet of Fire - J.K. Rowling
-Harry Potter and the Half-Blood Prince - J.K. Rowling
-The Battle of the Labyrinth - Rick Riordan
-The Last Olympian - Rick Riordan
-The Titan's Curse - Rick Riordan
-Milk and honey - Rupi Kaur
-New Moon - Stephenie Meyer
-Eclipse - Stephenie Meyer
+- The Red Pyramid - Rick Riordan
+- The Mark of Athena - Rick Riordan
+- The House of Hades - Rick Riordan
+- The Throne of Fire - Rick Riordan
+- The Serpent's Shadow - Rick Riordan
+- Eleanor & Park - Rainbow Rowell
+- The Twilight Saga - Stephenie Meyer
+- The Collected Poems - Langston Hughes
+- Necropolis - Anthony Horowitz
+- The Secret Lives of Baba Segi's Wives - Lola Shoneyin
+- Breaking Dawn - Stephenie Meyer
+- The Staff of Serapis - Rick Riordan
+- Percy Jackson and the Sword of Hades - Rick Riordan
+- The Son of Sobek - Rick Riordan
+- The Demigod Diaries - Rick Riordan
+- The Demigod Files - Rick Riordan
+- The Blood of Olympus - Rick Riordan
+- Harry Potter and the Prisoner of Azkaban - J.K. Rowling
+- Harry Potter and the Deathly Hallows - J.K. Rowling
+- Harry Potter and the Chamber of Secrets - J.K. Rowling
+- Harry Potter and the Goblet of Fire - J.K. Rowling
+- Harry Potter and the Half-Blood Prince - J.K. Rowling
+- The Battle of the Labyrinth - Rick Riordan
+- The Last Olympian - Rick Riordan
+- The Titan's Curse - Rick Riordan
+- Milk and honey - Rupi Kaur
+- New Moon - Stephenie Meyer
+- Eclipse - Stephenie Meyer
 
 **2015**
-Death Is My Friend With Benefits - Katarina E. Tonks
-Death Is My Frenemy - Katarina E. Tonks
-Death Is My Bfflad - Katarina E. Tonks
-Death Is My Bff - Katarina E. Tonks
-A Hunger Artist - Franz Kafka
+- Death Is My Friend With Benefits - Katarina E. Tonks
+- Death Is My Frenemy - Katarina E. Tonks
+- Death Is My Bfflad - Katarina E. Tonks
+- Death Is My Bff - Katarina E. Tonks
+- A Hunger Artist - Franz Kafka
 
 **2014**
-The Lion, the Witch and the Wardrobe - C.S. Lewis
+- The Lion, the Witch and the Wardrobe - C.S. Lewis
 American Gods - Neil Gaiman
 The Lost Hero - Rick Riordan
 Oliver Twist - Charles Dickens
