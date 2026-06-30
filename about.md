@@ -5,4 +5,4 @@ permalink: /about/
 ---
 # About
 
-Journaling 
+Over the course of my life I have one through phases of obsessions. Each of these contribute in some way or the other to the person
