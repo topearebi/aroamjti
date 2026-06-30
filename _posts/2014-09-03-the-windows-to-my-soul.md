@@ -6,7 +6,6 @@ type: poetry
 tags: [random, archive]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
-
 The eyes are the windows to the soul
 If this is so, then it would explain a lot
 It would explain why my soul was so dirty
