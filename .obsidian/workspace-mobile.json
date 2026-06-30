@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "books.md",
+                "file": "about.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "books"
+              "title": "about"
             }
           }
         ]
@@ -171,8 +171,8 @@
   "active": "7e9e5964b02d7bf4",
   "lastOpenFiles": [
     "blogroll.md",
-    "README.md",
     "books.md",
+    "README.md",
     "_posts/2014-07-24-you-are-ugly-yet.md",
     "_posts/2014-08-04-same-old-shit.md",
     "_posts/2014-08-13-false-hand.md",
