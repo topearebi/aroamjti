@@ -39,6 +39,7 @@ I have no proper records beyond this point, so here's just a list of books I've 
 **2024**
 Flower for Algernon - Daniel Keyes
 The New Topping Book - Donna Easton & Janet Hardy
+The Three Body Problem - Cixin Liu
 
 **2023**
 
