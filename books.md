@@ -5,16 +5,9 @@ permalink: /books/
 ---
 # Books
 
-I've moved my Calibre library and restructured my database so many times that I have no records of the books I've read. As my library has grown to over 7,000 books and it becomes increasingly harder to keep track, I thought it would be good to have an independent master record.
-
-For over a decade, I did all my reading in Moon+ Reader, and it kept a fairly decent record of books I've read down to the days I read them. Readest, however, is a much better app. It solves the only problem I ever had with Moon+ Reader: progress syncing and cross-platform compatibility. Readest works on any device, allowing you to pick up exactly where you left off.
-
-It also syncs to Hardcover, which means this list is redundant for anything I read from this month onward, but it's still a good exercise for me to manually log and revisit titles. These notes are independent and portable, and owning my data is something I am increasingly precious about. Regardless, Readest is so good I would pay money for it. And I have.
-
-Recommended library manager: [Calibre](https://calibre-ebook.com)
-Recommended ebook reader: [Readest](https://readest.com)
-
-Hopefully, at some point, I can link this list to my reviews of these books or even just my highlights. Regardless, my more structured thoughts make it out to Thoughtfood.
+My library manager: [Calibre](https://calibre-ebook.com)
+My ebook reader: [Readest](https://readest.com)
+My book progress record: hardcover.app
 
 Titles in **bold** are books that are great in my opinion. I usually pick a book because I think it's great to begin with, but if it's in bold, I found it really profound or moving, and hopefully I have notes linked in more recent entries that explain why.
 ## 2026
@@ -104,46 +97,46 @@ February
 
 **2014**
 - The Lion, the Witch and the Wardrobe - C.S. Lewis
-American Gods - Neil Gaiman
-The Lost Hero - Rick Riordan
-Oliver Twist - Charles Dickens
-Gulliver's Travels - Jonathan Swift
-Ivanhoe - Walter Scott
-Robinson Crusoe - Daniel Defoe
-Treasure Island - Robert Louis Stevenson
-The Adventures of Huckleberry Finn - Mark Twain
-Lord of the Flies - William Golding
-The Importance of Being Earnest - Oscar Wilde
-Romeo and Juliet - William Shakespeare
-To Kill a Mockingbird - Harper Lee
-Pride and Prejudice - Jane Austen
-A Game of Thrones - George R.R. Martin
-Harry Potter and the Sorcerer's Stone - J.K. Rowling
-Artemis Fowl - Eoin Colfer
-The Opal Deception - Eoin Colfer
-Eragon - Christopher Paolini
-I Am Number Four - Pittacus Lore
-Alcatraz Versus the Evil Librarians - Brandon Sanderson
-Easy - Tammara Webber
-Fifty Shades of Grey - E.L. James
-Black Beauty - Anna Sewell
-The Adventures of Tom Sawyer - Mark Twain
-The Golden Compass - Philip Pullman
-The Time Paradox - Eoin Colfer
-The Sea of Monsters - Rick Riordan
-Harry Potter and the Order of the Phoenix - J.K. Rowling
-The Hunger Games - Suzanne Collins
-Fifty Shades Freed - E.L. James
-Twilight - Stephenie Meyer
-The Lightning Thief - Rick Riordan
-The Subtle Knife - Philip Pullman
-Champion - Marie Lu
-Fight Club - Chuck Palahniuk
-Feed - Mira Grant
-Legend - Marie Lu
-Prodigy - Marie Lu
-Dead Babies - Martin Amis
-Stone of Tears - Terry Goodkind
-Wizard's First Rule - Terry Goodkind
-The Fractal Prince - Hannu Rajaniemi
-The Quantum Thief - Hannu Rajaniemi
+- American Gods - Neil Gaiman
+- The Lost Hero - Rick Riordan
+- Oliver Twist - Charles Dickens
+- Gulliver's Travels - Jonathan Swift
+- Ivanhoe - Walter Scott
+- Robinson Crusoe - Daniel Defoe
+- Treasure Island - Robert Louis Stevenson
+- The Adventures of Huckleberry Finn - Mark Twain
+- Lord of the Flies - William Golding
+- The Importance of Being Earnest - Oscar Wilde
+- Romeo and Juliet - William Shakespeare
+- To Kill a Mockingbird - Harper Lee
+- Pride and Prejudice - Jane Austen
+- A Game of Thrones - George R.R. Martin
+- Harry Potter and the Sorcerer's Stone - J.K. Rowling
+- Artemis Fowl - Eoin Colfer
+- The Opal Deception - Eoin Colfer
+- Eragon - Christopher Paolini
+- I Am Number Four - Pittacus Lore
+- Alcatraz Versus the Evil Librarians - Brandon Sanderson
+- Easy - Tammara Webber
+- Fifty Shades of Grey - E.L. James
+- Black Beauty - Anna Sewell
+- The Adventures of Tom Sawyer - Mark Twain
+- The Golden Compass - Philip Pullman
+- The Time Paradox - Eoin Colfer
+- The Sea of Monsters - Rick Riordan
+- Harry Potter and the Order of the Phoenix - J.K. Rowling
+- The Hunger Games - Suzanne Collins
+- Fifty Shades Freed - E.L. James
+- Twilight - Stephenie Meyer
+- The Lightning Thief - Rick Riordan
+- The Subtle Knife - Philip Pullman
+- Champion - Marie Lu
+- Fight Club - Chuck Palahniuk
+- Feed - Mira Grant
+- Legend - Marie Lu
+- Prodigy - Marie Lu
+- Dead Babies - Martin Amis
+- Stone of Tears - Terry Goodkind
+- Wizard's First Rule - Terry Goodkind
+- The Fractal Prince - Hannu Rajaniemi
+- The Quantum Thief - Hannu Rajaniemi
