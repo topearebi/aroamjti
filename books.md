@@ -17,24 +17,16 @@ Recommended ebook reader: [Readest](https://readest.com)
 Hopefully, at some point, I can link this list to my reviews of these books or even just my highlights. Regardless, my more structured thoughts make it out to Thoughtfood.
 
 Titles in **bold** are books that are great in my opinion. I usually pick a book because I think it's great to begin with, but if it's in bold, I found it really profound or moving, and hopefully I have notes linked in more recent entries that explain why.
-
 ## 2026
 
 February
-- **The Title of a Great Book** — Author Name
-- A Perfectly Fine Book — Another Author
-- **An Unlinked But Great Book** — Author Name
-- A Standard Read — Author Name
 - **Hail Mary - Andy Weir**
-
 
 ## 2025
 
-*Monthly records resume here as I rebuild them.*
+- 
 
 ## Before 2025
-
-I have no proper records beyond this point, so here's just a list of books I've read before, by year as best I can place them.
 
 **2024**
 Flower for Algernon - Daniel Keyes
@@ -51,11 +43,66 @@ The Control Book - Peter Masters
 Never where - Neil Gaiman
 
 **2020**
+Poison Study - Maria V. Snyder
 
-2018
+**2019**
+
+**2018**
 Sapiens - Yuval Noah Harari
+Legion: The Many Lives of Stephen Leeds - Brandon Sanderson
+Syrup - Max Barry
+John Dies at the End - David Wong
+Pathfinder - Orson Scott Card
 
-2014
+**2017**
+The Dangerous Days of Daniel X - James Patterson
+Magic Street - Orson Scott Card
+Gatefather - Orson Scott Card
+The Gate Thief - Orson Scott Card
+Speaker for the Dead - Orson Scott Card
+Ender's Game - Orson Scott Card
+Death Is My Soulmate - Katarina E. Tonks
+bone - Yrsa Daley-Ward
+
+**2016**
+The Son of Neptune - Rick Riordan
+The Red Pyramid - Rick Riordan
+The Mark of Athena - Rick Riordan
+The House of Hades - Rick Riordan
+The Throne of Fire - Rick Riordan
+The Serpent's Shadow - Rick Riordan
+Eleanor & Park - Rainbow Rowell
+The Twilight Saga - Stephenie Meyer
+The Collected Poems - Langston Hughes
+Necropolis - Anthony Horowitz
+The Secret Lives of Baba Segi's Wives - Lola Shoneyin
+Breaking Dawn - Stephenie Meyer
+The Staff of Serapis - Rick Riordan
+Percy Jackson and the Sword of Hades - Rick Riordan
+The Son of Sobek - Rick Riordan
+The Demigod Diaries - Rick Riordan
+The Demigod Files - Rick Riordan
+The Blood of Olympus - Rick Riordan
+Harry Potter and the Prisoner of Azkaban - J.K. Rowling
+Harry Potter and the Deathly Hallows - J.K. Rowling
+Harry Potter and the Chamber of Secrets - J.K. Rowling
+Harry Potter and the Goblet of Fire - J.K. Rowling
+Harry Potter and the Half-Blood Prince - J.K. Rowling
+The Battle of the Labyrinth - Rick Riordan
+The Last Olympian - Rick Riordan
+The Titan's Curse - Rick Riordan
+Milk and honey - Rupi Kaur
+New Moon - Stephenie Meyer
+Eclipse - Stephenie Meyer
+
+**2015**
+Death Is My Friend With Benefits - Katarina E. Tonks
+Death Is My Frenemy - Katarina E. Tonks
+Death Is My Bfflad - Katarina E. Tonks
+Death Is My Bff - Katarina E. Tonks
+A Hunger Artist - Franz Kafka
+
+**2014**
 The Lion, the Witch and the Wardrobe - C.S. Lewis
 American Gods - Neil Gaiman
 The Lost Hero - Rick Riordan
