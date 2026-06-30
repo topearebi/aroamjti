@@ -29,43 +29,43 @@ February
 ## Before 2025
 
 **2024**
-Flower for Algernon - Daniel Keyes
-The New Topping Book - Donna Easton & Janet Hardy
-The Three Body Problem - Cixin Liu
-Polysecure - Jessica Fern
-The Control Book - Peter Masters
+- Flower for Algernon - Daniel Keyes
+- The New Topping Book - Donna Easton & Janet Hardy
+- The Three Body Problem - Cixin Liu
+- Polysecure - Jessica Fern
+- The Control Book - Peter Masters
 
 **2023**
 
 **2022**
 
 **2021**
-Never where - Neil Gaiman
+- Never where - Neil Gaiman
 
 **2020**
-Poison Study - Maria V. Snyder
+- Poison Study - Maria V. Snyder
 
 **2019**
 
 **2018**
-Sapiens - Yuval Noah Harari
-Legion: The Many Lives of Stephen Leeds - Brandon Sanderson
-Syrup - Max Barry
-John Dies at the End - David Wong
-Pathfinder - Orson Scott Card
+- Sapiens - Yuval Noah Harari
+- Legion: The Many Lives of Stephen Leeds - Brandon Sanderson
+- Syrup - Max Barry
+- John Dies at the End - David Wong
+- Pathfinder - Orson Scott Card
 
 **2017**
-The Dangerous Days of Daniel X - James Patterson
-Magic Street - Orson Scott Card
-Gatefather - Orson Scott Card
-The Gate Thief - Orson Scott Card
-Speaker for the Dead - Orson Scott Card
-Ender's Game - Orson Scott Card
-Death Is My Soulmate - Katarina E. Tonks
-bone - Yrsa Daley-Ward
+- The Dangerous Days of Daniel X - James Patterson
+- Magic Street - Orson Scott Card
+- Gatefather - Orson Scott Card
+- The Gate Thief - Orson Scott Card
+- Speaker for the Dead - Orson Scott Card
+- Ender's Game - Orson Scott Card
+- Death Is My Soulmate - Katarina E. Tonks
+- bone - Yrsa Daley-Ward
 
 **2016**
-The Son of Neptune - Rick Riordan
+- The Son of Neptune - Rick Riordan
 The Red Pyramid - Rick Riordan
 The Mark of Athena - Rick Riordan
 The House of Hades - Rick Riordan
