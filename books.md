@@ -8,7 +8,7 @@ description: "What I'm reading and the tools I use to read it — my library, re
 
 My library manager: [Calibre](https://calibre-ebook.com) · my reader: [Readest](https://readest.com) · my progress log: [Hardcover](https://hardcover.app)
 
-Titles in **bold** are ones I found profound or moving — not just good. Recent reads are dated; older ones are grouped by series or author where relevant.
+Titles in **bold** are ones I found profound or moving — not just good. Recent reads are dated. Everything else is grouped **by author** (with series shown as sub-groups, so I can see what's left to finish), and true one-offs sit under **Standalone**.
 
 ## Recent
 
@@ -21,29 +21,143 @@ Titles in **bold** are ones I found profound or moving — not just good. Recent
 - **The Rosie Project - Graeme Simsion**
 - Permutation City - Greg Egan
 
-### Series
+## By author
 
-**Artemis Fowl** — Eoin Colfer
+### Orson Scott Card
+
+**Ender's Saga**
+  - Speaker for the Dead
+  - Ender's Game
+
+**Mither Mages**
+  - Gatefather
+  - The Gate Thief
+
+- Magic Street
+- Pathfinder
+
+### Eoin Colfer
+
+**Artemis Fowl**
   - Artemis Fowl
   - The Opal Deception
   - The Time Paradox
 
-**Death Is My BFF** — Katarina E. Tonks
-  - Death Is My Bff
-  - Death Is My Bfflad
-  - Death Is My Frenemy
-  - Death Is My Friend With Benefits
-  - Death Is My Soulmate
+### Suzanne Collins
 
-**Ender's Saga** — Orson Scott Card
-  - Speaker for the Dead
-  - Ender's Game
+**The Hunger Games**
+  - The Hunger Games
 
-**Fifty Shades** — E.L. James
+### Neil Gaiman
+
+- American Gods
+- Neverwhere
+
+### Terry Goodkind
+
+**The Sword of Truth**
+  - Stone of Tears
+  - Wizard's First Rule
+
+### Anthony Horowitz
+
+**The Power of Five**
+  - Necropolis
+
+### E.L. James
+
+**Fifty Shades**
   - Fifty Shades of Grey
   - Fifty Shades Freed
 
-**Harry Potter** — J.K. Rowling
+### C.S. Lewis
+
+**The Chronicles of Narnia**
+  - The Lion, the Witch and the Wardrobe
+
+### Cixin Liu
+
+**Remembrance of Earth's Past**
+  - The Three-Body Problem
+
+### Pittacus Lore
+
+**Lorien Legacies**
+  - I Am Number Four
+
+### Marie Lu
+
+**Legend**
+  - Champion
+  - Legend
+  - Prodigy
+
+### George R.R. Martin
+
+**A Song of Ice and Fire**
+  - A Game of Thrones
+
+### Stephenie Meyer
+
+**The Twilight Saga**
+  - Twilight
+  - New Moon
+  - Eclipse
+  - Breaking Dawn
+
+### Christopher Paolini
+
+**The Inheritance Cycle**
+  - Eragon
+
+### James Patterson
+
+**Daniel X**
+  - The Dangerous Days of Daniel X
+
+### Philip Pullman
+
+**His Dark Materials**
+  - The Golden Compass
+  - The Subtle Knife
+
+### Hannu Rajaniemi
+
+**Jean le Flambeur**
+  - The Quantum Thief
+  - The Fractal Prince
+  - The Causal Angel
+
+### Rick Riordan
+
+**Percy Jackson and the Olympians**
+  - The Lightning Thief
+  - The Sea of Monsters
+  - The Titan's Curse
+  - The Battle of the Labyrinth
+  - The Last Olympian
+
+**The Heroes of Olympus**
+  - The Son of Neptune
+  - The Mark of Athena
+  - The House of Hades
+  - The Blood of Olympus
+  - The Lost Hero
+
+**The Kane Chronicles**
+  - The Red Pyramid
+  - The Throne of Fire
+  - The Serpent's Shadow
+
+- Percy Jackson and the Sword of Hades
+- The Demigod Diaries
+- The Demigod Files
+- The Son of Sobek
+- The Staff of Serapis
+
+### J.K. Rowling
+
+**Harry Potter**
   - Harry Potter and the Sorcerer's Stone
   - Harry Potter and the Chamber of Secrets
   - Harry Potter and the Prisoner of Azkaban
@@ -52,102 +166,57 @@ Titles in **bold** are ones I found profound or moving — not just good. Recent
   - Harry Potter and the Half-Blood Prince
   - Harry Potter and the Deathly Hallows
 
-**His Dark Materials** — Philip Pullman
-  - The Golden Compass
-  - The Subtle Knife
+### Brandon Sanderson
 
-**Jean le Flambeur** — Hannu Rajaniemi
-  - The Quantum Thief
-  - The Fractal Prince
-  - The Causal Angel
+- Alcatraz Versus the Evil Librarians
+- Legion: The Many Lives of Stephen Leeds
 
-**Legend** — Marie Lu
-  - Champion
-  - Legend
-  - Prodigy
+### Maria V. Snyder
 
-**Mither Mages** — Orson Scott Card
-  - Gatefather
-  - The Gate Thief
+**Study**
+  - Poison Study
 
-**Percy Jackson and the Olympians** — Rick Riordan
-  - The Lightning Thief
-  - The Sea of Monsters
-  - The Titan's Curse
-  - The Battle of the Labyrinth
-  - The Last Olympian
+### Katarina E. Tonks
 
-**The Heroes of Olympus** — Rick Riordan
-  - The Son of Neptune
-  - The Mark of Athena
-  - The House of Hades
-  - The Blood of Olympus
-  - The Lost Hero
+**Death Is My BFF**
+  - Death Is My Bff
+  - Death Is My Bfflad
+  - Death Is My Frenemy
+  - Death Is My Friend With Benefits
+  - Death Is My Soulmate
 
-**The Kane Chronicles** — Rick Riordan
-  - The Red Pyramid
-  - The Throne of Fire
-  - The Serpent's Shadow
+### Mark Twain
 
-**The Sword of Truth** — Terry Goodkind
-  - Stone of Tears
-  - Wizard's First Rule
+- The Adventures of Huckleberry Finn
+- The Adventures of Tom Sawyer
 
-**The Twilight Saga** — Stephenie Meyer
-  - Twilight
-  - New Moon
-  - Eclipse
-  - Breaking Dawn
-
-### Standalone
+## Standalone
 
 - Dead Babies — Martin Amis
 - Pride and Prejudice — Jane Austen
 - Syrup — Max Barry
-- Magic Street — Orson Scott Card
-- Pathfinder — Orson Scott Card
-- The Hunger Games — Suzanne Collins
 - bone — Yrsa Daley-Ward
 - Robinson Crusoe — Daniel Defoe
 - Oliver Twist — Charles Dickens
 - The New Topping Book — Donna Easton & Janet Hardy
 - Polysecure — Jessica Fern
-- American Gods — Neil Gaiman
-- Neverwhere — Neil Gaiman
 - Lord of the Flies — William Golding
 - Feed — Mira Grant
 - Sapiens — Yuval Noah Harari
-- Necropolis — Anthony Horowitz
 - The Collected Poems — Langston Hughes
 - A Hunger Artist — Franz Kafka
 - Milk and Honey — Rupi Kaur
 - Flowers for Algernon — Daniel Keyes
 - To Kill a Mockingbird — Harper Lee
-- The Lion, the Witch and the Wardrobe — C.S. Lewis
-- The Three-Body Problem — Cixin Liu
-- I Am Number Four — Pittacus Lore
-- A Game of Thrones — George R.R. Martin
 - The Control Book — Peter Masters
 - Fight Club — Chuck Palahniuk
-- Eragon — Christopher Paolini
-- The Dangerous Days of Daniel X — James Patterson
-- Percy Jackson and the Sword of Hades — Rick Riordan
-- The Demigod Diaries — Rick Riordan
-- The Demigod Files — Rick Riordan
-- The Son of Sobek — Rick Riordan
-- The Staff of Serapis — Rick Riordan
 - Eleanor & Park — Rainbow Rowell
-- Alcatraz Versus the Evil Librarians — Brandon Sanderson
-- Legion: The Many Lives of Stephen Leeds — Brandon Sanderson
 - Ivanhoe — Walter Scott
 - Black Beauty — Anna Sewell
 - Romeo and Juliet — William Shakespeare
 - The Secret Lives of Baba Segi's Wives — Lola Shoneyin
-- Poison Study — Maria V. Snyder
 - Treasure Island — Robert Louis Stevenson
 - Gulliver's Travels — Jonathan Swift
-- The Adventures of Huckleberry Finn — Mark Twain
-- The Adventures of Tom Sawyer — Mark Twain
 - Easy — Tammara Webber
 - The Importance of Being Earnest — Oscar Wilde
 - John Dies at the End — David Wong
