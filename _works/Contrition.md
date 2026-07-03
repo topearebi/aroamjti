@@ -35,7 +35,6 @@ blurb: ""                # ← one-line description for the /works/ index
 -->
 
 1 
-
 You never really cared what I wanted, until it was somebody else
 
 2 
@@ -45,34 +44,25 @@ For you,
 Or as much you as I can spit out before I run out of words
 
 3 
-
 Everything I ever gave you, you gave someone else
 And everything I ever wanted from you, you gave everybody else
  
 4
-
 Sometimes I'm scared by the possibility that if I ever loved you back,
-
 You wouldn't be sad anymore.
-
 You wouldn't need me to make you happy.
 
 5
 
 I am quick to melt under your gaze
-
 Look how all my inhibitions are washed away
-
 Like I am ice and you are a summer's day
 
 6
 
 And if photography is art,
-
 I could remember you for a living
-
 I would print you out from my tongue with my words
-
 There is no room darker than the confines of this head which you persist in
 
 7
