@@ -21,7 +21,7 @@ Titles in **bold** are ones I found profound or moving — not just good. Recent
 - **The Rosie Project - Graeme Simsion**
 - Permutation City - Greg Egan
 
-## By author
+## 
 
 ### Orson Scott Card
 
