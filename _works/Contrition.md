@@ -39,7 +39,6 @@ blurb: ""                # ← one-line description for the /works/ index
 You never really cared what I wanted, until it was somebody else
 
 2 
-
 Every piece is either
 About you,
 For you,

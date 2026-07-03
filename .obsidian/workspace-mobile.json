@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "books.md",
+                "file": "_works/Contrition.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "books"
+              "title": "Contrition"
             }
           }
         ]
@@ -170,9 +170,9 @@
   },
   "active": "7e9e5964b02d7bf4",
   "lastOpenFiles": [
+    "books.md",
     "works.md",
     "_works/Contrition.md",
-    "books.md",
     "_works/10000 Days of the Sun.md",
     "_works",
     "_layouts/work.html",
