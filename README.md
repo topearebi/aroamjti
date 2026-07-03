@@ -80,11 +80,22 @@ engines still index the site fine without it.
 │   └── work.html          Template for standalone long-form "works"
 ├── _posts/
 │   └── YYYY-MM-DD-*.md     Journal posts
+├── _drafts/
+│   ├── _TEMPLATE.md        Copy this to start a draft (never published)
+│   └── README.md           How the drafts workflow works
 ├── _works/
 │   └── *.md               Long-form standalone compositions (a collection)
 ├── assets/
 │   ├── style.css          All styling (native CSS custom properties)
 │   └── images/            Repo-hosted images, organised by year / work
+├── .github/
+│   ├── workflows/
+│   │   ├── integrity.yml   Pre-publish gate (runs on every push)
+│   │   └── maintenance.yml Weekly link-rot + tag reports (non-blocking)
+│   └── scripts/
+│       ├── check_integrity.py  Filename / front-matter / vocabulary checks
+│       ├── tag_report.py       Tag consistency report
+│       └── link_check.py       Outbound link-rot report
 ├── index.html             Home page (paginated post list, newest first)
 ├── about.md               About + a "now" section
 ├── books.md               Reading log (curation-first, series grouped)
@@ -92,12 +103,14 @@ engines still index the site fine without it.
 ├── works.md               Index of the _works collection
 ├── 404.html
 ├── robots.txt             Blocks AI crawlers; allows normal search
+├── humans.txt             Small-web credit for the human behind the site
 ├── favicon.ico            Serif monogram on warm paper
 ├── apple-touch-icon.png
 ├── LICENSE                CC BY-NC-ND 4.0 for the writing
 ├── CNAME
 ├── Gemfile                Local preview only
-└── .gitignore
+├── .gitignore             What syncs across devices/platforms
+└── .gitattributes         Line-ending normalisation across OSes
 ```
 
 Generated automatically (never create these by hand): `feed.xml`, the
@@ -252,7 +265,14 @@ wall.
   emerging "don't train on this" signal, separate from search indexing, so it
   does not affect being findable by name.
 - **No sitemap** (see plugins) — nothing advertises a full content inventory.
-- **RSS is kept** — deliberate human following, not algorithmic discovery.
+- **RSS is kept** — deliberate human following, not algorithmic discovery. The
+  feed carries full post content (no excerpt separators) and a complete Atom
+  author element: `author` in `_config.yml` is a map (`name` + `email` + `uri`)
+  so `jekyll-feed` can emit all three. A `<meta name="author">` tag and a
+  `<link rel="author" href="/humans.txt">` reinforce name attribution.
+- **`humans.txt`** — the small-web tradition of crediting the human behind the
+  site, and a plain statement of the no-JS / no-tracking / findable-by-name
+  ethos.
 
 ---
 
@@ -281,6 +301,82 @@ Writing happens mostly on mobile. The stack separates *where you write* from
   touches it, so a failed sync never costs writing — at worst, publish that one
   post via the GitHub web interface. Pull before writing; push when done; never
   edit the same post on two devices with unsynced changes.
+
+### Drafts
+
+`_drafts/` is Jekyll's built-in draft folder: files here **sync across every
+device but never publish** (GitHub Pages does not build drafts). No date or
+filename rules apply while a piece lives there. To start one, copy
+`_drafts/_TEMPLATE.md`; to publish, add a timezone-stamped `date:`, rename to
+`YYYY-MM-DD-slug.md`, and move it into `_posts/`. Full instructions live in
+`_drafts/README.md`. (Use `published: false` inside `_posts/` only for a
+finished, dated post you want to temporarily unpublish.)
+
+---
+
+## Cross-platform sync (Obsidian · SilverBullet · GitHub web)
+
+The repo is edited from several places — Obsidian on mobile, a self-hosted
+SilverBullet instance, and the GitHub web UI. The `.md` files are the single
+source of truth; everything a tool derives from them is not, and must never
+sync. Two files enforce this:
+
+- **`.gitignore`** decides what travels between devices. It ignores build
+  output (`_site/`, caches), per-device editor state (`.obsidian/workspace*`,
+  SilverBullet's index/`.db`), OS junk, and `*.bak`. Content, layouts, config,
+  and assets are tracked.
+- **`.gitattributes`** normalises line endings to LF across Windows / macOS /
+  iOS / Linux, so editing one file on several OSes does not produce phantom
+  "everything changed" diffs.
+
+**One-writer discipline** is the real failsafe: pull/sync before writing, push
+after. Git handles different files on different devices cleanly; the same file
+edited concurrently is what causes conflicts. Keep publish-bound Markdown
+portable — SilverBullet `[[wikilinks]]` and `#inline-tags` render as literal
+text on the site, so keep them to notes that stay in `_drafts/`.
+
+---
+
+## Automated tooling (`.github/`)
+
+Two GitHub Actions look after quality and longevity. Both are dependency-light
+Python (standard library only) so they cannot rot from a package change, and
+both are readable/editable from the GitHub web UI.
+
+### Integrity gate — `integrity.yml` (every push, **hard fail**)
+
+Runs on every push and pull request; a failure marks the commit failed
+(visible in the GitHub mobile app) so problems are caught before they rot. Two
+jobs, both must pass:
+
+1. **Structural checks** (`check_integrity.py`) — validates post filename
+   format, required `title` + timezone-stamped `date`, `type`/`format` values
+   against the known vocabulary, and that works have a `.md` extension. Internal
+   links are reported as non-blocking notes.
+2. **Jekyll build** — builds the site with the same `github-pages` gem
+   production uses, with `--strict_front_matter`. If it does not build, the
+   check fails.
+
+This *validates*; it does not deploy. GitHub Pages still builds and deploys the
+site itself, so a failed check does not take the live site down — it flags the
+offending commit. **When you add a new `type:` or `format:` value, update the
+vocabulary sets at the top of `check_integrity.py` and add the matching CSS
+rule** — the checker is the enforcement, the CSS is the rendering.
+
+### Maintenance reports — `maintenance.yml` (weekly, **non-blocking**)
+
+Runs Monday 06:00 UTC and on demand from the Actions tab. These inform, never
+gate — a dead third-party link or a messy tag is a to-do, not a build error.
+Results appear in the run's Step Summary (readable from mobile).
+
+- **`tag_report.py`** — frequency table, tag-style inconsistencies (inline
+  `[a, b]` vs block `- a`), likely near-duplicates, tags that duplicate the
+  `type:` field (e.g. a `poetry` tag), and single-use tags.
+- **`link_check.py`** — checks every outbound link and reports dead, moved, and
+  bot-hostile-host results. Non-blocking by default; `--strict` makes dead
+  links fail if ever wanted.
+
+Note: scheduled Actions only fire from the default branch.
 
 ---
 
@@ -331,12 +427,18 @@ collection. The reusable lessons:
 
 1. New repo; enable GitHub Pages (Settings → Pages → branch, root).
 2. `CNAME` + DNS CNAME record → `USERNAME.github.io`; set `url` in `_config.yml`.
-3. `_config.yml`: title, author, nav, `paginate: 25`, the two plugins, the
-   `works` collection, and the `social:` list.
-4. `_layouts/default.html` (head with icons + RSS link + noai meta; nav;
-   footer with social SVGs), `post.html` (adaptive), `work.html`.
+3. `_config.yml`: title, `author` (a map: name / email / uri), nav,
+   `paginate: 25`, the two plugins, the `works` collection, and the `social:`
+   list.
+4. `_layouts/default.html` (head with icons + RSS link + `rel="author"` +
+   author/noai meta; nav; footer with social SVGs), `post.html` (adaptive),
+   `work.html`.
 5. `assets/style.css` — the token system and dark-mode override.
-6. `index.html`, `about.md`, `books.md`, `blogroll.md`, `works.md`.
-7. `robots.txt`, `404.html`, `LICENSE`, favicon + apple-touch-icon,
-   `.gitignore`, `Gemfile`.
-8. Add posts to `_posts/`, works to `_works/`. Push. It builds itself.
+6. `index.html`, `about.md` (+ now section), `books.md`, `blogroll.md`,
+   `works.md`.
+7. `robots.txt`, `humans.txt`, `404.html`, `LICENSE`, favicon +
+   apple-touch-icon, `.gitignore`, `.gitattributes`, `Gemfile`.
+8. `.github/workflows/` (`integrity.yml`, `maintenance.yml`) and
+   `.github/scripts/` (the three `.py` checkers); `_drafts/` with its template.
+9. Add posts to `_posts/`, works to `_works/`. Push. It builds itself — and the
+   integrity gate checks it on every push thereafter.
