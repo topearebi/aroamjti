@@ -2,6 +2,7 @@
 layout: default
 title: Blogroll
 permalink: /blogroll/
+description: "A living wall of the highest-value essays, sites, tools, and ideas I've come across. Newest at the top."
 ---
 # Blogroll
 
