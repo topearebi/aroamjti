@@ -51,7 +51,9 @@ Titles in **bold** are ones I found profound or moving — not just good. Recent
 
 ### James Dashner
 
-- Maze Runner
+- The Maze Runner
+- The Scorch Trails
+- 
 ### Suzanne Collins
 
 **The Hunger Games**
