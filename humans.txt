@@ -1,0 +1,22 @@
+/* TEAM */
+
+  Author & Writer: Temitope Arebi
+  Site: https://aroamjti.topearebi.com
+  Contact: hi [at] topearebi.com
+
+/* SITE */
+
+  A Record Of A Mortal's Journey To Immortality
+  A personal journal — documenting my days, that I may learn from them someday.
+
+  Standards: HTML5, CSS (custom properties), no JavaScript
+  Built with: Jekyll, GitHub Pages
+  Writing licensed: CC BY-NC-ND 4.0
+
+  This site is made by a human, for humans. It is deliberately free of
+  tracking, JavaScript, and machine-scraping — findable by name, not mined.
+
+/* THANKS */
+
+  To everyone whose words became pieces of me, and to the small web that
+  still believes a person should own the place they write.
