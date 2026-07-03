@@ -1,0 +1,56 @@
+name: Archive maintenance
+
+# Maintenance reports for the growing archive. Unlike the integrity check,
+# these do NOT gate publishing — they inform. They run:
+#   • on a weekly schedule (Monday 06:00 UTC), and
+#   • on demand from the Actions tab (workflow_dispatch).
+#
+# Results appear in the run's log and in the Step Summary, so you can read
+# them from the GitHub mobile app without opening any file.
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"     # every Monday at 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  tag-report:
+    name: Tag consistency
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Tag consistency report
+        run: |
+          python3 .github/scripts/tag_report.py | tee report.txt
+          {
+            echo '## Tag consistency report'
+            echo '```'
+            cat report.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+  link-check:
+    name: Link rot
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Outbound link check
+        # Never fails the run (no --strict): dead third-party links are a
+        # to-do, not a build error.
+        run: |
+          python3 .github/scripts/link_check.py | tee links.txt
+          {
+            echo '## Outbound link report'
+            echo '```'
+            cat links.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
