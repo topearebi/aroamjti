@@ -45,7 +45,8 @@ Titles in **bold** are ones I found profound or moving — not just good. Recent
   - The Opal Deception
   - The Lost Colony
   - The Time Paradox
-  - The Atlantis Comple
+  - The Atlantis Complex
+  - The Last Guardian
 
 ### Suzanne Collins
 
