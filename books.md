@@ -72,7 +72,7 @@ Titles in **bold** are ones I found profound or moving — not just good. Recent
   - Stone of Tears
   - Wizard's First Rule
   - blood of the fold 
-  - 
+  -  
 
 ### Anthony Horowitz
 
