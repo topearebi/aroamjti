@@ -1,7 +1,6 @@
 ---
 layout: work
 title: "Contrition"
-subtitle: ""
 year: 2016
 order: 2
 format: prose
