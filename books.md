@@ -53,7 +53,8 @@ Titles in **bold** are ones I found profound or moving — not just good. Recent
 
 - The Maze Runner
 - The Scorch Trails
-- 
+- The Death Cure
+
 ### Suzanne Collins
 
 **The Hunger Games**
