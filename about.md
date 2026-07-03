@@ -28,15 +28,15 @@ If I manage to leave enough pieces of me here, then I will continue to exist as 
   <dl class="now-list">
     <div>
       <dt>Reading</dt>
-      <dd>Fill in what you're reading — or point to the <a href="{{ '/books/' | relative_url }}">books</a> page.</dd>
+      <dd>Mastering your hidden self - Serge Khalil King.</dd>
     </div>
     <div>
       <dt>Building</dt>
-      <dd>What you're making or working on right now.</dd>
+      <dd>This very site</dd>
     </div>
     <div>
       <dt>Where</dt>
-      <dd>City, or a note on where life is at the moment.</dd>
+      <dd>Currently in Manchester, in between jobs literally. As I write this, I start a new job monday and I'm waiting to here from another interview.</dd>
     </div>
   </dl>
 </section>
