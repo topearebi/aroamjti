@@ -2,6 +2,7 @@
 layout: default
 title: Books
 permalink: /books/
+description: "What I'm reading and the tools I use to read it — my library, reader, and reading log."
 ---
 # Books
 
