@@ -1,7 +1,12 @@
 # --- Site settings ---
 title: A Record Of A Mortal's Journey To Immortality
 description: Documenting my days, that I may learn from them someday.
-author: Temitope Arebi
+# Author as a map so jekyll-feed can emit a complete Atom <author> element
+# (name + uri + email). Referenced elsewhere as site.author.name.
+author:
+  name: Temitope Arebi
+  email: hi@topearebi.com
+  uri: https://aroamjti.topearebi.com
 
 # Set these to match your custom subdomain.
 # If serving from blog.example.com at the root, baseurl is empty.
