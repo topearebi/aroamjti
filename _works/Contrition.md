@@ -1,20 +1,26 @@
 ---
 layout: work
 title: "Contrition"
-year: 2016
+subtitle: ""              # ← optional subtitle, or delete this line
+year:                    # ← year written, or delete this line
 order: 2
-format: poetry
-original_url: "#"
+format: poetry           # "poetry" = simple verse; "verse" = sectioned/centered; "prose" = paragraphs
+original_url: "#"        # ← paste the PDF/download link here, or delete for no download
 original_label: "Download the original"
-blurb: "Notes about a love that is too early to be appreciated. Too great to be understood"
+blurb: ""                # ← one-line description for the /works/ index
 ---
 
 <!--
   TRANSCRIPTION GUIDE — delete this comment block when done.
 
-  Set `format:` above to "verse" (preserves line breaks, for poetry) or
-  "prose" (normal paragraphs). If this work has no images, you can just
-  write plain Markdown below — headings, paragraphs, etc.
+  Set `format:` above to one of:
+    poetry — simple verse, left-aligned, single line breaks preserved
+             (blank line = new stanza). Same rendering as blog poems.
+    verse  — composed/sectioned verse: centered, with <section class="work-section">
+             blocks, optional <p class="work-label"> framing, and interleaved
+             artwork. Use for richer illustrated works (see 10000-days).
+    prose  — normal paragraphs.
+  If this work has no images, you can just write plain Markdown below.
 
   If it has sections or images, the same building blocks as 10000-days work:
 
@@ -27,6 +33,7 @@ blurb: "Notes about a love that is too early to be appreciated. Too great to be 
   Images go in assets/images/works/contrition/.
   Delete the placeholder below when you start.
 -->
+
 1 
 
 You never really cared what I wanted, until it was somebody else
