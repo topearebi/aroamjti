@@ -106,16 +106,18 @@ hr { border: none; border-top: 1px solid var(--hairline); margin: calc(var(--spa
 .post-content :not(pre) > code { background: color-mix(in srgb, var(--ink) 6%, var(--paper)); padding: 0.1em 0.35em; border-radius: 3px; }
 .post-content ul, .post-content ol { padding-left: 1.4rem; margin: 0 0 var(--space); }
 .post-content li { margin: 0.3rem 0; }
-/* Poetry: render the verse block with source whitespace preserved, so the
-   line breaks and blank-line stanza gaps appear exactly as in the .md file.
-   This avoids relying on kramdown's paragraph splitting, which pre-line
-   flattens. The whole poem body is one whitespace-preserving block. */
+/* Poetry: pre-wrap preserves the single line breaks between verse lines
+   (which normal HTML rendering would collapse into a space) while still
+   letting long lines wrap on narrow screens. kramdown splits stanzas into
+   separate <p> elements on the blank source lines; stanza spacing is set
+   on those paragraphs just below. */
 .post--poetry .post-content {
   font-size: var(--step-1);
   line-height: 1.7;
-  white-space: pre-wrap;   /* honor newlines AND blank lines literally */
+  white-space: pre-wrap;   /* keep single line breaks within a stanza */
 }
-.post--poetry .post-content p { margin: 0; max-width: 32rem; }
+.post--poetry .post-content p { margin: 0 0 var(--space); max-width: 32rem; }
+.post--poetry .post-content p:last-child { margin-bottom: 0; }
 .post--poetry .post-title { font-style: italic; }
 .post-tags { margin-top: calc(var(--space) * 1.5); padding-top: var(--space); border-top: 1px solid var(--hairline); display: flex; flex-wrap: wrap; gap: 0.75rem; }
 .post-tags .tag { color: var(--ink-muted); font-family: var(--mono); font-size: var(--step--1); }
