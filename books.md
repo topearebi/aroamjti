@@ -41,6 +41,7 @@ Titles in **bold** are ones I found profound or moving — not just good. Recent
 **Artemis Fowl**
   - Artemis Fowl
   - The Arctic Incident
+  - The Eternity Code
   - The Opal Deception
   - The Time Paradox
 
