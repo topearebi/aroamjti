@@ -49,6 +49,9 @@ Titles in **bold** are ones I found profound or moving — not just good. Recent
   - The Atlantis Complex
   - The Last Guardian
 
+### James Dashner
+
+- Maze Runner
 ### Suzanne Collins
 
 **The Hunger Games**
