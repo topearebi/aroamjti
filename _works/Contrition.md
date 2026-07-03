@@ -53,20 +53,18 @@ You wouldn't be sad anymore.
 You wouldn't need me to make you happy.
 
 5
-
 I am quick to melt under your gaze
 Look how all my inhibitions are washed away
 Like I am ice and you are a summer's day
 
 6
-
 And if photography is art,
 I could remember you for a living
 I would print you out from my tongue with my words
 There is no room darker than the confines of this head which you persist in
 
 7
- 
+
 Some people drink for strength
 
 And what you have is ink confidence my dear
