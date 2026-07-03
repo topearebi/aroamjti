@@ -110,14 +110,18 @@ hr { border: none; border-top: 1px solid var(--hairline); margin: calc(var(--spa
    (which normal HTML rendering would collapse into a space) while still
    letting long lines wrap on narrow screens. kramdown splits stanzas into
    separate <p> elements on the blank source lines; stanza spacing is set
-   on those paragraphs just below. */
-.post--poetry .post-content {
+   on those paragraphs just below. Applies to both blog posts
+   (type: poetry) and works (format: poetry). */
+.post--poetry .post-content,
+.work-body--poetry {
   font-size: var(--step-1);
   line-height: 1.7;
   white-space: pre-wrap;   /* keep single line breaks within a stanza */
 }
-.post--poetry .post-content p { margin: 0 0 var(--space); max-width: 32rem; }
-.post--poetry .post-content p:last-child { margin-bottom: 0; }
+.post--poetry .post-content p,
+.work-body--poetry p { margin: 0 0 var(--space); max-width: 32rem; }
+.post--poetry .post-content p:last-child,
+.work-body--poetry p:last-child { margin-bottom: 0; }
 .post--poetry .post-title { font-style: italic; }
 .post-tags { margin-top: calc(var(--space) * 1.5); padding-top: var(--space); border-top: 1px solid var(--hairline); display: flex; flex-wrap: wrap; gap: 0.75rem; }
 .post-tags .tag { color: var(--ink-muted); font-family: var(--mono); font-size: var(--step--1); }
@@ -316,7 +320,18 @@ hr { border: none; border-top: 1px solid var(--hairline); margin: calc(var(--spa
   font-size: var(--step--1); color: var(--ink-faint);
 }
 
-/* Body typography: verse preserves line breaks; prose is normal paragraphs */
+/* Body typography — three formats, chosen via `format:` front matter:
+
+     format: poetry  → simple left-aligned verse. Handled by the unified
+                       poetry rule near the top of this file, shared with blog
+                       posts (type: poetry), so a plain poem renders the same
+                       whether it is a post or a work.
+     format: verse   → composed verse: centered, with .work-section blocks and
+                       optional .work-label framing (e.g. Heaven / Earth) and
+                       interleaved .work-figure artwork. For richer, sectioned
+                       works rather than a single plain poem.
+     format: prose   → normal paragraphs (default).
+*/
 .work-body--verse .work-section {
   white-space: pre-line;
   text-align: center;
