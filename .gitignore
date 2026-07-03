@@ -1,6 +1,66 @@
+# =============================================================
+#  .gitignore — what travels between devices/platforms, and what doesn't
+#
+#  Rule of thumb:
+#    - Content + layouts + config + assets  → TRACKED (the site's source of truth)
+#    - Build output + tool caches + per-device state → IGNORED (derived or local)
+#
+#  Note: this controls SYNC (what Git shares across Obsidian, SilverBullet,
+#  the GitHub web UI, and your machines). It is separate from Jekyll's
+#  `exclude:` in _config.yml, which controls what gets PUBLISHED to the site.
+# =============================================================
+
+# --- Jekyll build output & caches (regenerated; never commit) ---
 _site/
 .jekyll-cache/
 .jekyll-metadata
 .sass-cache/
+
+# --- Ruby / dependency lock (GitHub Pages resolves its own) ---
 Gemfile.lock
+
+# --- OS junk ---
 .DS_Store
+Thumbs.db
+desktop.ini
+._*
+.Spotlight-V100
+.Trashes
+
+# =============================================================
+#  Obsidian
+#  Sync the SHARED vault config (so plugins/settings match across devices),
+#  but NEVER sync per-device UI state — it conflicts constantly and means
+#  nothing on other machines or on the server.
+# =============================================================
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/workspace.mobile.json
+.obsidian/cache
+.obsidian/*.log
+
+# If you'd rather keep the ENTIRE .obsidian folder private to each device
+# (simplest, zero-conflict), comment out the five lines above and uncomment:
+# .obsidian/
+
+# --- Obsidian trash (the "delete to trash" feature writes here) ---
+.trash/
+
+# =============================================================
+#  SilverBullet
+#  SilverBullet keeps an index/database derived from your Markdown.
+#  The .md files ARE the source of truth and sync; the index does not.
+# =============================================================
+.silverbullet.db
+.silverbullet.db-*
+_plug/
+.sb-*
+
+# =============================================================
+#  Editor / misc local state
+# =============================================================
+*.tmp
+*.bak
+*~
+.vscode/
+.idea/
