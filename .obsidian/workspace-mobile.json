@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "books.md",
+                "file": "_works/Contrition.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "books"
+              "title": "Contrition"
             }
           }
         ]
@@ -170,6 +170,12 @@
   },
   "active": "7e9e5964b02d7bf4",
   "lastOpenFiles": [
+    "books.md",
+    "works.md",
+    "_works/Contrition.md",
+    "_works/10000 Days of the Sun.md",
+    "_works",
+    "_layouts/work.html",
     "_posts/2014-06-21-life-after-death.md",
     "_posts/2021-08-18-only-walk-alone-when-its-actual-walking.md",
     "_posts/2021-08-18-cost-price-and-profitability.md",
@@ -191,10 +197,6 @@
     "_posts/2014-09-09-ignorance-is-bliss-knowledge-grief.md",
     "_posts/2014-09-08-dealing-with-grief.md",
     "_posts/2014-09-07-lust-incomplete.md",
-    "_posts/2014-09-06-scribbles.md",
-    "_posts/2014-09-05-unknown.md",
-    "_posts/2014-09-03-the-windows-to-my-soul.md",
-    "_posts/2014-09-04-thou-art.md",
-    "_posts/2014-09-02-the-shapeshifter.md"
+    "_posts/2014-09-06-scribbles.md"
   ]
 }
