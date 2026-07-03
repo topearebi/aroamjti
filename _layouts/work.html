@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<article class="work">
+  <header class="work-header">
+    <h1 class="work-title">{{ page.title }}</h1>
+    {% if page.subtitle %}<p class="work-subtitle-lead">{{ page.subtitle }}</p>{% endif %}
+    {% if page.year %}<p class="work-meta">{{ page.year }}</p>{% endif %}
+  </header>
+
+  {% if page.intro %}
+  <div class="work-intro">
+    <p>{{ page.intro }}</p>
+  </div>
+  {% endif %}
+
+  <div class="work-body work-body--{{ page.format | default: 'prose' }}">
+    {{ content }}
+  </div>
+
+  <footer class="work-footer">
+    {% if page.original_url %}
+    <p class="work-original">
+      This is the transcribed text. The original — with its full artwork and
+      layout as composed — is available here:
+      <a href="{{ page.original_url }}" rel="noopener">{{ page.original_label | default: "Download the original" }}</a>.
+    </p>
+    {% endif %}
+    <p class="work-back"><a href="{{ '/works/' | relative_url }}">← All works</a></p>
+  </footer>
+</article>
