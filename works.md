@@ -2,6 +2,7 @@
 layout: default
 title: Works
 permalink: /works/
+description: "Longer, self-contained pieces — written collections meant to be read whole, apart from the daily journal entries."
 ---
 # Works
 
