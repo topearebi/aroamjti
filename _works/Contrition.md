@@ -2,7 +2,7 @@
 layout: work
 title: "Contrition"
 subtitle: ""              # ← optional subtitle, or delete this line
-year:                    # ← year written, or delete this line
+year: 2016                   # ← year written, or delete this line
 order: 2
 format: poetry           # "poetry" = simple verse; "verse" = sectioned/centered; "prose" = paragraphs
 original_url: "#"        # ← paste the PDF/download link here, or delete for no download
