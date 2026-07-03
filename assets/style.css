@@ -358,3 +358,59 @@ hr { border: none; border-top: 1px solid var(--hairline); margin: calc(var(--spa
 .work-back { margin: var(--space) 0 0; font-size: var(--step--1); }
 .work-back a { color: var(--ink-muted); text-decoration: none; }
 .work-back a:hover { color: var(--accent); }
+
+/* ---------------------------------------------------------------------------
+   "Now" section (used on /about/): a dated snapshot of current focus, set off
+   from the timeless About prose above it. Explicitly disposable — the mono
+   date says how current it is. Reuses the site's meta styling vocabulary.
+   Markup:
+     <section class="now">
+       <p class="now-date">As of 3 July 2026</p>
+       <dl class="now-list">
+         <div><dt>Reading</dt><dd>…</dd></div>
+         <div><dt>Building</dt><dd>…</dd></div>
+         <div><dt>Where</dt><dd>…</dd></div>
+       </dl>
+     </section>
+--------------------------------------------------------------------------- */
+.now {
+  margin: calc(var(--space) * 2.5) 0 0;
+  padding-top: var(--space);
+  border-top: 1px solid var(--hairline);
+}
+.now-title {
+  font-family: var(--mono);
+  font-size: var(--step--1);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 0.35rem;
+}
+.now-date {
+  font-family: var(--mono);
+  font-size: var(--step--1);
+  color: var(--ink-faint);
+  margin: 0 0 var(--space);
+}
+.now-list { margin: 0; }
+.now-list > div {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--hairline);
+}
+.now-list > div:last-child { border-bottom: none; }
+.now-list dt {
+  flex: 0 0 6.5rem;
+  font-family: var(--mono);
+  font-size: var(--step--1);
+  letter-spacing: 0.02em;
+  color: var(--ink-muted);
+  margin: 0;
+}
+.now-list dd { margin: 0; }
+/* On narrow screens, stack label above value rather than crushing columns. */
+@media (max-width: 34rem) {
+  .now-list > div { flex-direction: column; gap: 0.2rem; }
+  .now-list dt { flex-basis: auto; }
+}
