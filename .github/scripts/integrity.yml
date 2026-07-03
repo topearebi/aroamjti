@@ -1,0 +1,58 @@
+name: Integrity check
+
+# Runs on every push and pull request. If anything here fails, the check is
+# marked failed on the commit — your signal (visible from the GitHub mobile
+# app) that something needs fixing before the site is trustworthy.
+#
+# Two gates, both must pass:
+#   1. Structural checks   — filenames, front matter, vocabulary, links
+#   2. Jekyll build        — the site must actually build with the same
+#                            github-pages gem that production uses
+#
+# Note: this workflow validates; it does not deploy. GitHub Pages continues
+# to build and deploy the site itself. A failed check here does not take the
+# live site down — it flags the offending commit so you fix it fast.
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:   # lets you run it manually from the Actions tab
+
+permissions:
+  contents: read
+
+jobs:
+  structural-checks:
+    name: Structural checks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Run integrity checker
+        run: python3 .github/scripts/check_integrity.py
+
+  build:
+    name: Jekyll build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true   # installs gems from Gemfile and caches them
+
+      - name: Build the site (production config)
+        env:
+          JEKYLL_ENV: production
+        run: bundle exec jekyll build --strict_front_matter
+        # --strict_front_matter makes malformed YAML fail the build instead
+        # of being silently skipped.
