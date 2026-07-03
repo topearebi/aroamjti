@@ -3,7 +3,7 @@ layout: work
 title: "Contrition"
 year: 2016
 order: 2
-format: prose
+format: poetry
 original_url: "#"
 original_label: "Download the original"
 blurb: "Notes about a love that is too early to be appreciated. Too great to be understood"
@@ -28,44 +28,40 @@ blurb: "Notes about a love that is too early to be appreciated. Too great to be 
   Delete the placeholder below when you start.
 -->
 1 
- 
+
 You never really cared what I wanted, until it was somebody else
 
-
 2 
- 
+
 Every piece is either
-
 About you,
-
 For you,
-
 Or as much you as I can spit out before I run out of words
- 
+
 3 
- 
+
 Everything I ever gave you, you gave someone else
 
 And everything I ever wanted from you, you gave everybody else
  
- 4
- 
+4
+
 Sometimes I'm scared by the possibility that if I ever loved you back,
 
 You wouldn't be sad anymore.
 
 You wouldn't need me to make you happy.
- 
+
 5
- 
+
 I am quick to melt under your gaze
 
 Look how all my inhibitions are washed away
 
 Like I am ice and you are a summer's day
- 
-6 
- 
+
+6
+
 And if photography is art,
 
 I could remember you for a living
@@ -73,8 +69,8 @@ I could remember you for a living
 I would print you out from my tongue with my words
 
 There is no room darker than the confines of this head which you persist in
- 
-7 
+
+7
  
 Some people drink for strength
 
@@ -90,7 +86,7 @@ The things you don't say, bury themselves deep in your heart my dear
 
 And there they rot; there they fester my dear
 
-8 
+8
 
 I miss you
 
