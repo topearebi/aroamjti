@@ -4,7 +4,7 @@ title: "Contrition"
 subtitle: ""
 year: 2016
 order: 2
-format: verse
+format: prose
 original_url: "#"
 original_label: "Download the original"
 blurb: "Notes about a love that is too early to be appreciated. Too great to be understood"
@@ -135,23 +135,35 @@ I remember how I failed
 9 
 
 You are rivers and you are springs
+
 A cornucopia of things to me
+
 Life is the breath off your lips
+
 Food is your voice at 2 am singing to me
+
 And your skin is the only thing that will ever quench my thirst
  
 10
- 
+
 I see her in my dreams every night
+
 She stalks me in my sleep
+
 In my dreams we never fight
+
 The us from my dreams I'd like to keep
+
 But what if that's all we'll ever be-
+
 Perfect only in our dreams
+
 What does that mean for me?
 
 11
 
 I really want you
+
 I promise this will stay true
+
 So please want me too
