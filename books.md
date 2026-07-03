@@ -51,6 +51,7 @@ Titles in **bold** are ones I found profound or moving — not just good. Recent
 
 ### James Dashner
 
+**The Maze Runner Series*
 - The Maze Runner
 - The Scorch Trails
 - The Death Cure
@@ -70,6 +71,8 @@ Titles in **bold** are ones I found profound or moving — not just good. Recent
 **The Sword of Truth**
   - Stone of Tears
   - Wizard's First Rule
+  - blood of the fold 
+  - 
 
 ### Anthony Horowitz
 
