@@ -81,3 +81,10 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - bear_to_jekyll.py
+  # Never let Jekyll scan installed gems / CI bundle dirs as site content.
+  # Without these, `jekyll build` in CI tries to render Jekyll's own gem
+  # templates (e.g. the sample _posts file) and fails on their placeholder
+  # front matter — especially under --strict_front_matter.
+  - vendor/
+  - .bundle/
+  - .github/
