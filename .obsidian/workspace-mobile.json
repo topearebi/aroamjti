@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_works/Contrition.md",
+                "file": "about.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Contrition"
+              "title": "about"
             }
           }
         ]
@@ -170,10 +170,10 @@
   },
   "active": "7e9e5964b02d7bf4",
   "lastOpenFiles": [
-    "books.md",
     "_works/Contrition.md",
-    "works.md",
     "_works/10000 Days of the Sun.md",
+    "books.md",
+    "works.md",
     "_works",
     "_layouts/work.html",
     "_posts/2014-06-21-life-after-death.md",

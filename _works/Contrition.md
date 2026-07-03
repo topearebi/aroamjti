@@ -64,94 +64,53 @@ I would print you out from my tongue with my words
 There is no room darker than the confines of this head which you persist in
 
 7
-
 Some people drink for strength
-
 And what you have is ink confidence my dear
-
 I hope one day you learn
-
 That though the pen is mightier than the sword my dear
-
 Nothing cuts you deeper than words left unsaid
-
 The things you don't say, bury themselves deep in your heart my dear
-
 And there they rot; there they fester my dear
 
 8
-
 I miss you
-
 God how could something so hard to say
-
 be so easy to write?
-
 These three words have become the bane of my life.
-
 The worst part is that you're right here, so close I could touch you
-
 But oh God we are not like that anymore
-
 You must think I'm so stupid as some of my words don't come out,
-
 I choke on them
-
 Oh God I'm so stupid I should just let the words go like I let you go
 
- 
 Oh God you're so close
-
 My heart is working crazy at its spokes
-
 Your lips are so close, you make lumps in my throat
-
 I don't think I ever really did let you go
-
 You seem so calm even as you drive me to self-harm
-
 What do I have to do to break the ice that covers your soul?
-
 All I want to do is make you shake
-
 Make your soul ache
-
 But I still remember the last time we played this game
-
 I remember how I failed
   
 9 
-
 You are rivers and you are springs
-
 A cornucopia of things to me
-
 Life is the breath off your lips
-
 Food is your voice at 2 am singing to me
-
 And your skin is the only thing that will ever quench my thirst
  
 10
-
 I see her in my dreams every night
-
 She stalks me in my sleep
-
 In my dreams we never fight
-
 The us from my dreams I'd like to keep
-
 But what if that's all we'll ever be-
-
 Perfect only in our dreams
-
 What does that mean for me?
 
 11
-
 I really want you
-
 I promise this will stay true
-
 So please want me too
