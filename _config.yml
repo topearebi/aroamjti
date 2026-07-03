@@ -33,6 +33,14 @@ social:
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
 
+# --- Collections ---
+# "Works" are longer standalone compositions, kept out of the post feed.
+# Each lives in _works/ as its own file and appears on the /works/ index.
+collections:
+  works:
+    output: true
+    permalink: /works/:name/
+
 # --- Pagination (jekyll-paginate) ---
 # Paginates the home page (index.html) only. Change `paginate` to adjust
 # how many posts appear per page. `paginate_path` controls the URL of pages
@@ -57,6 +65,8 @@ nav:
     url: /about/
   - title: Books
     url: /books/
+  - title: Works
+    url: /works/
   - title: Blogroll
     url: /blogroll/
 
