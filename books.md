@@ -30,6 +30,7 @@ Titles in **bold** are ones I found profound or moving — not just good. Recent
   - Ender's Game
 
 **Mither Mages**
+  - The Lost Gate
   - Gatefather
   - The Gate Thief
 
