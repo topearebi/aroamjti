@@ -48,7 +48,6 @@ Or as much you as I can spit out before I run out of words
 3 
 
 Everything I ever gave you, you gave someone else
-
 And everything I ever wanted from you, you gave everybody else
  
 4
