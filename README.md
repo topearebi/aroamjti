@@ -130,8 +130,10 @@ unstable. Always include it.
   always lowercased and de-duplicated by concept (e.g. `poems` and `poetry`
   were merged to one).
 - `type: poetry` — switches the post to verse layout via CSS. The default
-  (omit it) is prose. **Adding a new post type means adding a CSS rule for
-  `.post--TYPENAME`, never a new template.**
+  (omit it) is prose. This renders identically to a **work** with
+  `format: poetry` (see Works below): both share one CSS rule, so a plain
+  poem looks the same whether it is a post or a work. **Adding a new post
+  type means adding a CSS rule for `.post--TYPENAME`, never a new template.**
 - `date_note:` — a small visible footnote for posts whose date is approximate
   (used for pre-2014 archive material with no known original dates).
 - `updated:` — shown beside the date if an old post is meaningfully revised.
@@ -172,9 +174,22 @@ not a new file.
 - **Works** — a Jekyll *collection* (`_works/`) for long-form standalone
   compositions that should be read whole, kept out of the post feed. The
   index sorts by an `order` field, so adding a work is dropping in a file.
-  Works can be prose or verse and can interleave images; long image-based
-  works are transcribed to real text on-site with the original offered as a
-  downloadable file (portability + accessibility without losing the artifact).
+  Each work sets a `format:` field that picks its rendering (parallel to a
+  post's `type:`):
+  - `format: poetry` — simple left-aligned verse. Same CSS as a post's
+    `type: poetry`; use for a plain poem (e.g. *Contrition*). Single line
+    breaks are kept; a blank line starts a new stanza.
+  - `format: verse` — composed/sectioned verse: centered, with
+    `<section class="work-section">` blocks, optional
+    `<p class="work-label">` framing, and interleaved `<figure class="work-figure">`
+    artwork. Use for richer illustrated works (e.g. *10000 Days of the Sun*).
+  - `format: prose` — normal paragraphs (the default).
+
+  Long image-based works are transcribed to real text on-site with the
+  original offered as a downloadable file (portability + accessibility
+  without losing the artifact). **A new format is a CSS rule for
+  `.work-body--FORMAT`, never a new template** — the same adaptive-template
+  principle as posts.
 
 ---
 
@@ -197,10 +212,12 @@ all of them sharing these tokens.
   dependency, no load cost) for body; a monospace utility face for dates,
   meta, and tags. Reading measure capped near 66 characters — the proven
   comfortable line length. Generous line-height for prose.
-- **Poetry** gets its own rhythm: verse layout preserves line breaks
-  (`white-space: pre-line`) with two spacing levels — tight *within* a stanza,
-  a gap *between* stanzas (a blank line in the source). Italic titles mark
-  verse apart from prose at a glance.
+- **Poetry** gets its own rhythm. Plain verse (post `type: poetry` or work
+  `format: poetry`) preserves line breaks with `white-space: pre-wrap` — tight
+  *within* a stanza, a gap *between* stanzas (a blank line in the source) via
+  paragraph spacing — and long lines still wrap on narrow screens. Composed
+  works (`format: verse`) instead center their `.work-section` blocks and use
+  `white-space: pre-line`. Italic titles mark verse apart from prose at a glance.
 - **Responsive:** on narrow screens the home list stacks dates above titles
   rather than crushing them into a column.
 
