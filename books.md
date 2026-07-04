@@ -83,7 +83,7 @@ Titles in **bold** are ones I found profound or moving — not just good. Recent
   - Confessor
   - The Omen Machine
   - The Third Kingdom
-  - Severed
+  - Severed Souls
 
 ### Anthony Horowitz
 
