@@ -209,8 +209,8 @@ Titles in **bold** are ones I found profound or moving — not just good. Recent
 ### Brandon Sanderson
 
 **Alcatraz Versus the Evil Librarians**
-  - Alcatraz Vs the Evil Librarians 
-  - Alcatraz 
+  - Alcatraz Versus the Evil Librarians 
+  - Alcatraz Versus the Scr
 - Legion: The Many Lives of Stephen Leeds
 
 ### Maria V. Snyder
