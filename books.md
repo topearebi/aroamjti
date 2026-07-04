@@ -213,7 +213,9 @@ Titles in **bold** are ones I found profound or moving — not just good. Recent
   - Alcatraz Versus the Scrivener's Bones
   - Alcatraz Versus the Knights of Crystallia
   - Alcatraz Versus the Shattered Lens
-  - 
+  - The Dark Talent
+
+**Legion**
 - Legion: The Many Lives of Stephen Leeds
 
 ### Maria V. Snyder
