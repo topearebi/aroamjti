@@ -63,3 +63,180 @@ Upon its birth
 The first time I met you frankly I thought you were crazy…
 
 </section>
+
+
+10000 Days of the sun
+
+
+A letter from me to you
+
+1
+The first time I met you frankly I thought you were crazy. I suppose I should call it the first time you met me seeing as you walked up to me. I would never have had the balls to do what you did. I have a track record of watching things I like pass me by to maintain.
+I thought you crazy as you talked about liking my backpack. Who does that? Walk up to someone and initiates a conversation with a stranger over an accessory. I should accessorize more if it means I get to meet you over and over again. I mean, you get to meet me. You get it. I don't know if you noticed but I was already making faces and stacking up escape plans in my head. Thinking of the best possible way to extricate myself from this train wreck that was about to happen. See I'm not really a people person. Never have been. But somehow we did not wreck at all. Or at least if we did it was a minor fender bender, or near miss, or, that's besides the point.
+The point is just as I was about to set fire to us and anything that could ever come out of this, I noticed your hair. It was done into beautiful braided twists that I couldn't seem to take my eyes off. They were beautiful. Beautiful enough for me to mention, which I did. Several times during those first couple of days as I recall. See they had these things in them that I do not know a name for.
+Accessories. Once again accessories save the day. I've been looking for the right neckpiece and the perfect bracelet for quite some times now. It's become a past time of mine. I remember when you told me your name and I laughed. In hindsight that may have been rude, but I laughed because I thought it was beautiful. I remember thinking your father must have either been a poet or simply hilarious. It turns out that while he was neither of those, he was something close. Something even better.
+Fast forward a couple of weeks and I find myself talking to one of the most beautiful, most discerning souls to walk the planet. You have this warmth to you, this glow. By the second time I met you I considered you home. By the third I nestled myself in your arms and placed my heart on your chest so I could always come back there. Every day since I've been leaving bits and pieces of myself hoping they never grow too heavy for you to carry. Hoping you never ask me to come collect them because there's nowhere else they'd rather be. I don't think anywhere else will ever feel this comfortable to me
+I am torn however. We are both different people. Very different people and our differences seem to become more glaring each day that passes. Our personalities, responsibilities, the parts of life we've seen. These things define us and frankly we are very different dictionary entries.
+They say opposites attract and to be honest it is all of these things that I like you for. 
+That I love you for.
+I love that everyday is an adventure navigating your minefields.
+I love that everyday is discovering the soft parts to you.
+There are so many parts to you and I am writing this in hope that you give me forever to discover them all.
+
+2
+If beauty came to walk the earth among us
+It would have no choice but to take your form
+Upon it's birth
+
+3
+My warmth comes not from the sun
+But from your arms, wrapping around my form
+My bed is soft
+But I would rather lay my head in your bosom
+There's a rhythm to your walk
+Your every sentence is a song
+Bidding me come
+Bidding me welcome
+Sometimes home is not 4 falls
+But the days I get to spend with you
+
+4
+I am lying on my bed
+Wishing I was with you, but instead
+I am holding on to air
+My fingers clutching ghosts where you were
+Where you were
+
+5
+Leaving you hurts
+And missing you is killing me
+
+6
+Today I learnt there are other things you could do to hurt me
+Besides existing
+And being out of reach
+
+7
+Over the years
+I've felt like I've been leaving 
+Bits and pieces of myself
+In people I've met
+But you,
+You are everything I adore
+In you I have found
+The parts of me I had thought lost
+And so much more
+You are so much more
+
+8
+Your lips are the colour of a rose and I'm scared
+Scared that like a rose there are thorns laying in wait for me farther in
+So gently I trace my fingers across them
+Slowly exploring every ridge
+Waiting to touch the parts of you that will cut into my skin
+But know this,
+No matter how it takes, I will explore every inch of you
+Of them
+And if I bleed so be it
+You already hold my heart in your mouth
+My blood on your lips is nothing at all
+
+9
+My lips trace the outline of your skin
+Like some sort of kiss artist
+My tongue follows like it's paintbrush
+
+I lick and taste in dots and sashes
+Like Morse code messaging
+A picture is worth a thousand words and I am
+Trying to pain you one
+
+I am telling you in body language
+In sign language
+In staring at your lips for too long
+In anything but the words
+
+There is a thirst in me only your waters can cure
+Let me paint with your paintbrush my love
+Hold my lips between yours
+
+10
+The eyes are the window to the soul and I am staring at you
+Perhaps I have stared at you too long
+I am starting to feel you inside of me
+My eyes remember places I have never touched
+I can feel every inch of skin
+Every curve of your form
+You have settled in me
+Like dust settles in a room
+With the windows left open for far too long
+
+11
+Us like two sun
+Eclipsing to become one
+But you are the centre of this world 
+And I a lowly white dwarf
+
+12
+Our love is not eternal
+Just like the sun it shall one day die
+But just like the sun
+It shall burn so long and so bright
+It will seem as though it never will
+
+13
+Every moment I spend with you
+Feels like days of getting to know you
+And the days are never long enough
+I ask whatever God exists
+To grant us forever
+
+- Love can sometimes bend time and space
+
+14
+Doubt that the stars be fire
+Doubt Shakespeare be a great writer
+But if I ever quote you his work
+Never doubt my love
+
+15
+Dear Sun,
+Teach me how to put out your fires when you burn
+I do not know how to run away
+I do not know how to do anything that does not draw me closer to you
+
+16
+"I'm afraid my dear
+I seem to have fallen in love with you" he said
+
+"Why ever would that make you scared" she asked
+
+To which he replied
+"You see I am all kinds of lost
+I never used to believe in love
+I'm like an atheist who not only discovered God,
+But found himself in heaven at the same time
+You are heaven my dear 
+And nothing like I imagined -
+You are so much more than I imagined"
+
+17
+You already know don't you
+Even though I haven't said the words 
+
+18
+Perhaps there are things I should tell you.
+Perhaps there are things that should be stated clearly, just so they're out there. 
+So they are known. 
+Perhaps things should have clearly defined roles in the world. 
+Both miscommunication and lack of communication tend to be major catalysts for destruction and we're just building us. 
+So talk to me. 
+Tell me everything.
+Tell me stories. 
+Tell me your thoughts.
+Tell me what you had for lunch. 
+Nothing is too big or too small. 
+I will listen to it all.
+I could listen to you all day long.
+I just wanted to write that into existence.
+That it is known to us.
