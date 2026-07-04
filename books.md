@@ -145,6 +145,11 @@ Titles in **bold** are ones I found profound or moving — not just good. Recent
 **Daniel X**
   - The Dangerous Days of Daniel X
 
+**Maximum Ride**
+  - Maximum Ride
+  - School's Out Forever 
+  - 
+
 ### Philip Pullman
 
 **His Dark Materials**
