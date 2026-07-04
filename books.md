@@ -150,7 +150,8 @@ Titles in **bold** are ones I found profound or moving — not just good. Recent
   - School's Out Forever 
   - Saving the World and Other Extreme Sports
   - Final Warning
-  - 
+  - Max
+  - Fang
 
 ### Philip Pullman
 
