@@ -219,6 +219,7 @@ Titles in **bold** are ones I found profound or moving — not just good. Recent
   - Legion: The Many Lives of Stephen Leeds
   - Stephen Leeds: Death and Faxes
   - Skin Deep
+  - Lies of the Beho
 
 **Infinity Blade**
   - 
