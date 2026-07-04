@@ -152,6 +152,8 @@ Titles in **bold** are ones I found profound or moving — not just good. Recent
   - Final Warning
   - Max
   - Fang
+  - Angel
+  - Nevermore
 
 ### Philip Pullman
 
@@ -206,7 +208,9 @@ Titles in **bold** are ones I found profound or moving — not just good. Recent
 
 ### Brandon Sanderson
 
-- Alcatraz Versus the Evil Librarians
+**Alcatraz Versus the Evil Librarians**
+  - Alcatraz Vs the Evil Librarians 
+  - Alcatraz 
 - Legion: The Many Lives of Stephen Leeds
 
 ### Maria V. Snyder
