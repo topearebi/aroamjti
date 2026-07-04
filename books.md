@@ -75,6 +75,8 @@ Titles in **bold** are ones I found profound or moving — not just good. Recent
   - blood of the fold 
   -  Temple of the Winds
   - Soul of the Fire
+  - Faith of the Fallen
+  - Pillars of Creation
   - 
 
 ### Anthony Horowitz
