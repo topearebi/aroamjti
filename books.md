@@ -74,6 +74,7 @@ Titles in **bold** are ones I found profound or moving — not just good. Recent
   - Wizard's First Rule
   - blood of the fold 
   -  Temple of the Winds
+  - Soul of the Fire
   - 
 
 ### Anthony Horowitz
