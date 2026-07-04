@@ -136,6 +136,8 @@ Titles in **bold** are ones I found profound or moving — not just good. Recent
 
 **The Inheritance Cycle**
   - Eragon
+  - Eldest
+  - Brisingr
 
 ### James Patterson
 
