@@ -216,7 +216,12 @@ Titles in **bold** are ones I found profound or moving — not just good. Recent
   - The Dark Talent
 
 **Legion**
-- Legion: The Many Lives of Stephen Leeds
+  - Legion: The Many Lives of Stephen Leeds
+  - Stephen Leeds: Death and Faxes
+  - Skin Deep
+
+**Infinity Blade**
+  - 
 
 ### Maria V. Snyder
 
