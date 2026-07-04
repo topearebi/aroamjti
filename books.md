@@ -95,6 +95,7 @@ Titles in **bold** are ones I found profound or moving — not just good. Recent
 **Fifty Shades**
   - Fifty Shades of Grey
   - Fifty Shades Freed
+  - Fifty Shades Darker
 
 ### C.S. Lewis
 
