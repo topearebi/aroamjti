@@ -77,6 +77,11 @@ Titles in **bold** are ones I found profound or moving — not just good. Recent
   - Soul of the Fire
   - Faith of the Fallen
   - Pillars of Creation
+  - The Naked Empire
+  - Chainfire
+  - Phantom
+  - Confessor
+  - The Omen Machine
   - 
 
 ### Anthony Horowitz
