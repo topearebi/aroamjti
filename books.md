@@ -211,7 +211,8 @@ Titles in **bold** are ones I found profound or moving — not just good. Recent
 **Alcatraz Versus the Evil Librarians**
   - Alcatraz Versus the Evil Librarians 
   - Alcatraz Versus the Scrivener's Bones
-  - Alcatraz Versus the 
+  - Alcatraz Versus the Knights of Crystalia
+  - 
 - Legion: The Many Lives of Stephen Leeds
 
 ### Maria V. Snyder
