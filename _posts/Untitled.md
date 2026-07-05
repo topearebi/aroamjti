@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Space Dust
-date: # No date needed while it lives in _drafts/. Add the date only when you
+date: 2015-04-# No date needed while it lives in _drafts/. Add the date only when you
 # publish (see workflow below).
 # type: poetry        # uncomment for verse; omit for prose (the default)
 # tags: [lowercase, list]
