@@ -2,7 +2,7 @@
 layout: post
 title: Space Dust
 date: 2015-04-07
-# type: poetry    
+# type: poetry
 # tags: [lowercase, list]
 ---
 
