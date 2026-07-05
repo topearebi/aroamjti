@@ -1,12 +1,19 @@
 ---
 layout: post
 title: Space Dust
-# No date needed while it lives in _drafts/. Add the date only when you
+date# No date needed while it lives in _drafts/. Add the date only when you
 # publish (see workflow below).
 # type: poetry        # uncomment for verse; omit for prose (the default)
 # tags: [lowercase, list]
 ---
 
+layout: post
+title: "At the end"
+date: 2014-06-17 12:00:00 +0000
+type: poetry
+tags: [death-and-the-end, archive]
+date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
+---
 Write freely here. This file will NOT appear on the live site as long as it
 stays in _drafts/ — GitHub Pages never builds drafts.
 
