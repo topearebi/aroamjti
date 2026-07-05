@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 
+title: Space Dust
 # No date needed while it lives in _drafts/. Add the date only when you
 # publish (see workflow below).
 # type: poetry        # uncomment for verse; omit for prose (the default)
