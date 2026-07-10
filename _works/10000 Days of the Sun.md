@@ -131,7 +131,6 @@ Feels like days of getting to know you
 And the days are never long enough
 I ask whatever God exists
 To grant us forever
-
 - Love can sometimes bend time and space
 
 14

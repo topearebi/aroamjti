@@ -225,10 +225,12 @@ Titles in **bold** are ones I found profound or moving — not just good. Recent
   - Awakening
   - Redemption
 
-### Maria V. Snyder
+### Paul Hoffman 
 
-**Study**
-  - Poison Study
+**The Left Hand of God**
+  - The Left Hand of God 
+  - The Last Four Things
+  - The Beating of His Wings 
 
 ### Katarina E. Tonks
 
@@ -244,8 +246,42 @@ Titles in **bold** are ones I found profound or moving — not just good. Recent
 - The Adventures of Huckleberry Finn
 - The Adventures of Tom Sawyer
 
+### Douglas Adams
+
+
+### George R. R. Martin
+
+**A Song of Ice and Fire**
+- A Game of Thrones
+- A Clash of Kings
+- A Storm of Swords
+
+### Stephen King
+
+**The Dark Tower**
+- The Gunslinger 
+
+### Mario Puzo
+
+- The Godfather 
+- The Sicilian
+- The Last Don
+- Omerta
+
+### Mira Grant
+
+**The New flesh Series**
+- Feed
+
+### Patrick Ness
+**Chaos Walking**
+- The Knife of Never Letting Go
+- The Ask and the Answer
+- Monsters and Men
+
 ## Standalone
 
+- 1984 - George Orwell
 - Dead Babies — Martin Amis
 - Pride and Prejudice — Jane Austen
 - Syrup — Max Barry
@@ -274,3 +310,12 @@ Titles in **bold** are ones I found profound or moving — not just good. Recent
 - Easy — Tammara Webber
 - The Importance of Being Earnest — Oscar Wilde
 - John Dies at the End — David Wong
+- To Kill a Mockingbird - Harper Lee
+- Pride and Prejudice - Jane Austen
+- The Catcher in the Rye - J.D. Salinger
+- The Perks of Being a Wallflower - Stephen Chbosky
+- Nick and Nora's Infinite Playlist - Rachel Cohn & David Levithan
+- Lord of the Flies - William Golding
+- Thirteen Reasons Why - Jay Asher
+- Uglies - Scott Westerfield
+- 
