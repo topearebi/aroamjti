@@ -1,39 +1,14 @@
 ---
 layout: work
 title: "Contrition"
-subtitle: ""              # ← optional subtitle, or delete this line
-year: 2016                   # ← year written, or delete this line
-order: 2
-format: poetry           # "poetry" = simple verse; "verse" = sectioned/centered; "prose" = paragraphs
-original_url: "#"        # ← paste the PDF/download link here, or delete for no download
+subtitle: "conversation between the persona’s of The Grey Gloom and *redacted*"
+year: 2016
+order: 1
+format: poetry
+original_url: https://drive.google.com/file/d/1LE-VnUVfwhB74qYhNh6HLN-tELp5J1Z4/view?usp=sharing
 original_label: "Download the original"
-blurb: ""                # ← one-line description for the /works/ index
+blurb: "This was a foray into one of the most intense, complicated and long lasting relationships I had ever. The original document has the complete work but I have recreated the text of my singular half of the story here."
 ---
-
-<!--
-  TRANSCRIPTION GUIDE — delete this comment block when done.
-
-  Set `format:` above to one of:
-    poetry — simple verse, left-aligned, single line breaks preserved
-             (blank line = new stanza). Same rendering as blog poems.
-    verse  — composed/sectioned verse: centered, with <section class="work-section">
-             blocks, optional <p class="work-label"> framing, and interleaved
-             artwork. Use for richer illustrated works (see 10000-days).
-    prose  — normal paragraphs.
-  If this work has no images, you can just write plain Markdown below.
-
-  If it has sections or images, the same building blocks as 10000-days work:
-
-    <section class="work-section"> … text … </section>
-
-    <figure class="work-figure">
-      <img src="{{ '/assets/images/works/contrition/01.jpg' | relative_url }}" alt="…">
-    </figure>
-
-  Images go in assets/images/works/contrition/.
-  Delete the placeholder below when you start.
--->
-
 1 
 You never really cared what I wanted, until it was somebody else
 
