@@ -314,6 +314,114 @@ finished, dated post you want to temporarily unpublish.)
 
 ---
 
+# Taxonomy — canonical types & tags
+
+This is the source of truth for how posts are classified. Before inventing a new
+`type:` or `tag:`, check here. The whole point is to stop drift: a new tag is a
+deliberate decision, not something made up mid-draft.
+
+Two independent axes:
+
+- **`type:`** — the *form* of the piece (what kind of writing it is). One per post.
+- **`tags:`** — the *subject* of the piece (what it's about). One or more per post.
+
+Form and subject never mix. "Is it a poem?" is a type question; "is it about
+love?" is a tag question. A love poem is `type: poetry` + `tags: [love]`.
+
+---
+
+## Types (5) — the form axis
+
+Exactly one per post. Decision order (take the first that applies):
+
+1. **`poetry`** — stanza-based, rhythmic, lyrical. Lineated verse, whatever its
+   length. A three-line image and a 500-word lyric are both poetry.
+2. **`fiction`** — invented. Characters, events, or worlds that aren't your own
+   lived experience. Narrative told about someone who isn't you. (If it happened
+   to *you* but is told story-style, it is **not** fiction — it's journal.)
+3. **`fragments`** — a set-down, not a finished thing. The test is **intent, not
+   length**: did you consider it done, or just jot it and leave it? A raw thought,
+   a seed, a note-to-self. Length doesn't decide this — a long unpolished scribble
+   is a fragment; a tight finished couplet is poetry.
+4. **`journal`** — true, personal, time-bound. The record of a day, a meal, a
+   mood, an experience. Stays close to lived life. Restaurants, dating, worklife,
+   daily texture. *Records* rather than *reflects outward.*
+5. **`essay`** — true and personal, but travels outward. Starts from experience
+   and reaches for the broader concept — philosophical dives, social commentary,
+   polished thought. The distinction from journal is **record vs. reflect**: if it
+   mostly *thinks*, it's an essay; if it mostly *recounts*, it's a journal.
+
+The `journal` ↔ `essay` line is the only fuzzy one. Rule of thumb: if you could
+remove the personal anecdote and still have a piece, it's an essay; if the anecdote
+*is* the piece, it's a journal.
+
+---
+
+## Tags (11) — the subject axis
+
+One or more per post. Grouped into families below for the tag page, but the tag
+value itself is just the flat name (e.g. `tags: [love, mortality]`). Families are
+presentation only — do not write the family name into front matter.
+
+### Love & intimacy
+- **`love`** — affection, attachment, longing, devotion, the beginning and middle
+  of the love arc. (Endings go to `heartbreak`.)
+- **`desire`** — physical intimacy, passion, lust, intense wanting.
+- **`heartbreak`** — endings, loss of love, the grief of a relationship's close.
+
+### Inner life
+- **`struggle`** — the dark thread: depression, fear, feeling lost, numbness,
+  the fight to heal. The broad umbrella for mental battles.
+- **`mortality`** — death, time passing, human limits, the existential.
+- **`neurodivergence`** — autism, time-blindness, the texture of a differently
+  wired mind.
+
+### Mind & meaning
+- **`philosophy`** — human nature, society, rules, the examined life. Your
+  reflective/commentary thread.
+- **`faith`** — religion, belief, doubt, the sacred. (Split from philosophy so
+  neither becomes a catch-all.)
+
+### Living & growth
+- **`growth`** — discipline, consistency, progress, work, moving forward. The
+  logs and the getting-better.
+- **`life`** — everyday lived experience: food, places, the body, daily texture.
+  The everyday-journal subject thread. Built to grow.
+
+### Mode
+- **`satire`** — the comic/critical register: send-ups, fake-deep, the Red Pill
+  pieces. A mode more than a subject, kept because it's a coherent thread.
+
+---
+
+## What was removed, and why
+
+Deleted tags fell into three groups (see `tag-consolidation-map.csv` for the full
+old→new table):
+
+- **Type-leak** — `poetry`, `prose`, `blackout-poetry` described *form*, now the
+  job of `type:`. Removed to keep the axes clean.
+- **Metadata** — `archive` is handled by the Archive/date page, not a subject.
+- **Non-thematic noise** — `random`, `musings`, `humor` told a visitor nothing;
+  the long tail of one-off tags (`fashion`, `pictures`, `filters`, `french`…)
+  was fly-made drift, absorbed upward into a durable parent or dropped.
+
+The result: 64 drifting tags → 11 canonical ones, each populated enough to browse
+and readable at a glance on the tag page.
+
+---
+
+## Adding to the taxonomy later
+
+- A new **subject** you'll write about **repeatedly** can become a new tag — but
+  only if you expect ≥3–4 posts. One-offs go to the nearest existing tag. Record
+  the new tag here first.
+- New **types** should be rare. Five forms cover the writing; add a sixth only if
+  a genuinely new *form* appears (not a new subject — that's a tag).
+- When unsure, prefer an existing tag over a new one. Drift is the enemy.
+
+---
+
 ## Cross-platform sync (Obsidian · SilverBullet · GitHub web)
 
 The repo is edited from several places — Obsidian on mobile, a self-hosted
