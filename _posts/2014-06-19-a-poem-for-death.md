@@ -6,7 +6,6 @@ type: poetry
 tags: [death-and-the-end, archive]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
-
 And so I came upon death
 Or she came upon me
 And I knew that it was my time
