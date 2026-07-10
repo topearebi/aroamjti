@@ -6,7 +6,6 @@ type: poetry
 tags: [love-the-end, archive]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
-
 I see her in my dreams every night 
 She stalks me in my sleepIn my dreams we never fight
 The us from my dreams I'd like to keep
