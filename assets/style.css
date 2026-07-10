@@ -414,3 +414,47 @@ hr { border: none; border-top: 1px solid var(--hairline); margin: calc(var(--spa
   .now-list > div { flex-direction: column; gap: 0.2rem; }
   .now-list dt { flex-basis: auto; }
 }
+
+/* ============================================================
+   Browse pages — tags, types, archive, and the /browse/ hub.
+   Reuses existing tokens and the .post-list styling. No JS.
+   ============================================================ */
+.browse-count {
+  font-family: var(--mono); font-size: var(--step--1);
+  color: var(--ink-faint); margin: 1.5rem 0 0;
+}
+.tag-index {
+  display: flex; flex-wrap: wrap; gap: 0.5rem 1rem;
+  margin: 1.25rem 0 2.5rem; padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--hairline);
+  font-family: var(--mono); font-size: var(--step--1);
+}
+.tag-index a { text-decoration: none; color: var(--ink-muted); }
+.tag-index a:hover { color: var(--accent); }
+.tag-group { margin: 0 0 calc(var(--space) * 2); scroll-margin-top: 1.5rem; }
+.tag-group-title {
+  font-size: var(--step-1); margin: 0 0 0.5rem;
+  padding-bottom: 0.35rem; border-bottom: 1px solid var(--hairline);
+  display: flex; align-items: baseline; justify-content: space-between; gap: 1rem;
+}
+.tag-group-top {
+  font-family: var(--mono); font-size: var(--step--1); font-weight: 400;
+  text-decoration: none; color: var(--ink-faint); flex: none;
+}
+.tag-group-top:hover { color: var(--accent); }
+.tag-group .post-list { margin-top: 0.5rem; }
+
+/* Browse hub */
+.browse-intro { color: var(--ink-muted); margin-top: 1.5rem; }
+.browse-hub-list { list-style: none; padding: 0; margin: 2rem 0 0; }
+.browse-hub-list li {
+  padding: 0.85rem 0; border-top: 1px solid var(--hairline);
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5rem 1rem;
+}
+.browse-hub-list li:last-child { border-bottom: 1px solid var(--hairline); }
+.browse-hub-link {
+  text-decoration: none; color: var(--ink);
+  font-size: var(--step-1); font-weight: 700; letter-spacing: -0.01em;
+}
+.browse-hub-link:hover { color: var(--accent); }
+.browse-hub-note { color: var(--ink-muted); font-size: var(--step--1); }
