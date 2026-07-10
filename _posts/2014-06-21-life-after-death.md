@@ -6,7 +6,6 @@ type: poetry
 tags: [death-and-the-end, archive]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
-
 At times
 I sit around and think:
 What is the point of anything?
