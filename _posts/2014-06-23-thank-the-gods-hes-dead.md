@@ -6,7 +6,6 @@ type: poetry
 tags: [death-and-the-end, archive]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
-
 One day I will lay, dead
 Then my "friends" will their false skin shed
 They'll speak the truth about me
@@ -35,4 +34,4 @@ She'll thank the gods its with me, dead
 My kids will speak of me
 How they thought I was stingy
 They used to beg me till they (their eyes) were red
-They'll thank the gods I'm dead
+They'll thank the gods that I am dead
