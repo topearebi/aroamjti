@@ -1,17 +1,17 @@
 ---
 layout: work
 title: "10000 Days of the Sun"
-subtitle: "A letter from me to you"
+subtitle: "A scrapbook of feelings"
 year: 2016
-order: 1
+order: 2
 format: poetry
-original_url: "#"          # ← paste the PDF/download link here
-original_label: "Download the original (with artwork)"
-blurb: "A love letter in fragments, written across the small mythologies of one relationship."
+original_url: https://drive.google.com/file/d/1-HvCprbcKSl34j0aZfyxGQl9MMdd4zDs/view?usp=sharing
+original_label: "Download the original"
+blurb: "I wrote these series of letters during a rather interesting time in my life. I met someone much older and wiser than I was, as in all my relationships in hindsight, at a time when I myself was crossing into the realm of adulthood and semi-freedom. And I really tried to let myself just be a bit more free. More open to exploration and posibility. I hope you enjoy it."
 ---
+1
 A letter from me to you
 
-1
 The first time I met you frankly I thought you were crazy. I suppose I should call it the first time you met me seeing as you walked up to me. I would never have had the balls to do what you did. I have a track record of watching things I like pass me by to maintain.
 I thought you crazy as you talked about liking my backpack. Who does that? Walk up to someone and initiates a conversation with a stranger over an accessory. I should accessorize more if it means I get to meet you over and over again. I mean, you get to meet me. You get it. I don't know if you noticed but I was already making faces and stacking up escape plans in my head. Thinking of the best possible way to extricate myself from this train wreck that was about to happen. See I'm not really a people person. Never have been. But somehow we did not wreck at all. Or at least if we did it was a minor fender bender, or near miss, or, that's besides the point.
 The point is just as I was about to set fire to us and anything that could ever come out of this, I noticed your hair. It was done into beautiful braided twists that I couldn't seem to take my eyes off. They were beautiful. Beautiful enough for me to mention, which I did. Several times during those first couple of days as I recall. See they had these things in them that I do not know a name for.
