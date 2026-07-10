@@ -11,7 +11,7 @@ And so I came upon death
 Or she came upon me
 And I knew that it was my time
 For I alone saw her
-Stood in d middle of a sea of people she did
+Stood in the middle of a sea of people she did
 Her ugliness arresting attention, as beauty may
 An ugly, beautifully so
 Terrifying, soothing
