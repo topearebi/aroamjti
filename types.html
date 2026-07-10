@@ -1,0 +1,42 @@
+---
+layout: default
+title: Types
+permalink: /types/
+description: Browse the archive by type.
+---
+{% comment %}
+  Group posts by their `type:` front-matter value. Any type value appears
+  automatically; posts with no type fall under "prose" to match the post
+  layout default (post--prose).
+{% endcomment %}
+{% assign all_types = "" | split: "" %}
+{% for post in site.posts %}
+  {% assign t = post.type | default: "prose" %}
+  {% assign all_types = all_types | push: t %}
+{% endfor %}
+{% assign types = all_types | uniq | sort_natural %}
+
+<p class="browse-count">{{ types.size }} type{% if types.size != 1 %}s{% endif %}.</p>
+
+<nav class="tag-index" aria-label="Type index">
+  {% for type in types %}
+  <a href="#type-{{ type | slugify }}">{{ type }}</a>
+  {% endfor %}
+</nav>
+
+{% for type in types %}
+<section class="tag-group" id="type-{{ type | slugify }}">
+  <h2 class="tag-group-title">{{ type }} <a class="tag-group-top" href="#top" aria-label="Back to top">&uarr;</a></h2>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      {% assign pt = post.type | default: "prose" %}
+      {% if pt == type %}
+      <li>
+        <time class="post-list-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+        <a class="post-list-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</section>
+{% endfor %}

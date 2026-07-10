@@ -1,0 +1,33 @@
+---
+layout: default
+title: Archive
+permalink: /archive/
+description: Browse the archive by year.
+---
+{% comment %}
+  Group posts by year, newest year first. site.posts is already sorted
+  newest-first, so group_by preserves that order within each year.
+{% endcomment %}
+{% assign by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+
+<p class="browse-count">{{ site.posts.size }} post{% if site.posts.size != 1 %}s{% endif %} across {{ by_year.size }} year{% if by_year.size != 1 %}s{% endif %}.</p>
+
+<nav class="tag-index" aria-label="Year index">
+  {% for year in by_year %}
+  <a href="#year-{{ year.name }}">{{ year.name }}</a>
+  {% endfor %}
+</nav>
+
+{% for year in by_year %}
+<section class="tag-group" id="year-{{ year.name }}">
+  <h2 class="tag-group-title">{{ year.name }} <a class="tag-group-top" href="#top" aria-label="Back to top">&uarr;</a></h2>
+  <ul class="post-list">
+    {% for post in year.items %}
+    <li>
+      <time class="post-list-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%m-%d" }}</time>
+      <a class="post-list-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endfor %}
