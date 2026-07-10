@@ -1,7 +1,7 @@
 ---
 layout: work
 title: "Contrition"
-subtitle: "conversation between the persona’s of The Grey Gloom and *redacted*"
+subtitle: "Conversation between the personas of The Grey Gloom and *redacted*"
 year: 2016
 order: 1
 format: poetry
