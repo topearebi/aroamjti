@@ -7,15 +7,15 @@ tags: [death-and-the-end, archive]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
 I've always wondered
-what it would be like to fly
+What it would be like to fly
 Then one day, I decided to stop wondering
-I decided to try (do it)
+I decided to try
 I took one step, then another
 I was on the edge now
 I looked down, and I thought
 "This is stupid"
 But I believe
-And if u believe, u can achieve
+And if you believe, you can achieve
 And that is all that matters in the end; faith
 All I need to do is jump
 Take a step
@@ -26,7 +26,7 @@ The adrenaline coursing through my veins
 Heart-rate increasing
 I had done it, I thought
 I was flying
-Then I opened my eye
+Then I opened my eyes
 For some reason, the ground was coming up to me
 Would not this earth leave me alone
 Was it so determined to bind me forever
