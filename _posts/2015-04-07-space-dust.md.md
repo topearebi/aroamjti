@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Space Dust
-date: 2015-04-07
+date: 2015-04-07 12:00:00 +0000
 type: poetry
 # tags: 
 ---
