@@ -3,7 +3,7 @@ layout: post
 title: "Heart-break"
 date: 2014-07-02 12:00:00 +0000
 type: poetry
-tags: [love]
+tags: [heartbreak]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
 Here once lay the heart of a young man pleading, for someone to stop its bleeding, because it had been broken, by words spoken, by the lips of a young woman, who was in love with another man. 
