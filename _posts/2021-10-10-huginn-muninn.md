@@ -2,14 +2,14 @@
 layout: post
 title: Huginn. Muninn.
 date: 2021-10-10 23:00:00 +0000
-tags: [acceptance, consistency, depression, inner-darkness, realisations]
+type: journal 
+tags: [struggle, existential]
 ---
-
 For years now I have been convinced that my problem is self-loathing. That I hate myself for not being able to keep up with the world. It's pace. It's fluidity. Quick and ever changing. Unlike I. Always constant. Never changing.
 
 Today I realised it is not myself I hate, but the world for those very features. It is hurried and shifty. Always searching for something. Unable to find completeness in itself.
 
-I am complete. The perfect base material. I require no hast. No change. No alchemy. Merely the moulding and shaping of pressures. Like coal turns to diamond.
+I am complete. The perfect base material. I require no haste. No change. No alchemy. Merely the moulding and shaping of pressures. Like coal turns to diamond.
 
 I have been going through (attempting to go through) my old notes. Searching for inspiration. I realised that change is the hardest thing to do when you are a human. It takes more than will or desire or a sudden flash of inspiration. The only way to change is to suffer under a great weight. Or a tremendous upheaval. Just as the body must be strained to be bigger, the mind must be stressed to its limit if it is to be affected. In the absence of such stressors, I can only dig deeper into myself. Be better at what I already am instead of floundering on the edges of new paths.
 

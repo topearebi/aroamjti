@@ -2,8 +2,9 @@
 layout: post
 title: Today I Can
 date: 2023-10-26 23:00:00 +0000
+type: journal 
+tags: [growth]
 ---
-
 The time is exactly 00:38. That is 38 minutes into a new day and this is the first time that I am able to journal in over a year.
 
 There is nothing special about 38 minutes. Nor is there anything special about today. It is the same as any other day for the past 3 months except that today, I am writing this.

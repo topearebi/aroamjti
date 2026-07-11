@@ -3,8 +3,9 @@ layout: post
 title: To Know, Biblically
 date: 2021-11-05 00:00:00 +0000
 tags: [sex, bad-faith, realisations]
+type: essay 
+tags: [desire, philosophy]
 ---
-
 You can never really know someone. Really know someone. You can know things about them. Like the colour of their hair, their favourite band, what they smell like after two days without a bath. But these are merely outward manifestations of a more complex condition. The fever is not the malaria. Nor is the headache. But we must treat these things for a cure.
 
 Like medicine, the best we can hope for is patterns. To discover them. To recognise them. Because it is these patterns. These collections of things we know about a person can shed some insight into some small aspect of who a person really is.

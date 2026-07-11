@@ -2,9 +2,9 @@
 layout: post
 title: Is it a hiatus if you do it often
 date: 2021-11-28 00:00:00 +0000
-tags: [depression, failure, psychology, travel]
+type: journal 
+tags: [struggle]
 ---
-
 For the past couple of weeks, I have done little of the things that I truly want to do. This is not to say that I am unhappy or unfulfilled because of it. My unhappiness and lack of fulfilment are more an existential crisis that seems insurmountable and yet for some reason, I find myself hoping that doing the things that I think I should or need to do will be instrumental in surmounting this obstacle.
 
 I am aware that some type of psychopathology is involved in my inability to balance my desire and my actions. I would regret the set of choices or actions and inactions that led me to this condition if I could for the life of me figure out what those choices are. For all my supposed objectivity, I seem incapable of seeing myself clearly. Which is nothing particularly terrible unless, like me, you are looking to cure this condition.

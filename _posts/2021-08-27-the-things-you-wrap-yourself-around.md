@@ -2,9 +2,9 @@
 layout: post
 title: The Things You Wrap Yourself Around
 date: 2021-08-27 23:00:00 +0000
-tags: [gym, psychology]
+type: journal
+tags: [life]
 ---
-
 It's evening and I'm still in my gym clothes. My gym bottoms anyways. And shoes. And yes as you can guess, it means I haven't had a bath since I got back.
 
 A favourite hobby of mine is to psychoanalyse little quirks and give them largely unrelated or exaggerated interpretations a la personality traits.

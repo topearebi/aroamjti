@@ -2,9 +2,9 @@
 layout: post
 title: Moving Past Fear Through Understanding
 date: 2021-09-23 23:00:00 +0000
-tags: [fear, health]
+type: essay 
+tags: [mortality]
 ---
-
 I have fallen sick again and it has me kind of worried. I know it is malaria and I basically get bitten by mosquitoes everyday but these are strange times. I am getting a blood test.
 
 Going to the hospital is quite a chore because of the distance between where I live and my current insurance coverage so I tend to self-diagnose and self-treat. It usually works because I almost always exclusively come down with malaria, a condition I am certain tons of people can relate too. I have at this point had it so much I can usually recognize the symptoms a few days away.

@@ -2,9 +2,9 @@
 layout: post
 title: "Deadly Virtues: Patience"
 date: 2021-08-28 23:00:00 +0000
-tags: [business, cowreeh, dreams]
+type: essay
+tags: [growth]
 ---
-
 Once upon a time, I wanted to be a model. I had this idea that people would call me up and pay me to wear clothes and take pictures that make me look good. So of course I asked people who worked with models what they thought of my chances. I did not become a model.
 
 Earlier in the month while launching Cowreeh, we needed to do a product shoot. And not just any product shoot. At Cowreeh, we are not just building a store or any regular old fashion label. We are building a lifestyle brand. A collective of people that believe that understand that there is no limit to the ways in which a person can look good and feel good. So we needed to look the part.

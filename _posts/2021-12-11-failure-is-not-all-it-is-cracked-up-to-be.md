@@ -2,9 +2,9 @@
 layout: post
 title: Failure Is Not All It Is Cracked Up To Be
 date: 2021-12-11 00:00:00 +0000
-tags: [failure]
+type: essay 
+tags: [struggle, neurodivergence]
 ---
-
 From the moment we are born into this world, multiple life paths open to us. Depending on our choices, these paths split, intersect, diverge and evolve in ways that we cannot very often foresee. They, however, lead to generally two classes of destinations; success, or failure. You can often tell where the path you’re on is heading towards.
 
 In the earlier stages of my life, it felt like I was on the first of these paths. From private high school to federal university, despite the complexities involved, I somehow scaled through. I have never been the sharpest tack in the room but if you push hard enough, I could break skin. There have been flashes of brilliance here and there. A few spelling bees. Almost every English exam. And yet when the true class geniuses were getting ‘best in subject’ awards, I got awarded for being the neatest.

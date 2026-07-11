@@ -2,9 +2,9 @@
 layout: post
 title: Falling Off the Wagon, Getting On the Horse
 date: 2021-08-25 23:00:00 +0000
-tags: [business, consistency, cowreeh, failure]
+type: journal 
+tags: [growth]
 ---
-
 I should probably explain how I fell off the wagon so soon. I mean I didn't even last a week but here it goes.
 
 My phone literally stopped charging and I am definitely more comfortable typing on my phone. I suppose I could have done with just using a laptop or some other device which I would have done eventually, but then I fell sick. One of those once in a year really terrible bouts with the ailment that we AAs tend to fall prey too. As I write this I am still in recovery. There were definitely times between these events when I could have written, but I didn't. I own up to that.

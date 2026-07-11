@@ -2,9 +2,9 @@
 layout: post
 title: Pictures and Perceptions of Self
 date: 2021-09-21 23:00:00 +0000
-tags: [filters, pictures, self-worth]
+type: essay 
+tags: [struggle]
 ---
-
 I've never liked filters. For the same reason I've never been truly able to appreciate make-up and body modification surgery. This is not because I have a purist ideafication of the human body. I do not believe that we are what we are and we should not interfere with God's plan or anything so contrived. In fact, I believe quite the opposite. That the condition of being human is to constantly be evolving. Changing. Adapting.
 
 But it is one thing to evolve, another entirely to pretend.

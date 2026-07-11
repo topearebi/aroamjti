@@ -11,5 +11,6 @@ How could I ever convince anyone
 that the earth is round
 or that 2 and 2 make 4
 When I cannot get you to believe
-I. LOVE. YOU. 3 little things
+I. LOVE. YOU. 
+3 little things
 I guess it's turtles all the way down

@@ -2,9 +2,9 @@
 layout: post
 title: Drowning But In A Person
 date: 2021-10-27 23:00:00 +0000
-tags: [poetry]
+type: poetry
+tags: [love]
 ---
-
 I was going through my notes a while back like I tend to when I have the blues and I was surprised to find that I don’t entirely hate everything I’ve written. And perhaps i found it touching because it reminded me that even terrible things can feel good when you are with someone.
 
 I stand naked before the sea

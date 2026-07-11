@@ -2,7 +2,8 @@
 layout: post
 title: Social Bridge Building
 date: 2023-12-25 10:49:00 +0000
-tags: [autism, social]
+type: essay 
+tags: [neurodivergence]
 ---
 
 I'm quite terrible at socialisation. Coupled with my issues with consistency, I am rather terrible at maintaining social relationships. Apparently relationships require nurturing, for some people anyways. 

@@ -2,9 +2,9 @@
 layout: post
 title: The Goal of Goal Setting. The Accomplishment of Accomplishments.
 date: 2023-12-23 00:00:00 +0000
-tags: [goals]
+type: essay 
+tags: [growth]
 ---
-
 The problem is not so much having goals as it is keeping them top of mind.  Having them always visible or present to guide your actions. It's not like your resolutions or life plan is somehow burned into the back of your eyelids so that every time you take a step or action you can assess how it fits into each line item on your list.
 
 You can write down your goals on a piece of paper, but how long will it last. Before the words fade out; or the paper gets wet; or you loose it. 

@@ -2,6 +2,8 @@
 layout: post
 title: I should have written this yesterday but here we go now
 date: 2021-08-16 04:28:00 +0000
+type: journal 
+tags: [growth]
 ---
 I am starting a personal challenge to myself to write every day or at least as much as possible for the foreseeable future. I could do one of those 30 or 60-day writing challenges but this isn't a vanity metric. This is an actual attempt to be better and more consistent than I have ever been in my life.
 

@@ -2,9 +2,9 @@
 layout: post
 title: Runaway or Why the world should end if I can not
 date: 2021-12-01 00:00:00 +0000
-tags: [healing, inner-darkness, pain]
+type: journal 
+tags: [struggle]
 ---
-
 [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7ym07b0RTO9kFlp-18wO0nCSTxEjzNwnzw7wninaqWH3Vg2LYoZ60gqtjOYB1jxeGR1yfr0-cE7Ufn2KjheNI9Ae9lUSk4PZWv6cGPtoGZfzQC_zDUTjyT88tlDIT9zpDMX1YeZMOYfzI/s320/IMG_8698.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7ym07b0RTO9kFlp-18wO0nCSTxEjzNwnzw7wninaqWH3Vg2LYoZ60gqtjOYB1jxeGR1yfr0-cE7Ufn2KjheNI9Ae9lUSk4PZWv6cGPtoGZfzQC_zDUTjyT88tlDIT9zpDMX1YeZMOYfzI/s4032/IMG_8698.jpg)
 
 Sometimes I wish you were dead. Or that I was dead. Or that the whole world would end. Had ended.

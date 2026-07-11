@@ -2,6 +2,8 @@
 layout: post
 title: Only walk alone when it's actual walking
 date: 2021-08-18 23:00:00 +0000
+type: essay 
+tags: [growth]
 ---
 A few years ago, I used to imagine I'd do everything myself. Money? Yeah I'll make it myself. A job? Na I'm good by myself. Love? Pfft. I'm fine all by myself. More and more however, I am learning that one of the key ingredients to success is collaboration. It's why founders have co-founders and why silent partners and angel investors and all these things exist. You can't just do it yourself.
 

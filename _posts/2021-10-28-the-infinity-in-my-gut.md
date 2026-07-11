@@ -2,7 +2,8 @@
 layout: post
 title: The Infinity In My Gut
 date: 2021-10-28 05:41:00 +0000
-tags: [depression, healing, inner-darkness, psychology, realisations]
+type: journal 
+tags: [struggle]
 ---
 
 I've been binging again. Food. Sleep. Netflix. And I know. I know it’s bad for me. For my health and my life but it’s about all I can manage right now. And it’s a lot better than my usual coping mechanisms. Oh boy. Thank God for that.

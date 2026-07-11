@@ -2,9 +2,9 @@
 layout: post
 title: Imperfect
 date: 2021-08-20 23:00:00 +0000
-tags: [mistakes, pain]
+type: essay
+tags: [malice, growth]
 ---
-
 We all make mistakes. And when we do, we either hurt ourselves, or someone else. And I think that when we hurt people, we cannot but come to love them.
 
 Ender Wiggin has a better quote about love and it's relation to harm but he's a better man than I could ever be.

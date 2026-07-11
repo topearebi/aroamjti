@@ -2,6 +2,8 @@
 layout: post
 title: Live fast, Burnout, Leave a String of Unfinished Work
 date: 2021-08-17 23:00:00 +0000
+type: essay 
+tags: [growth]
 ---
 Now that I'm working on something again, I am starting to understand why I dislike working. When I find something I am passionate about, I tend to hyperfocus on it, leaving little space for anything else. I hate distractions. I seem to believe for some as of yet undiscovered reason that the only way to have something you want is to first suffer for it. Go through some sort of trial by fire. And even just reading this I can see how this is problematic.
 

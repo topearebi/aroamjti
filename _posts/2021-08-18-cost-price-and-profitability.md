@@ -2,7 +2,8 @@
 layout: post
 title: Cost, Price and Profitability
 date: 2021-08-18 23:00:00 +0000
-tags: [business, cowreeh, money]
+type: journal 
+tags: [growth]
 ---
 Today, I realised something pretty profound about pricing. Well maybe not pricing in general but the way I've been calculating item prices for Cowreeh. See I've been calculating the material costs alone and using that to set sale price at what I assumed was reasonable. Because I think it's ridiculous when I see items set at cut-throat prices.
 
