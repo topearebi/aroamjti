@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Weird"
+title: "In Times of War"
 date: 2014-06-26 12:00:00 +0000
 type: poetry
-tags: [death-and-the-end, archive]
+tags: [mortality]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
 In times of war
