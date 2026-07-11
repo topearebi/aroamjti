@@ -3,10 +3,9 @@ layout: post
 title: "She cared for me but"
 date: 2014-07-08 12:00:00 +0000
 type: poetry
-tags: [love-the-end, archive]
+tags: [heartbreak]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
-
 She cared for me
 But she did not love me
 She was still in love with him
@@ -27,7 +26,7 @@ What I am to do now
 To break through this shield
 I thought waiting, was the answer
 Wait for time to destroy all that would stand in my way
-Way for his shield to crumble from rust
+Wait for his shield to crumble from rust
 And his lance, break from wear
 But time, neutral as it is
 Destroys me also
