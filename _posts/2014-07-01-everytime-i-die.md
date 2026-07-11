@@ -3,7 +3,7 @@ layout: post
 title: "Everytime I die"
 date: 2014-07-01 12:00:00 +0000
 type: poetry
-tags: [love-the-end, archive]
+tags: [heartbreak]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
 Each time I see your face
