@@ -2,6 +2,8 @@
 layout: post
 title: I tell you but you don't listen
 date: 2026-06-24 22:02:00 +0000
+type: journal
+tags: [struggle]
 ---
 
 The other day I saw this thing which seemed to be a Chinese saying of sorts about stubborn people and the futility of attempting to convince someone who's mind is made up

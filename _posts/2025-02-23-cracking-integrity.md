@@ -2,7 +2,8 @@
 layout: post
 title: Cracking Integrity
 date: 2025-02-23 00:00:00 +0000
-tags: [discipline, reflections]
+type: essay
+tags: [philosophy]
 ---
 
 One of the very first things we do, before we do anything else, is make promises to ourselves. I'll wake up at this time. I'll do this today.

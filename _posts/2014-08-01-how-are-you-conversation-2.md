@@ -3,11 +3,11 @@ layout: post
 title: "How are you? Conversation 2"
 date: 2014-08-01 12:00:00 +0000
 type: poetry
-tags: [the-conversations, archive]
+tags: [struggle]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
 How are you?
-I'm gud. You?
+I'm good. You?
 I don't know how I am
 I merely exist in space
 Moving unmoved
@@ -20,7 +20,7 @@ I don't remember what its like to feel
 I don't remember what its like to be real
 I want to be real again,
 But I don't want to give up this absence from real life
-Bcos if I'm real again, I'll feel pain
+Because if I am real again, I'll feel pain
 Pain comes with reality
 And the pain is too real for me
 It'll force me back into my shell

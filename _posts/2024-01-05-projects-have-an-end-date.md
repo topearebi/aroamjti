@@ -2,9 +2,9 @@
 layout: post
 title: Projects Have an End Date
 date: 2024-01-05 00:00:00 +0000
-tags: [projects, realisations]
+type: essay
+tags: [growth]
 ---
-
 I have a number of projects set out that I'd like to complete. Some short term, from a week to longer term year-spanning ones.
 
 The most important concept that I've come to understand recently and which I think is most critical to internalise is projects and how they necessarily have start dates, and end dates.

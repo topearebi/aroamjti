@@ -2,9 +2,9 @@
 layout: post
 title: Dish Washing
 date: 2024-01-16 00:00:00 +0000
-tags: [home]
+type: journal
+tags: [life]
 ---
-
 Dish washing requires optimising for so many different things that it's no surprise people hate it. 
 
 You have to make sure you are

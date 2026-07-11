@@ -2,9 +2,9 @@
 layout: post
 title: Gratitude Log Mon 8th June 24
 date: 2024-06-07 23:00:00 +0000
-tags: [gratitude]
+type: journal
+tags: [life]
 ---
-
 Daughter got shortlisted for another ad. This is good.
 
 It means another trip to London and a lot of physical stress, but I do enjoy spending the time with her. And I've never shied from physicality.

@@ -2,7 +2,8 @@
 layout: post
 title: The past is binding and the future, predetermined
 date: 2026-07-10 17:53:00 +0000
-tags: [musings]
+type: essay
+tags: [philosophy, existential]
 ---
 I watched free solo today and right around the middle of the show, it made me think about growing up. In it, Alex talks about how his mother's favourite phrases while he was growing up were .... and good enough isnt. ....in french. And how that sort of language and approach is one of the things that led him to free soloing and ultimately, you could say, drove him to be the first person to solo el capitan.
 And that made me think about all the interesting ways that our environmental conditions, the people we grow up around, their beliefs and their language are ultimately the things that shape not just who we are, but to some extent, our entire life potential.

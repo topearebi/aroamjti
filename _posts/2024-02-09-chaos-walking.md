@@ -2,9 +2,9 @@
 layout: post
 title: Chaos Walking
 date: 2024-02-09 00:00:00 +0000
-tags: [love, pain]
+type: poetry
+tags: [love, struggle]
 ---
-
 There are a two things I absolutely believe it is necessary to master throughout the course of a life.
 
 - The mind, and

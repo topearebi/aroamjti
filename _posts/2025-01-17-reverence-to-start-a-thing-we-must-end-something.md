@@ -2,7 +2,8 @@
 layout: post
 title: "Reverence: To start a thing, we must end something."
 date: 2025-01-17 00:00:00 +0000
-tags: [healing, reflections, sacrifice]
+type: essay
+tags: [growth]
 ---
 
 ### Revereri. Sacrificium

@@ -3,19 +3,19 @@ layout: post
 title: "The Truth About Life"
 date: 2014-08-05 12:00:00 +0000
 type: poetry
-tags: [musings, archive]
+tags: [philosophy]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
 I once thought differently about life
 I thought it was all about honour and glory
 Thought I should be grateful to the world
 For giving me a chance to live life
-And taste this of this earth
+To taste of this earth
 And share in the joy on it
 Taste of its food and happiness
 Its health and laughter
 But now, I think otherwise
-Life is filled with rife
+Life is filled with strife
 War, famine, unrest, hunger and disease
 The bad forever overshadowing the supposedly "good" things
 There is no honour in it

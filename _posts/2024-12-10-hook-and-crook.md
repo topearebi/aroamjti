@@ -2,9 +2,9 @@
 layout: post
 title: Hook and Crook
 date: 2024-12-10 00:00:00 +0000
-tags: [failure, fear, psychology, realisations]
+type: essay
+tags: [struggle, growth]
 ---
-
 This has been a terrible couple of months is what I have been thinking for the last couple of months. But as I gradually learn the importance of positivity and mindset, I am looking at the positive sides to my current situation. I am learning lessons 20 years too late. Lessons that I should have learnt and internalised as a child, I am only learning now. All of the books I have read, and the quotes I have kept locked up in notes have been nothing compared to cold hard reality. There's this phrase I have often found to compelling. Throw yourself on death-grounds it says. Or something of that nature. I have never been closer. I have always believed that when all else fails, my body would always be the one thing I would be able to rely on to get me through any situation. My body and my brain. But the past couple of years of neglect for myself, my body and my spirit have done things to me that I hope are not irreversible.
 
 The problem is of course never the environment, or the circumstances or conditions, but our inability to change with it. I have been marching headlong into an abyss for a while now and have refused to course correct. Now I am standing on the edge of it and must either change or die. There is no more middle ground.

@@ -2,9 +2,9 @@
 layout: post
 title: White men don't run?
 date: 2024-10-18 18:51:00 +0000
-tags: [time-blindness, transport]
+type: journal
+tags: [life, neurodivergence]
 ---
-
 Obviously, this is a play on the white men can't jump trope, but this is actually in praise of our fairer skinned cousins. White people don't run. Ever since I moved to this country, I don't think I've seen a white person running, except of course, when they are running. Then they really run.
 
 I on the other hand, run everywhere. I'm always late for something. Late to the bus because I spent too much time getting dressed. Or started getting ready too late. Or maybe I got ready well on time, but had to keep going in and out of the house several times because I forgot my shoes or my shopping bag or one of a million tiny other reasons.

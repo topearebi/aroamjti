@@ -2,7 +2,8 @@
 layout: post
 title: How to Become Immortal
 date: 2024-12-07 00:00:00 +0000
-tags: [discipline]
+type: journal
+tags: [growth]
 ---
 
 Here are some non negotiables

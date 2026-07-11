@@ -2,9 +2,9 @@
 layout: post
 title: Over Planning. Over Analysis.
 date: 2024-01-04 00:00:00 +0000
-tags: [execution, failure, planning]
+type: essay
+tags: [growth, mortality]
 ---
-
 Yesterday I listened to how Amazon once planned for almost 2 years before shopping a product and how they believe this is the only way to build anything truly valuable. To plan and research extensively beforehand. As a person who is very critical of my ability to execute, this is something I have internalised to some degree as well. My favourite app is Google Sheets. Next is Google Docs.
 
 It has always seemed ridiculous to me to commit to action without at least understanding all the variables, even if they cannot be determined.
