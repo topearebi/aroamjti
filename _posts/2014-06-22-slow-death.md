@@ -3,7 +3,7 @@ layout: post
 title: "Slow Death"
 date: 2014-06-22 12:00:00 +0000
 type: poetry
-tags: [death-and-the-end, archive]
+tags: [mortality]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
 He sits at his piano and plays his notes
