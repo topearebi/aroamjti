@@ -3,40 +3,76 @@ layout: default
 title: Types
 permalink: /types/
 description: Browse the archive by type.
+# Curated order + teaching descriptions. Only types with posts are shown.
+# Untyped posts collect under "Unclassified" so migration progress stays visible.
+types:
+  - name: journal
+    desc: True, personal, time-bound — the record of a day, a mood, an experience.
+  - name: essay
+    desc: Personal thought that travels outward — reflection, philosophy, commentary.
+  - name: poetry
+    desc: Stanza-based, rhythmic, lyrical — verse of any length.
+  - name: fiction
+    desc: Invented — characters and worlds that aren't lived experience.
+  - name: fragments
+    desc: Set down, not finished — a raw thought, a seed, a jotting.
 ---
 {% comment %}
-  Group posts by their `type:` front-matter value. Any type value appears
-  automatically; posts with no type fall under "prose" to match the post
-  layout default (post--prose).
+  Group posts by `type:`, shown in the curated order defined in this page's
+  front matter (page.types). A type section renders only if it has posts, so
+  empty types never appear. Any post with no recognised type collects under
+  "Unclassified". Pure Liquid, no plugins.
 {% endcomment %}
-{% assign all_types = "" | split: "" %}
-{% for post in site.posts %}
-  {% assign t = post.type | default: "prose" %}
-  {% assign all_types = all_types | push: t %}
-{% endfor %}
-{% assign types = all_types | uniq | sort_natural %}
 
-<p class="browse-count">{{ types.size }} type{% if types.size != 1 %}s{% endif %}.</p>
+{% comment %} Count typed vs untyped for the summary line. {% endcomment %}
+{% assign known = "" | split: "" %}
+{% for t in page.types %}{% assign known = known | push: t.name %}{% endfor %}
+{% assign untyped = "" | split: "" %}
+{% for post in site.posts %}
+  {% unless known contains post.type %}
+    {% assign untyped = untyped | push: post %}
+  {% endunless %}
+{% endfor %}
+
+<p class="browse-count">{{ known.size }} type{% if known.size != 1 %}s{% endif %}{% if untyped.size > 0 %} &middot; {{ untyped.size }} unclassified{% endif %}.</p>
 
 <nav class="tag-index" aria-label="Type index">
-  {% for type in types %}
-  <a href="#type-{{ type | slugify }}">{{ type }}</a>
+  {% for t in page.types %}
+  {% assign in_type = site.posts | where: "type", t.name %}
+  {% if in_type.size > 0 %}<a href="#type-{{ t.name | slugify }}">{{ t.name }}</a>{% endif %}
   {% endfor %}
+  {% if untyped.size > 0 %}<a href="#type-unclassified">unclassified</a>{% endif %}
 </nav>
 
-{% for type in types %}
-<section class="tag-group" id="type-{{ type | slugify }}">
-  <h2 class="tag-group-title">{{ type }} <a class="tag-group-top" href="#top" aria-label="Back to top">&uarr;</a></h2>
+{% for t in page.types %}
+{% assign in_type = site.posts | where: "type", t.name %}
+{% if in_type.size > 0 %}
+<section class="tag-group" id="type-{{ t.name | slugify }}">
+  <h2 class="tag-group-title">{{ t.name }} <span class="tag-group-count">{{ in_type.size }}</span> <a class="tag-group-top" href="#top" aria-label="Back to top">&uarr;</a></h2>
+  <p class="tag-group-desc">{{ t.desc }}</p>
   <ul class="post-list">
-    {% for post in site.posts %}
-      {% assign pt = post.type | default: "prose" %}
-      {% if pt == type %}
-      <li>
-        <time class="post-list-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
-        <a class="post-list-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      </li>
-      {% endif %}
+    {% for post in in_type %}
+    <li>
+      <time class="post-list-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+      <a class="post-list-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </li>
     {% endfor %}
   </ul>
 </section>
+{% endif %}
 {% endfor %}
+
+{% if untyped.size > 0 %}
+<section class="tag-group tag-group--unsorted" id="type-unclassified">
+  <h2 class="tag-group-title">Unclassified <span class="tag-group-count">{{ untyped.size }}</span> <a class="tag-group-top" href="#top" aria-label="Back to top">&uarr;</a></h2>
+  <p class="tag-group-desc">Posts without a recognised type — still being migrated.</p>
+  <ul class="post-list">
+    {% for post in untyped %}
+    <li>
+      <time class="post-list-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+      <a class="post-list-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}

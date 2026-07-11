@@ -1,0 +1,18 @@
+# Canonical tag descriptors. One line each, shown beside the tag on /tags/.
+# Editing this is a deliberate taxonomy act — see TAXONOMY.md. Tags not listed
+# here still work; they just render without a descriptor and group under
+# "Unsorted" on the tag page (useful for spotting un-migrated old tags).
+#
+# Order here does not matter — the page sorts alphabetically.
+
+love:            affection, attachment, longing — the beginning and middle of the love arc
+desire:          physical intimacy, passion, intense wanting
+heartbreak:      endings, loss of love, the grief of a relationship's close
+struggle:        the dark thread — depression, fear, feeling lost, the fight to heal
+mortality:       death, time passing, human limits, the existential
+neurodivergence: autism, time-blindness, the texture of a differently wired mind
+philosophy:      human nature, society, rules, the examined life
+faith:           religion, belief, doubt, the sacred
+growth:          discipline, consistency, progress, moving forward
+life:            everyday lived experience — food, places, the body, daily texture
+satire:          the comic and critical register — send-ups and fake-deep
