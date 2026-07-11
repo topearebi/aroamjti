@@ -3,11 +3,11 @@ layout: post
 title: "Stranger In My Heart"
 date: 2014-07-19 12:00:00 +0000
 type: poetry
-tags: [love-the-beginning, archive]
+tags: [love]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
-I sit beside u
-From afar, but still beside u
+I sit beside you
+From afar, but still beside you
 
 I listen to your every word
 Your words are faint but, I still listen
