@@ -3,10 +3,9 @@ layout: post
 title: "Catharsis"
 date: 2014-07-26 12:00:00 +0000
 type: poetry
-tags: [pain, archive]
+tags: [struggle]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
-
 I pick up my pen, set it to paper, and prepare to write
 But my fingers are shaky as though protesting "not tonight"
 By and by I force my will
