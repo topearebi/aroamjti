@@ -3,22 +3,22 @@ layout: post
 title: "Don't think I didn't see it coming I did"
 date: 2014-07-13 12:00:00 +0000
 type: poetry
-tags: [love-the-end, archive]
+tags: [heartbreak]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
 Don't think I didn't see it coming I did
 So I prepared myself for it
 Only way I know how
-I push you away cos I might as well
-After all its only a matter of time before you make the choice yourself
+I push you away because I might as well
+After all, it is only a matter of time before you make the choice yourself
 You don't know yet but soon you'll see
-You can't love me cos I'm unlovable
-I can't love you cos I'm unlovable
+You can't love me because I'm unlovable
+I can't love you because I'm unlovable
 So it may be cliche but baby its true
 Its really not you or us its just me boo
 You're just too good. Too good for me
 My ego's big but my heart's x3
-I figured it out put it all together
+I figured it out, put it all together
 There's really no way we can make it to forever
 We're just too different you and I
 And experience has taught me that's a mountain too high
