@@ -3,7 +3,7 @@ layout: post
 title: "In A Moment"
 date: 2014-07-16 12:00:00 +0000
 type: poetry
-tags: [love-the-beginning, archive]
+tags: [love]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
 She came
@@ -26,7 +26,7 @@ And everything I wanted to say
 Rushed to the tip of my tongue
 Yet I could not speak them
 Those words, that would lay bare my feelings
-and strip my heart of the defences I built
+And strip my heart of the defences I built
 Defences it took me all my life to build
 About to crumble, in one instant
 It was definitely wrong
