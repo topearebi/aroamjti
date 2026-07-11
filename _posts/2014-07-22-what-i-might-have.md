@@ -3,7 +3,7 @@ layout: post
 title: "What I Might Have"
 date: 2014-07-22 12:00:00 +0000
 type: poetry
-tags: [love-the-beginning, archive]
+tags: [love]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
 I might not have money
