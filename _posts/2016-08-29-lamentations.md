@@ -3,7 +3,7 @@ layout: post
 title: "Lamentations"
 date: 2016-08-29 12:00:00 +0000
 type: poetry
-tags: [poetry, musings, pain]
+tags: [faith, existential]
 ---
 In the beginning was the word
 From which everything else was born

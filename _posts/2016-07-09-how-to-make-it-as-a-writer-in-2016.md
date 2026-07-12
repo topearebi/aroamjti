@@ -3,7 +3,7 @@ layout: post
 title: "How to make it as a writer in 2016"
 date: 2016-07-09 12:00:00 +0000
 type: poetry
-tags: [poetry, satire, fake-deep]
+tags: [satire, craft]
 ---
 To sound
 Important

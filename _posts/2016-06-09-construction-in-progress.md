@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Adrenaline Through My Bones"
+title: "Construction in Progress"
 date: 2016-06-09 12:00:00 +0000
 type: poetry
-tags: [poetry, love]
+tags: [love, struggle]
 ---
 I love you like adrenaline through my bones
 And I'll admit that, your kiss

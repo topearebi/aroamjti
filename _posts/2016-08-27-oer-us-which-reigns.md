@@ -3,7 +3,7 @@ layout: post
 title: "O'er Us Which Reigns"
 date: 2016-08-27 11:00:00 +0000
 type: poetry
-tags: [poetry, religion, deartitilope]
+tags: [faith, existential]
 ---
 You are the very earth, the sea, sky
 O'er us which reigns

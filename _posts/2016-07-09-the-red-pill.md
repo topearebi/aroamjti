@@ -3,7 +3,7 @@ layout: post
 title: "The Red Pill"
 date: 2016-07-09 11:00:00 +0000
 type: poetry
-tags: [poetry, satire]
+tags: [satire, philosophy]
 ---
 The Red Pill
 

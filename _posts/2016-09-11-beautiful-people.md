@@ -3,7 +3,7 @@ layout: post
 title: "Beautiful People"
 date: 2016-09-11 12:00:00 +0000
 type: poetry
-tags: [poetry, musings]
+tags: [philosophy, craft]
 ---
 You draw such beautiful people
 And write such beautiful stories

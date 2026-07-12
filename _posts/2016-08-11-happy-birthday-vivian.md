@@ -3,7 +3,7 @@ layout: post
 title: "Happy birthday Vivian"
 date: 2016-08-11 12:00:00 +0000
 type: poetry
-tags: [poetry, humor]
+tags: [satire]
 ---
 Happy birthday Vivian
 I wish you all the best

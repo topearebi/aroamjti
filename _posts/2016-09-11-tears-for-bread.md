@@ -3,7 +3,7 @@ layout: post
 title: "Tears For Bread"
 date: 2016-09-11 11:00:00 +0000
 type: poetry
-tags: [poetry, pain, depression]
+tags: [struggle]
 ---
 Tears for bread
 

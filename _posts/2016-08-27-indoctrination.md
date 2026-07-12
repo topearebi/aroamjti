@@ -3,7 +3,7 @@ layout: post
 title: "Indoctrination"
 date: 2016-08-27 10:00:00 +0000
 type: poetry
-tags: [poetry, religion, deartitilope]
+tags: [faith]
 ---
 I have walked in shadows, in valleys, amidst graves in cemeteries
 But nothing prepared me for a feast like this

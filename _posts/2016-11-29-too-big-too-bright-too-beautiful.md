@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "The Only Planet"
+title: "Too Big, Too Bright, Too Beautiful"
 date: 2016-11-29 12:00:00 +0000
 type: poetry
-tags: [poetry, love, 10000-days-of-the-sun]
+tags: [love, 10000-days-of-the-sun]
 ---
 Sometimes I wish
 You weren't so big

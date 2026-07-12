@@ -3,7 +3,7 @@ layout: post
 title: "Water for Wu'du"
 date: 2016-11-20 12:00:00 +0000
 type: poetry
-tags: [poetry, love, 10000-days-of-the-sun]
+tags: [love, 10000-days-of-the-sun]
 ---
 i.
 You are everything that my hands want to ever hold

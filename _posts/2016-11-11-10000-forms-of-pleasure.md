@@ -3,7 +3,7 @@ layout: post
 title: "10000 Forms of Pleasure"
 date: 2016-11-11 12:00:00 +0000
 type: poetry
-tags: [poetry, love, 10000-days-of-the-sun]
+tags: [love, desire, 10000-days-of-the-sun]
 ---
 The gods have given me a gift
 And while it must be worth it,

@@ -3,7 +3,7 @@ layout: post
 title: "Demigoddess"
 date: 2016-09-07 12:00:00 +0000
 type: poetry
-tags: [poetry, lust, musings]
+tags: [desire]
 ---
 demigoddess
 

@@ -3,10 +3,10 @@ layout: post
 title: "Turtles All The Way Down"
 date: 2017-06-19 12:00:00 +0000
 type: poetry
-tags: [poetry, love]
+tags: [love]
 ---
 I would probably be
-the world's worst teacher
+The world's worst teacher
 How could I ever convince anyone
 that the earth is round
 or that 2 and 2 make 4
