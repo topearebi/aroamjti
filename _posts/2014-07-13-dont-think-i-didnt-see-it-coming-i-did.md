@@ -3,7 +3,7 @@ layout: post
 title: "Don't think I didn't see it coming I did"
 date: 2014-07-13 12:00:00 +0000
 type: poetry
-tags: [heartbreak]
+tags: [heartbreak, struggle]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
 Don't think I didn't see it coming I did

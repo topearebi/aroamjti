@@ -3,7 +3,7 @@ layout: post
 title: "The Taste of Life"
 date: 2014-06-24 12:00:00 +0000
 type: poetry
-tags: [mortality]
+tags: [mortality, malice]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
 As I lay face down at her feet

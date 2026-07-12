@@ -3,11 +3,11 @@ layout: post
 title: "In Times of War"
 date: 2014-06-26 12:00:00 +0000
 type: poetry
-tags: [mortality]
+tags: [existential]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
 In times of war
-In time of famine (brawling)
+In time of famine
 When days are raw
 Brutal, hard and harming
 
