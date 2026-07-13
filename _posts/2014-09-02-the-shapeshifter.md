@@ -3,7 +3,7 @@ layout: post
 title: "The Shapeshifter"
 date: 2014-09-02 12:00:00 +0000
 type: poetry
-tags: [random, archive]
+tags: [malice]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
 He is forever without form.

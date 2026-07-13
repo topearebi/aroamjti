@@ -3,7 +3,7 @@ layout: post
 title: "Loneliness"
 date: 2014-09-20 12:00:00 +0000
 type: poetry
-tags: [numb, archive]
+tags: [struggle]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
 As I stood over that which I once had loved

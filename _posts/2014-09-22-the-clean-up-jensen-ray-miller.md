@@ -3,7 +3,7 @@ layout: post
 title: "The Clean-Up (Jensen Ray-Miller)"
 date: 2014-09-22 12:00:00 +0000
 type: poetry
-tags: [psychos, archive]
+tags: [malice]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
 Jensen Ray-Miller had just gotten a new axe

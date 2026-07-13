@@ -3,7 +3,7 @@ layout: post
 title: "The Devil's Hunt"
 date: 2014-08-31 12:00:00 +0000
 type: poetry
-tags: [random, archive]
+tags: [malice]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
 Ripped jeans

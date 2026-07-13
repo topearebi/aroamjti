@@ -3,7 +3,7 @@ layout: post
 title: "Inferiority Complex"
 date: 2014-08-21 12:00:00 +0000
 type: poetry
-tags: [random, archive]
+tags: [existential]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
 Why does man need a creator?

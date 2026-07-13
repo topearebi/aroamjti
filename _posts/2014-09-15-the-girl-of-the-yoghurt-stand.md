@@ -2,10 +2,10 @@
 layout: post
 title: "The Girl Of The Yoghurt Stand"
 date: 2014-09-15 12:00:00 +0000
-tags: [prose, archive]
+type: fiction
+tags: [love]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
-
 I'm terrible with introductions. I never know how to begin. Its rather hard to decide whether to just get right to the point, or start off with some sort of preamble. Guess I chose the latter as we can well see.
 
 So, back to the girl of the yoghurt stand. It was a warm summer's day...

@@ -2,7 +2,8 @@
 layout: post
 title: "Defier of the dead (temerator mortuorum)"
 date: 2014-09-13 12:00:00 +0000
-tags: [prose, archive]
+type: fiction
+tags: [malice]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
 

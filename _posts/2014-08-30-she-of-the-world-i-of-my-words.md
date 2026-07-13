@@ -3,7 +3,7 @@ layout: post
 title: "She of the World, I of my Words"
 date: 2014-08-30 12:00:00 +0000
 type: poetry
-tags: [random, archive]
+tags: [craft, love]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
 We were different in every way

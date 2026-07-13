@@ -2,10 +2,10 @@
 layout: post
 title: "Ignorance Is Bliss, Knowledge Grief"
 date: 2014-09-09 12:00:00 +0000
-tags: [prose, archive]
+type: essay
+tags: [existential, faith]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
-
 There is a certain amount of ignorance that comes with faith. The curse of wisdom is loss of such things as hope and faith. Once knowledge is attained, there is no room for progress anymore. You cannot still hope to win after crossing the finish line. Attainment of knowledge is also a sort of finish line. Knowledge is the end. Knowledge is death.
 
 If to live is to become familiar with and understand things, and all life that lives shall experience and become familiar with a number of things before. The last thing we who have been granted life must come to understand is death, and for this reason, I shall now call death; the final intimacy.

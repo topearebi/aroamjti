@@ -3,7 +3,7 @@ layout: post
 title: "SHADOWS IN SPACE"
 date: 2014-08-26 12:00:00 +0000
 type: poetry
-tags: [random, archive]
+tags: [haunting]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
 Walking across planets (cast across the planets)

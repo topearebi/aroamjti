@@ -2,7 +2,8 @@
 layout: post
 title: "Dealing with grief"
 date: 2014-09-08 12:00:00 +0000
-tags: [prose, archive]
+type: essay
+tags: [heartbreak]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
 

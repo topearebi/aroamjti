@@ -3,7 +3,7 @@ layout: post
 title: "Hopeless, Helpless"
 date: 2014-08-08 12:00:00 +0000
 type: poetry
-tags: [philosophy, desire]
+tags: [philosophy]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
 They come in pieces, this flock

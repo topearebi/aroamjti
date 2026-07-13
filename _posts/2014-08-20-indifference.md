@@ -3,7 +3,7 @@ layout: post
 title: "INDIFFERENCE"
 date: 2014-08-20 12:00:00 +0000
 type: poetry
-tags: [random, archive]
+tags: [philosophy]
 date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
 They are all the same
