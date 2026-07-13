@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Scribbles"
+title: Scribbles
 date: 2014-09-06 12:00:00 +0000
 type: fragments
-tags: [random, archive]
-date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
+tags:
+  - struggle
+date_note: Written before 2014; exact date unknown. Date shown is approximate, for ordering only.
 ---
 I know how this must sound
 But I really do believe there's enuff of me to go around
