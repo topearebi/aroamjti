@@ -3,7 +3,7 @@ layout: post
 title: "The Fact That I Miss You"
 date: 2016-11-25 12:00:00 +0000
 type: poetry
-tags: [love, 10000-days-of-the-sun]
+tags: [love]
 ---
 I miss you like it cannot rain without clouds,
 Like white light is made of different colours
