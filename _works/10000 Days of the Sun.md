@@ -7,7 +7,28 @@ order: 2
 format: poetry
 original_url: https://drive.google.com/file/d/1-HvCprbcKSl34j0aZfyxGQl9MMdd4zDs/view?usp=sharing
 original_label: "Download the original"
+original_note: "The text above is the curated selection, as composed. The original — with its full artwork and layout — is available here:"
 blurb: "I wrote these series of letters during a rather interesting time in my life. I met someone much older and wiser than I was, as in all my relationships in hindsight, at a time when I myself was crossing into the realm of adulthood and semi-freedom. And I really tried to let myself just be a bit more free. More open to exploration and posibility. I hope you enjoy it."
+
+# Poems from this body of work that did not make the curated selection.
+# These are references to published posts — the posts themselves are untouched
+# and unaware they are listed here. Add or remove a slug to change the section;
+# an unresolvable slug is silently skipped, so nothing can break the build.
+beyond_title: "Beyond the book"
+beyond_note: "Poems from the same season that did not make the selection."
+beyond:
+  - the-most-awake
+  - halo-of-missing-you
+  - too-big-too-bright-too-beautiful
+  - orbital-distance
+  - like-gravity
+  - never-leave-me-alone
+  - the-fact-that-i-miss-you
+  - water-for-wudu
+  - cher-brown
+  - 10000-forms-of-pleasure
+  - the-little-things
+  - run-love-run
 ---
 1
 A letter from me to you

@@ -87,6 +87,35 @@ layout: default
     {%- endif -%}
   </div>
 
+  {%- comment -%}
+    "Beyond the book": poems belonging to this body of work that were not part
+    of the curated selection. Referenced by slug; the posts themselves are
+    untouched and unaware. Renders after the work body, before the footer.
+  {%- endcomment -%}
+  {% if page.beyond %}
+  <section class="work-beyond">
+    <h2 class="work-beyond-title">{{ page.beyond_title | default: "Beyond the book" }}</h2>
+    {% if page.beyond_note %}<p class="work-beyond-note">{{ page.beyond_note }}</p>{% endif %}
+    <div class="work-body work-body--{{ page.format | default: 'prose' }}">
+      {%- for slug in page.beyond -%}
+        {%- assign ref = nil -%}
+        {%- for p in site.posts -%}
+          {%- assign p_slug = p.url | split: '/' | last -%}
+          {%- if p_slug == slug -%}{%- assign ref = p -%}{%- break -%}{%- endif -%}
+        {%- endfor -%}
+        {%- if ref -%}
+        <section class="work-part" id="part-{{ slug }}">
+          <h3 class="work-part-title">
+            <a href="{{ ref.url | relative_url }}">{{ ref.title }}</a>
+          </h3>
+          <div class="work-part-body">{{ ref.content }}</div>
+        </section>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </section>
+  {% endif %}
+
   <footer class="work-footer">
     {% if page.original_url %}
     <p class="work-original">

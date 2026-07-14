@@ -514,3 +514,21 @@ hr { border: none; border-top: 1px solid var(--hairline); margin: calc(var(--spa
   color: var(--ink-faint);
   font-size: var(--step--1);
 }
+
+/* "Beyond the book" — post-referenced poems appended after a work's body. */
+.work-beyond {
+  margin: calc(var(--space) * 4) 0 0;
+  padding-top: calc(var(--space) * 2);
+  border-top: 1px solid var(--hairline);
+}
+.work-beyond-title {
+  font-size: var(--step-1);
+  text-align: center;
+  margin: 0 0 0.4rem;
+}
+.work-beyond-note {
+  text-align: center;
+  color: var(--ink-muted);
+  font-size: var(--step--1);
+  margin: 0 0 calc(var(--space) * 2);
+}
