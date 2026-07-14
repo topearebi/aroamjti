@@ -3,7 +3,7 @@ layout: post
 title: "Never Leave Me Alone"
 date: 2016-11-26 12:00:00 +0000
 type: poetry
-tags: [love, 10000-days-of-the-sun]
+tags: [love]
 ---
 Every time
 I see you
