@@ -303,16 +303,7 @@ hr { border: none; border-top: 1px solid var(--hairline); margin: calc(var(--spa
   color: var(--ink-muted); font-style: italic; text-align: center;
 }
 
-/* Sections & figures within a work */
-.work-section { margin: calc(var(--space) * 2.5) 0; }
-.work-label {
-  text-align: center;
-  font-family: var(--mono);
-  font-size: var(--step--1);
-  letter-spacing: 0.15em;
-  color: var(--ink-muted);
-  margin: 0.75rem 0;
-}
+/* Figures within a work (driven by a work's `media:` list) */
 .work-figure { margin: calc(var(--space) * 2.5) 0; text-align: center; }
 .work-figure img { max-width: 100%; height: auto; display: block; margin: 0 auto; }
 .work-figure figcaption {
@@ -320,29 +311,20 @@ hr { border: none; border-top: 1px solid var(--hairline); margin: calc(var(--spa
   font-size: var(--step--1); color: var(--ink-faint);
 }
 
-/* Body typography — three formats, chosen via `format:` front matter:
+/* Body typography — two formats, chosen via `format:` front matter:
 
      format: poetry  → simple left-aligned verse. Handled by the unified
                        poetry rule near the top of this file, shared with blog
                        posts (type: poetry), so a plain poem renders the same
                        whether it is a post or a work.
-     format: verse   → composed verse: centered, with .work-section blocks and
-                       optional .work-label framing (e.g. Heaven / Earth) and
-                       interleaved .work-figure artwork. For richer, sectioned
-                       works rather than a single plain poem.
      format: prose   → normal paragraphs (default).
+
+   A third format, `verse` (centered composed sections), was removed once the
+   unified work layout replaced it: composition now lives in a work's `parts:`
+   list rather than in hand-written section markup. A new format is a rule for
+   .work-body--FORMAT here, never a new template.
 */
-.work-body--verse .work-section {
-  white-space: pre-line;
-  text-align: center;
-  line-height: 1.5;
-  font-size: var(--step-1);
-  max-width: 30rem;
-  margin-left: auto; margin-right: auto;
-}
-.work-body--verse .work-section .work-label { white-space: normal; }
 .work-body--prose { line-height: var(--line); }
-.work-body--prose .work-section { text-align: left; }
 
 /* Footer: original download + back link */
 .work-footer {
@@ -514,6 +496,12 @@ hr { border: none; border-top: 1px solid var(--hairline); margin: calc(var(--spa
   color: var(--ink-faint);
   font-size: var(--step--1);
 }
+
+/* .work-part--inline is deliberately unstyled. Inline parts must look
+   identical to post-referenced parts — a reader should never be able to tell
+   which chapters are pulled from posts and which are transcribed in the work
+   file. The class exists only as a semantic hook; give it rules and you break
+   that seam. */
 
 /* "Beyond the book" — post-referenced poems appended after a work's body. */
 .work-beyond {
