@@ -3,7 +3,7 @@ layout: post
 title: "Home Is Where You Are"
 date: 2016-10-25 12:00:00 +0000
 type: poetry
-tags: [love, 10000-days-of-the-sun]
+tags: [love]
 ---
 "Sometimes home isn't 4 walls, it's 2 eyes and a heartbeat"
 - You're my home. (via sativa-mermaid)
