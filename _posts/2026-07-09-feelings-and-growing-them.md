@@ -3,7 +3,7 @@ layout: post
 title: "Feelings and Growing Them"
 date: 2026-07-09 22:00:00 +0000
 type: essay
-tags: life
+tags: [life]
 ---
 I always have something to write about. Whether it's how my day went, specific things that happened during it or how I felt about them. The feelings they evoked. The resulting memories and connections my brain made as it processed them. But I don't always write about them. In fact I rarely ever do as writing is an action that requires more reflection than doing. It is not an automatic activity that you can offload to your subconscious while you press the exact same buttons or swipe down a feed over and over again. Each word, each letter, each button press requires thought and planning and consideration. It is the closest thing to the lost of art of writing on paper we'll have for a while.
 
