@@ -2,18 +2,27 @@
 """
 check_integrity.py — pre-publish integrity gate for the blog.
 
-Run by the GitHub Action on every push. Exits non-zero (blocking the publish)
-if any HARD check fails. Prints a clear, grouped report so a failure is
-understandable from a phone.
+Run by the GitHub Action on every push. Prints a clear, grouped report so a
+failure is understandable from a phone.
+
+Two severities:
+
+- ERRORS (exit 1, blocking) — things that silently BREAK publishing: a bad
+  filename, a missing title/date, a work Jekyll won't process. These are not
+  matters of taste; the post simply will not appear correctly.
+- WARNINGS (exit 0, non-blocking) — things that are probably drift but might
+  be deliberate, chiefly an unrecognised `type:`/`format:` value. A vocabulary
+  in flux should never block a publish; you may be mid-migration, or trying a
+  new form. The warning is a nudge, not a gate.
 
 Design notes:
 - Zero third-party dependencies (standard library only), so it runs anywhere
   and never rots due to a package change.
-- Deliberately conservative: it only flags things that are unambiguously
-  wrong, to avoid false positives blocking a legitimate publish.
-- The valid vocabularies below are the single source of truth for what
-  `type:` (posts) and `format:` (works) may contain. Update them here if you
-  ever add a new rendering style (and add the matching CSS rule).
+- Deliberately conservative: it only blocks on things that are unambiguously
+  broken, to avoid false positives stopping a legitimate publish.
+- The valid vocabularies below track the taxonomy documented in README.md.
+  Update them when the taxonomy deliberately changes (and add the matching
+  CSS rule).
 """
 
 import re
@@ -21,11 +30,12 @@ import sys
 import glob
 import os
 
-# --- Vocabularies: keep in sync with the CSS rules -------------------------
-# Posts: `type:` may be omitted (=> prose) or one of these.
-VALID_POST_TYPES = {"poetry"}          # absence = prose (the default)
+# --- Vocabularies: keep in sync with README.md and the CSS rules -----------
+# Posts: every post should carry exactly one `type:`. See README.md for the
+# decision order and the boundary rules.
+VALID_POST_TYPES = {"poetry", "essay", "journal", "fiction", "fragments"}
 # Works: `format:` may be omitted (=> prose) or one of these.
-VALID_WORK_FORMATS = {"poetry", "verse", "prose"}
+VALID_WORK_FORMATS = {"poetry", "prose"}
 
 POST_DIR = "_posts"
 WORK_DIR = "_works"
@@ -41,8 +51,9 @@ FORMAT_LINE_RE = re.compile(r"^format:\s*([^\s#]+)", re.MULTILINE)
 # post/permalink. External links (http...) and anchors (#...) are ignored.
 INTERNAL_LINK_RE = re.compile(r"\]\((/[^)#\s]*)")
 
-errors = []   # hard failures -> block publish
-notes = []    # informational -> printed but do not block
+errors = []    # hard failures -> block publish (something is actually broken)
+warnings = []  # probable drift -> reported, but never blocks
+notes = []     # informational -> printed but do not block
 
 
 def front_matter(text):
@@ -86,13 +97,20 @@ def check_posts():
                 f"(e.g. +0000). Without it, sort order can drift."
             )
 
-        # 4) type vocabulary
+        # 4) type vocabulary (WARNING ONLY — a vocabulary in flux must never
+        #    block a publish; you may be mid-migration or trying a new form.)
         t = TYPE_LINE_RE.search(fm)
-        if t and t.group(1) not in VALID_POST_TYPES:
-            errors.append(
+        if not t:
+            warnings.append(
+                f"[type] {path}: no `type:`. Every post should carry one of "
+                f"{sorted(VALID_POST_TYPES)}."
+            )
+        elif t.group(1) not in VALID_POST_TYPES:
+            warnings.append(
                 f"[type] {path}: type '{t.group(1)}' is not in "
-                f"{sorted(VALID_POST_TYPES)} (or omit it for prose). "
-                f"A new type needs a matching .post--{t.group(1)} CSS rule."
+                f"{sorted(VALID_POST_TYPES)}. If this is deliberate, add it to "
+                f"VALID_POST_TYPES here, add a .post--{t.group(1)} CSS rule, and "
+                f"record it in README.md."
             )
 
 
@@ -110,10 +128,10 @@ def check_works():
         # format vocabulary
         f = FORMAT_LINE_RE.search(fm)
         if f and f.group(1) not in VALID_WORK_FORMATS:
-            errors.append(
+            warnings.append(
                 f"[format] {path}: format '{f.group(1)}' is not in "
-                f"{sorted(VALID_WORK_FORMATS)}. "
-                f"A new format needs a matching .work-body--{f.group(1)} CSS rule."
+                f"{sorted(VALID_WORK_FORMATS)}. A new format needs a matching "
+                f".work-body--{f.group(1)} CSS rule."
             )
 
         # Works must have a file extension Jekyll will process (.md/.markdown/.html)
@@ -141,7 +159,10 @@ def check_internal_links():
             y, mo, d, slug = m.groups()
             known.add(f"/{y}/{mo}/{d}/{slug}/")
     # static pages
-    known.update({"/", "/about/", "/books/", "/works/", "/blogroll/"})
+    known.update({
+        "/", "/about/", "/books/", "/works/", "/blogroll/",
+        "/browse/", "/tags/", "/types/", "/archive/",
+    })
 
     for path in glob.glob(os.path.join(POST_DIR, "*.md")):
         with open(path, encoding="utf-8") as fh:
@@ -167,14 +188,24 @@ def main():
             print("  •", n)
         print()
 
+    if warnings:
+        print("── Warnings (non-blocking) " + "─" * 27)
+        for w in warnings:
+            print("  !", w)
+        print(f"\n  {len(warnings)} warning(s) — taxonomy drift, not breakage.")
+        print()
+
     if errors:
         print("── Integrity errors (publish blocked) " + "─" * 16)
         for e in errors:
             print("  ✗", e)
-        print(f"\n{len(errors)} error(s). Fix these and push again.")
+        print(f"\n{len(errors)} error(s). These break publishing. Fix and push again.")
         sys.exit(1)
 
-    print("✓ Integrity checks passed.")
+    if warnings:
+        print("✓ No breakage. See warnings above.")
+    else:
+        print("✓ Integrity checks passed.")
     sys.exit(0)
 
 
