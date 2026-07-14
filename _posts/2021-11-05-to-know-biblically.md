@@ -2,7 +2,6 @@
 layout: post
 title: To Know, Biblically
 date: 2021-11-05 00:00:00 +0000
-tags: [sex, bad-faith, realisations]
 type: essay 
 tags: [desire, philosophy]
 ---
