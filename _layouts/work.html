@@ -1,6 +1,24 @@
 ---
 layout: default
 ---
+{%- comment -%}
+  Unified work layout.
+
+  A work is a curated reading order laid over posts. Its `parts:` list is
+  ordered; each entry is one of:
+
+    - heading: "III"        a section label / chapter marker
+    - inline:  |            literal text transcribed in the work file
+        ...
+    - post:    "slug"       a pointer to a published post (pulls title + body)
+
+  Posts are never edited and never know they belong to a work. Membership
+  lives only here, so referencing a post is non-destructive.
+
+  BACKWARDS COMPATIBLE: a work with no `parts:` simply renders {{ content }}
+  exactly as before (the legacy inline model). Both can coexist indefinitely,
+  and a single work may mix inline parts with post references.
+{%- endcomment -%}
 <article class="work">
   <header class="work-header">
     <h1 class="work-title">{{ page.title }}</h1>
@@ -8,21 +26,72 @@ layout: default
     {% if page.year %}<p class="work-meta">{{ page.year }}</p>{% endif %}
   </header>
 
-  {% if page.intro %}
-  <div class="work-intro">
-    <p>{{ page.intro }}</p>
-  </div>
+  {%- comment -%} `context` is the richer markdown intro; `intro` kept for legacy. {%- endcomment -%}
+  {% if page.context %}
+  <div class="work-intro">{{ page.context | markdownify }}</div>
+  {% elsif page.intro %}
+  <div class="work-intro"><p>{{ page.intro }}</p></div>
+  {% endif %}
+
+  {% if page.media %}
+  {% for item in page.media %}
+  <figure class="work-figure">
+    <img src="{{ item.src | relative_url }}" alt="{{ item.alt | default: item.caption | default: '' }}">
+    {% if item.caption %}<figcaption>{{ item.caption }}</figcaption>{% endif %}
+  </figure>
+  {% endfor %}
   {% endif %}
 
   <div class="work-body work-body--{{ page.format | default: 'prose' }}">
-    {{ content }}
+    {%- if page.parts -%}
+      {%- for part in page.parts -%}
+
+        {%- if part.heading -%}
+        <h2 class="work-part-heading">{{ part.heading }}</h2>
+
+        {%- elsif part.post -%}
+          {%- comment -%}
+            Resolve the slug to a post. Posts use /:year/:month/:day/:title/,
+            so we compare the final path segment exactly rather than using
+            `contains`, which would false-match shorter slugs.
+          {%- endcomment -%}
+          {%- assign ref = nil -%}
+          {%- for p in site.posts -%}
+            {%- assign p_slug = p.url | split: '/' | last -%}
+            {%- if p_slug == part.post -%}{%- assign ref = p -%}{%- break -%}{%- endif -%}
+          {%- endfor -%}
+
+          {%- if ref -%}
+          <section class="work-part" id="part-{{ part.post }}">
+            <h3 class="work-part-title">
+              <a href="{{ ref.url | relative_url }}">{{ part.title | default: ref.title }}</a>
+            </h3>
+            <div class="work-part-body">{{ ref.content }}</div>
+          </section>
+          {%- else -%}
+          <section class="work-part work-part--missing">
+            <p><em>This part is not yet published as a post.</em></p>
+          </section>
+          {%- endif -%}
+
+        {%- elsif part.inline -%}
+        <section class="work-part work-part--inline">
+          {%- if part.title -%}<h3 class="work-part-title">{{ part.title }}</h3>{%- endif -%}
+          {{ part.inline | markdownify }}
+        </section>
+        {%- endif -%}
+
+      {%- endfor -%}
+    {%- else -%}
+      {{ content }}
+    {%- endif -%}
   </div>
 
   <footer class="work-footer">
     {% if page.original_url %}
     <p class="work-original">
-      This is the transcribed text. The original — with its full artwork and
-      layout as composed — is available here:
+      {% if page.original_note %}{{ page.original_note }}{% else %}This is the transcribed text. The original — with its full artwork and
+      layout as composed — is available here:{% endif %}
       <a href="{{ page.original_url }}" rel="noopener">{{ page.original_label | default: "Download the original" }}</a>.
     </p>
     {% endif %}
