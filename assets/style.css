@@ -520,3 +520,15 @@ hr { border: none; border-top: 1px solid var(--hairline); margin: calc(var(--spa
   font-size: var(--step--1);
   margin: 0 0 calc(var(--space) * 2);
 }
+
+/* Work backlink on a post — derived at build time by scanning works for this
+   post's slug, so nothing is stored on the post itself. */
+.post-work {
+  margin-top: calc(var(--space) * 1.5);
+  font-family: var(--mono);
+  font-size: var(--step--1);
+  color: var(--ink-muted);
+}
+.post-work a { color: inherit; text-decoration-color: var(--hairline); }
+.post-work a:hover { color: var(--accent); text-decoration-color: var(--accent); }
+.post-work cite { font-style: italic; }

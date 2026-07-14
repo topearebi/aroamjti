@@ -15,6 +15,31 @@ layout: default
     {{ content }}
   </div>
 
+  {%- comment -%}
+    Work backlink, derived at build time — nothing is stored on the post.
+    Scans every work for this post's slug in its `beyond:` or `parts:` list.
+    This is the return half of the works model: a work references posts, and
+    the post discovers that relationship rather than declaring it. Adopting a
+    post into a work therefore never requires editing the post.
+  {%- endcomment -%}
+  {%- assign this_slug = page.url | split: '/' | last -%}
+  {%- assign in_work = nil -%}
+  {%- for w in site.works -%}
+    {%- if w.beyond contains this_slug -%}
+      {%- assign in_work = w -%}
+    {%- else -%}
+      {%- for part in w.parts -%}
+        {%- if part.post == this_slug -%}{%- assign in_work = w -%}{%- break -%}{%- endif -%}
+      {%- endfor -%}
+    {%- endif -%}
+    {%- if in_work -%}{%- break -%}{%- endif -%}
+  {%- endfor -%}
+  {% if in_work %}
+  <p class="post-work">
+    Part of <a href="{{ in_work.url | relative_url }}"><cite>{{ in_work.title }}</cite></a>
+  </p>
+  {% endif %}
+
   {% if page.tags.size > 0 %}
   <footer class="post-tags">
     {% for tag in page.tags %}<span class="tag">#{{ tag }}</span>{% endfor %}
