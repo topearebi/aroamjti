@@ -1,1 +1,0 @@
-You, me and the night sky. Don't be scared if we start to fly. Tis my kiss that cast this spell. Forged in our passion that burns like hell
