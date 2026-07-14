@@ -10,62 +10,63 @@ moved to another platform — from principles rather than guesswork.
 
 ## Guiding philosophy
 
-Every decision on this site traces back to a small set of principles. When in
-doubt, these break the tie.
+Every decision traces back to a small set of principles. When in doubt, these
+break the tie.
 
-1. **Own the content, always.** Everything that matters lives as plain
-   Markdown files with front matter. No databases, no proprietary formats, no
-   content trapped in a plugin's internal state. If the site had to move to a
-   different platform tomorrow, a script reading the `.md` files' front matter
-   and body would be enough to reconstruct it. Portability is the point.
+1. **Own the content, always.** Everything that matters lives as plain Markdown
+   with front matter. No databases, no proprietary formats, no content trapped
+   in a plugin's internal state. A script reading the `.md` files would be
+   enough to reconstruct the site elsewhere. Portability is the point.
 
 2. **Sustainability over cleverness.** If a feature needs ongoing maintenance,
    a build step that can break, or a dependency that might vanish, it is ruled
-   out — even if it is more powerful. The site should still build in ten years
-   with no intervention.
+   out — even if more powerful. The site should still build in ten years with
+   no intervention.
 
-3. **Zero JavaScript.** The site ships no JS. This constrains some features
-   (no dark-mode toggle button, no client-side search, no comments) but buys
-   permanence, speed, privacy, and simplicity. Where a feature seems to need
-   JS, the answer is either a CSS-only equivalent or not doing it.
+3. **Zero JavaScript.** No JS ships. This costs some features (no dark-mode
+   toggle, no client-side search, no comments) but buys permanence, speed,
+   privacy, and simplicity. Where a feature seems to need JS, the answer is a
+   CSS-only equivalent or not doing it.
 
 4. **No build tooling beyond what GitHub Pages runs natively.** No SCSS, no
-   bundlers, no Node pipeline. Native CSS custom properties replace everything
-   SCSS would offer. Push Markdown; the site rebuilds itself.
+   bundlers, no Node. Native CSS custom properties replace everything SCSS
+   would offer. Push Markdown; the site rebuilds itself.
 
-5. **Findable by a deliberate human, not by machines.** The site should be
-   discoverable by a person who goes looking, but not mined by AI crawlers and
-   not aggressively advertised to search indexes.
+5. **Findable by a deliberate human, not by machines.** Discoverable by a
+   person who goes looking; not mined by AI crawlers.
 
-6. **The words come first.** It is a writing site. Design, structure, and
-   features exist to make reading frictionless and to keep the content
-   central — never to decorate around it.
+6. **The words come first.** Design, structure, and features exist to make
+   reading frictionless — never to decorate around the writing.
+
+7. **Coherent navigation of mood.** The north star for the taxonomy. A reader
+   browsing a tag should stay inside one emotional weather system. This is why
+   the tags are few, capped, and ruthlessly bounded (see *Taxonomy*).
 
 ---
 
 ## Platform & build
 
-- **Jekyll on GitHub Pages**, built from the web interface only — no command
-  line required for daily use. GitHub Pages has native Jekyll support: push
-  Markdown, it builds automatically, no CI configuration needed.
-- **Custom subdomain** via a `CNAME` file plus a DNS CNAME record pointing the
-  subdomain at `USERNAME.github.io`. `url` in `_config.yml` matches.
+- **Jekyll on GitHub Pages**, edited from the web interface and Obsidian — no
+  command line required. Push Markdown; it builds automatically.
+- **Custom subdomain** via `CNAME` plus a DNS CNAME record pointing at
+  `USERNAME.github.io`. `url` in `_config.yml` matches.
 - **Markdown processor:** kramdown (the GitHub Pages default).
 
-### Plugins — only the two that are safe and serve the principles
+### Plugins — only the two that are safe
 
-GitHub Pages allows a fixed allowlist of plugins. Only two are used, both
-maintained as part of the platform (so they will not rot):
+GitHub Pages allows a fixed allowlist. Only two are used, both maintained as
+part of the platform (so they cannot rot):
 
-- `jekyll-paginate` — paginates the home page. Note: its successor
-  `jekyll-paginate-v2` is **not** on the GitHub Pages allowlist and will not
-  run on a default build. Use `jekyll-paginate` only.
-- `jekyll-feed` — generates the RSS feed at `/feed.xml`. RSS is kept
-  deliberately: it is how a human follows the site without an algorithm.
+- `jekyll-paginate` — paginates the home page. Its successor
+  `jekyll-paginate-v2` is **not** allowlisted and will not run.
+- `jekyll-feed` — generates `/feed.xml`. RSS is kept deliberately: it is how a
+  human follows the site without an algorithm.
 
-`jekyll-sitemap` was **deliberately removed.** A sitemap.xml hands crawlers a
-complete content map, which works against the "not mined" principle. Search
-engines still index the site fine without it.
+`jekyll-sitemap` was **deliberately removed** — a sitemap hands crawlers a
+complete content map, working against the "not mined" principle.
+
+Everything else — the browse pages, tag descriptors, composed works, and work
+backlinks — is **pure Liquid**. No plugin was added to achieve any of it.
 
 ---
 
@@ -73,48 +74,50 @@ engines still index the site fine without it.
 
 ```
 .
-├── _config.yml            Site settings, nav, pagination, plugins, collections
+├── _config.yml            Settings, nav, pagination, plugins, collections
+├── _data/
+│   └── tags.yml           Canonical tag descriptors (drives /tags/)
 ├── _layouts/
 │   ├── default.html       Master template: head, nav, footer, social icons
-│   ├── post.html          Adaptive post template (handles all post types)
-│   └── work.html          Template for standalone long-form "works"
+│   ├── post.html          Adaptive post template (all types) + work backlink
+│   └── work.html          Unified work template (inline + composed)
 ├── _posts/
-│   └── YYYY-MM-DD-*.md     Journal posts
+│   └── YYYY-MM-DD-*.md    Every post
 ├── _drafts/
-│   ├── _TEMPLATE.md        Copy this to start a draft (never published)
-│   └── README.md           How the drafts workflow works
+│   ├── TEMPLATE.md        Copy to start a draft (never published)
+│   └── README.md          Drafts workflow
 ├── _works/
-│   └── *.md               Long-form standalone compositions (a collection)
+│   └── *.md               Long-form compositions (a Jekyll collection)
 ├── assets/
-│   ├── style.css          All styling (native CSS custom properties)
-│   └── images/            Repo-hosted images, organised by year / work
+│   └── style.css          All styling (native CSS custom properties)
 ├── .github/
 │   ├── workflows/
-│   │   ├── integrity.yml   Pre-publish gate (runs on every push)
-│   │   └── maintenance.yml Weekly link-rot + tag reports (non-blocking)
+│   │   ├── integrity.yml     Push gate
+│   │   └── maintenance.yml   Weekly link/tag reports (non-blocking)
 │   └── scripts/
-│       ├── check_integrity.py  Filename / front-matter / vocabulary checks
-│       ├── tag_report.py       Tag consistency report
-│       └── link_check.py       Outbound link-rot report
-├── index.html             Home page (paginated post list, newest first)
+│       ├── check_integrity.py
+│       ├── tag_report.py
+│       └── link_check.py
+├── index.html             Home (paginated post list, newest first)
+├── browse.md              Browse hub → tags / types / archive
+├── tags.html              All tags, alphabetical, with descriptors + counts
+├── types.html             All types, curated order, with descriptions
+├── archive.html           Every post by year
 ├── about.md               About + a "now" section
-├── books.md               Reading log (curation-first, series grouped)
+├── books.md               Reading log
 ├── blogroll.md            Curated outbound links
 ├── works.md               Index of the _works collection
 ├── 404.html
 ├── robots.txt             Blocks AI crawlers; allows normal search
-├── humans.txt             Small-web credit for the human behind the site
-├── favicon.ico            Serif monogram on warm paper
-├── apple-touch-icon.png
+├── humans.txt
+├── favicon.ico · apple-touch-icon.png
 ├── LICENSE                CC BY-NC-ND 4.0 for the writing
-├── CNAME
-├── Gemfile                Local preview only
-├── .gitignore             What syncs across devices/platforms
-└── .gitattributes         Line-ending normalisation across OSes
+├── CNAME · Gemfile · .gitignore · .gitattributes
+└── README.md              This file
 ```
 
-Generated automatically (never create these by hand): `feed.xml`, the
-`/page2/`, `/page3/` … pagination pages, and each work's output page.
+Generated automatically (never create by hand): `feed.xml`, `/page2/` … , and
+each work's output page.
 
 ---
 
@@ -122,167 +125,327 @@ Generated automatically (never create these by hand): `feed.xml`, the
 
 ### Front matter is the real database
 
-Everything portable lives in front matter. Nothing meaningful is stored
-anywhere else.
-
-**Every post requires** exactly three fields:
+**Every post requires:**
 
 ```yaml
 layout: post
 title: "Quote titles that contain a colon"
 date: 2021-08-18 23:00:00 +0000
+type: poetry
+tags: [love]
 ```
 
-The **timezone offset on the date is not optional.** Without it, posts written
-near midnight can shift days depending on the build server, making sort order
-unstable. Always include it.
+The **timezone offset is not optional.** Without it, posts written near
+midnight shift days depending on the build server, making sort order unstable.
+This is one of the few things the integrity gate hard-fails on.
 
 **Optional post fields:**
 
-- `tags: [lowercase, list]` — pure metadata; never affects the URL. Tags are
-  always lowercased and de-duplicated by concept (e.g. `poems` and `poetry`
-  were merged to one).
-- `type: poetry` — switches the post to verse layout via CSS. The default
-  (omit it) is prose. This renders identically to a **work** with
-  `format: poetry` (see Works below): both share one CSS rule, so a plain
-  poem looks the same whether it is a post or a work. **Adding a new post
-  type means adding a CSS rule for `.post--TYPENAME`, never a new template.**
-- `date_note:` — a small visible footnote for posts whose date is approximate
-  (used for pre-2014 archive material with no known original dates).
+- `date_note:` — a visible footnote where a date is approximate (pre-2014
+  archive material with no known original date).
 - `updated:` — shown beside the date if an old post is meaningfully revised.
-- `published: false` — keeps a draft out of the built site.
+- `published: false` — keeps a finished, dated post temporarily unpublished.
 
 **Deliberately avoided:** `categories` (Jekyll injects them into the URL,
-coupling taxonomy to permalinks — use tags instead); `slug` (the filename owns
-it); per-post `author` (set once in `_config.yml`).
+coupling taxonomy to permalinks); `slug` (the filename owns it); per-post
+`author` (set once in `_config.yml`). And notably **no work/series field** — a
+post never records that it belongs to a work; see *Works*.
 
 ### Filenames
 
-Posts must be named `YYYY-MM-DD-title.md`. The date and slug are read from the
-filename; the permalink is `/:year/:month/:day/:title/`.
+`YYYY-MM-DD-lowercase-slug.md`. The date and slug are read from the filename;
+the permalink is `/:year/:month/:day/:title/`. A filename with a space or a
+capital produces a broken URL.
 
 ### One adaptive template, not many
 
-`post.html` reads `page.type` and sets a class (`post--poetry`,
-`post--prose`) on the article. All post types share the same HTML structure;
-only CSS differs. This is why poetry, prose, and any future type never need
-separate templates — the sustainability win is that new types are a CSS rule,
-not a new file.
+`post.html` reads `page.type` and sets a class (`post--poetry`, `post--essay`
+…). All types share one HTML structure; only CSS differs. **A new type is a CSS
+rule, never a new template.**
+
+---
+
+## Taxonomy
+
+The source of truth for classification. The whole point is to stop drift: a new
+tag is a deliberate decision, not something invented mid-draft.
+
+**Two independent axes, never mixed:**
+
+- **`type:`** — the *form* of the piece. Exactly one per post.
+- **`tags:`** — the *subject/mood*. **Strict maximum of two.**
+
+"Is it a poem?" is a type question. "Is it about love?" is a tag question. A
+love poem is `type: poetry` + `tags: [love]`.
+
+### The rules
+
+1. **1 tag minimum, 2 maximum.** Never three. If a post seems to need three,
+   you have not yet found its dominant weather.
+2. **Zero tags is valid** — but only for `fragments`: a genuinely themeless
+   jotting. Do not force a theme onto a post that has none.
+3. **Tags name subject or mood, never technique.** The single exception is
+   `satire`. No future tag may name a technique — no "dialogue", no
+   "epistolary", no "list-poem". One declared exception stays clean; two
+   becomes a second axis nobody decided to build.
+4. **Force the dominant choice.** Name the one weather system a reader is
+   immersed in, plus at most one genuine secondary. If everything is tagged
+   everywhere, the tags mean nothing.
+
+### Tie-breaking (when a post feels like 3+ tags)
+
+1. What is the reader's dominant *feeling* leaving this post? That is tag one.
+2. Is a second thread strong enough that its absence would misrepresent the
+   post? If unsure, there isn't — stop at one.
+3. Am I tagging a theme merely *present* rather than *driving*? Cut it.
+4. Two tags from the same family (love + heartbreak; struggle + malice)? Pick
+   the stronger.
+
+### Types (5) — the form axis
+
+Decision order — take the first that applies:
+
+1. **`poetry`** — stanza-based, rhythmic, lyrical. Lineated verse of any
+   length. A three-line image and a 500-word lyric are both poetry.
+2. **`fiction`** — invented. Characters or events that aren't lived experience.
+   *If it happened to you but is told story-style, it is journal, not fiction.*
+   For narrative verse: if it has characters and a plot, it is fiction
+   regardless of whether it rhymes.
+3. **`fragments`** — set down, not finished. The test is **intent, not
+   length**: did you consider it done, or just jot it and leave it? A long
+   unpolished scribble is a fragment; a tight finished couplet is poetry.
+4. **`journal`** — true, personal, time-bound. The record of a day, a meal, a
+   mood. *Records* rather than reflects outward.
+5. **`essay`** — true and personal, but travels outward: philosophy, social
+   commentary, polished thought. **Record vs. reflect** is the line — if you
+   could remove the personal anecdote and still have a piece, it's an essay; if
+   the anecdote *is* the piece, it's a journal.
+
+### Tags (15) — the subject axis
+
+Descriptors live in `_data/tags.yml`, which drives `/tags/`. Each tag below
+lists its boundary against the tag it is most often confused with — the
+boundary is the useful part; descriptions alone don't help you choose.
+
+| Tag | What it is | Boundary |
+|---|---|---|
+| `love` | affection, attachment, longing; the beginning and middle of the arc | vs `desire`: love is the bond, desire is the body. vs `heartbreak`: alive or hoped-for = love; over = heartbreak |
+| `desire` | physical intimacy, passion, heat | if removing the body leaves the poem intact, it's love |
+| `heartbreak` | endings, loss of love, the grief of a bond's close | vs `struggle`: heartbreak has a named cause — a lost person |
+| `struggle` | **personal, felt** suffering: depression, fear, numbness, healing | vs `malice`: suffering you undergo, not vice you enact. vs `haunting`: real pain, not surreal dread. vs `existential`: personal, not cosmic |
+| `malice` | human darkness as subject: envy, betrayal, cruelty, cold self-interest | **the active-vice rule** — active vice, or the external pull of the dark = malice; internal suffering and failing to resist = struggle |
+| `mortality` | death itself, time passing, the body's limits | vs `existential`: death *as death*, not death as meaning |
+| `existential` | cosmic indifference, duality, meaning, the human place in an uncaring world | *indifferent* cosmos = existential; *contested* divine = faith; society and ethics = philosophy |
+| `haunting` | the surreal and dreadful: demons, voids, shadows, unreality | unreal dread, not felt fear |
+| `neurodivergence` | autism, time-blindness, a differently wired mind | only when the wiring is the *subject*, not the backdrop |
+| `philosophy` | human nature, society, ethics, the examined life | the tag most at risk of becoming a catch-all. If a post is only *loosely* reflective, find its truer mood first |
+| `faith` | religion, belief, doubt, the sacred — the **contested** cosmos | wrestling with the divine = faith; its absence = existential |
+| `growth` | discipline, practice, progress, mastering something | **the experience/effort rule** — being in the world (a meal, a walk, a date) = life; the effort to change or master (a workout log, a habit) = growth |
+| `life` | everyday lived experience: food, places, the body, dating, work | see `growth`. `life` is the *subject*; `journal` is the *form* — don't confuse the axes |
+| `craft` | the making of art: the muse, creative block, the writer and the word | making art = craft; practising any skill = growth |
+| `satire` | **the one mode-tag.** The comic and critical register | marks *voice*, not mood — almost always pair it with a subject tag so the post also lives in its true weather |
+
+### Adding to the taxonomy later
+
+- A new **subject** may become a tag only if you expect ≥3–4 posts *where it is
+  the dominant note*. A theme that is always the second-strongest thing on a
+  post never earns a tag — this is why "writing" didn't, while `craft`,
+  reframed around *the making*, did.
+- New **types** should be rare. Add a sixth only for a genuinely new *form*.
+- When unsure, prefer an existing tag. Drift is the enemy.
+- Record it **here first**, then in `_data/tags.yml`, then in
+  `VALID_POST_TYPES` in `check_integrity.py` if it is a type, then add the CSS.
 
 ---
 
 ## Pages & sections
 
-- **Home** — paginated list of posts, newest first, dates in monospace
-  tabular figures aligned in a column (the site's one deliberate visual
-  signature: a "ledger of time," fitting a journal preoccupied with time).
-- **About** — includes a periodically-updated "now" section (current focus),
-  in the old-web tradition.
-- **Books** — a reading log that is *curation-first*: recent years are dated
-  where dates are reliable; everything older is grouped by series (nested) or
-  author, since exact per-book dates were lost. Bold marks standout books.
-  Serves two audiences — a personal log and a recommendation resource.
-- **Blogroll** — curated outbound links, newest first, one-line notes,
-  optional loose tags. Zero placement friction: prepend and go.
-- **Works** — a Jekyll *collection* (`_works/`) for long-form standalone
-  compositions that should be read whole, kept out of the post feed. The
-  index sorts by an `order` field, so adding a work is dropping in a file.
-  Each work sets a `format:` field that picks its rendering (parallel to a
-  post's `type:`):
-  - `format: poetry` — simple left-aligned verse. Same CSS as a post's
-    `type: poetry`; use for a plain poem (e.g. *Contrition*). Single line
-    breaks are kept; a blank line starts a new stanza.
-  - `format: verse` — composed/sectioned verse: centered, with
-    `<section class="work-section">` blocks, optional
-    `<p class="work-label">` framing, and interleaved `<figure class="work-figure">`
-    artwork. Use for richer illustrated works (e.g. *10000 Days of the Sun*).
-  - `format: prose` — normal paragraphs (the default).
+- **Home** — paginated posts, newest first; dates in monospace tabular figures
+  aligned in a column (the site's one visual signature: a "ledger of time").
+- **Browse** — a hub linking the three discovery axes. All three are pure
+  Liquid, generated at build time, and self-maintaining: a new tag or type
+  appears automatically with no other edit.
+  - **`/tags/`** — every tag alphabetically with its descriptor (from
+    `_data/tags.yml`) and post count. Tags *not* in that file render without a
+    descriptor under **Unsorted** — a deliberate migration dashboard: anything
+    appearing there is drift to clean up.
+  - **`/types/`** — the five types in curated reading order (journal · essay ·
+    poetry · fiction · fragments) with teaching descriptions. Empty types are
+    hidden; untyped posts collect under **Unclassified**.
+  - **`/archive/`** — every post by year, newest first.
+- **About** — includes a periodically-updated "now" section.
+- **Books** — a curation-first reading log; recent years dated, older grouped
+  by series or author. Bold marks standouts.
+- **Blogroll** — curated outbound links, newest first.
+- **Works** — see below.
 
-  Long image-based works are transcribed to real text on-site with the
-  original offered as a downloadable file (portability + accessibility
-  without losing the artifact). **A new format is a CSS rule for
-  `.work-body--FORMAT`, never a new template** — the same adaptive-template
-  principle as posts.
+---
+
+## Works
+
+A **work** is a curated reading order laid over posts — a view, not a
+container. `_works/` is a Jekyll collection kept out of the post feed; the
+index sorts by an `order` field.
+
+### The central property
+
+**Posts are never edited and never know they belong to a work.** Membership
+lives only on the work's side. A post carries no `work:` or `series:` field —
+nothing at all. This is what makes adoption non-destructive: a referenced post
+keeps its normal life in the feed and in `/tags/`, gaining no new presence
+anywhere.
+
+It also means the two ways a work comes into being collapse to the same
+one-list edit:
+
+- *Planning a collection* — create the work file, append each poem's slug as
+  you publish it.
+- *A collection drawing on existing posts* — create the work file, list the
+  slugs. Nothing about those posts changes.
+
+Making a new work is: create a file, list the parts, write the context. Never
+"go modify N published posts."
+
+### Composition — `parts:`
+
+A work may carry an ordered list of parts. Three kinds, mixable in any order:
+
+```yaml
+parts:
+  - heading: "III"              # a section marker
+  - inline: |                   # literal text, transcribed here
+      A letter from me to you...
+  - post: some-post-slug        # pulls that post's title + body
+```
+
+The reader cannot tell which chapters are pulled from posts and which are
+transcribed inline — that seam is deliberately invisible.
+
+### Appendix — `beyond:`
+
+Separately, a work may list posts that belong to its body of work but were not
+part of the published selection:
+
+```yaml
+beyond_title: "Beyond the book"
+beyond_note: "Poems from the same season that did not make the selection."
+beyond:
+  - the-most-awake
+  - like-gravity
+```
+
+### Open works and closed works
+
+This distinction decides whether `beyond:` applies at all:
+
+- **An open work** was cherry-picked from a larger, still-growing pool. The
+  book is a *selection*; more of the body of work exists and may yet surface.
+  `beyond:` names that gap, and the download note says the text above is the
+  curated selection. *(10000 Days of the Sun.)*
+- **A closed work** is complete: the book *is* the body of work. Anything
+  absent from the site is missing for a reason other than curation — in
+  Contrition's case an **authorship boundary**, since the omitted half is the
+  co-author's words and the blog carries only its author's. There is no pool to
+  reveal, so a `beyond:` section would not merely be empty, it would be false.
+  A closed work stays inline permanently. That is a correct end state, not an
+  unfinished migration.
+
+### Backlinks
+
+A post that appears in any work's `beyond:` or `parts:` shows *Part of [work]*
+in its footer. This is **derived at build time** by scanning `site.works` for
+the post's slug — consistent with the central property, nothing is stored on
+the post. A closed work with no references produces no backlinks, correctly.
+
+### Backwards compatibility
+
+A work with no `parts:` renders `{{ content }}` exactly as a plain inline
+document, so the composed model was added without touching what already worked.
+An unresolvable slug renders a quiet placeholder rather than breaking the
+build — a half-migrated work is always safe.
+
+### Work fields
+
+| Field | Purpose |
+|---|---|
+| `title` `subtitle` `year` `order` | identity; `order` sorts the index |
+| `format` | `poetry` or `prose` — picks the CSS, parallel to a post's `type:` |
+| `blurb` | shown on the `/works/` index |
+| `context` | markdown intro on the work page (`intro:` is the older plain-text version) |
+| `media` | list of `{src, caption}` images |
+| `original_url` `original_label` `original_note` | the downloadable artifact and its framing |
+| `parts` | the ordered composition (above) |
+| `beyond` `beyond_title` `beyond_note` | appendix of post references |
+
+Long image-based works are transcribed to real text on-site with the original
+offered as a download — portability and accessibility without losing the
+artifact. **A new format is a rule for `.work-body--FORMAT`, never a new
+template.**
 
 ---
 
 ## Design system
 
-The look is warm and literary, and it is defined once as CSS custom
-properties, then flipped for dark mode. Cohesion across every page comes from
-all of them sharing these tokens.
+Defined once as CSS custom properties, then flipped for dark mode. Every page
+shares the tokens; that is where cohesion comes from.
 
-- **Palette:** warm off-white paper, warm near-black ink (never pure black —
-  it vibrates on warm paper and tires the eye), an ochre/terracotta accent
-  used sparingly for links and markers, hairline rules. Dark mode uses a warm
-  near-black ground and warm off-white text (never pure white), with the
-  accent **lifted brighter** because the light-mode ochre is too dark to read
-  on a dark ground.
+- **Palette:** warm off-white paper, warm near-black ink (never pure black — it
+  vibrates on warm paper), an ochre/terracotta accent used sparingly, hairline
+  rules. Dark mode uses a warm near-black ground and warm off-white text (never
+  pure white), with the accent **lifted brighter** — the light-mode ochre is
+  too dark to read on a dark ground.
 - **Dark mode, no JS:** `@media (prefers-color-scheme: dark)` overrides the
-  variables. It follows the reader's system setting. There is deliberately no
-  toggle — a toggle needs JavaScript.
-- **Typography:** a system serif stack (no web-font download, no external
-  dependency, no load cost) for body; a monospace utility face for dates,
-  meta, and tags. Reading measure capped near 66 characters — the proven
-  comfortable line length. Generous line-height for prose.
-- **Poetry** gets its own rhythm. Plain verse (post `type: poetry` or work
-  `format: poetry`) preserves line breaks with `white-space: pre-wrap` — tight
-  *within* a stanza, a gap *between* stanzas (a blank line in the source) via
-  paragraph spacing — and long lines still wrap on narrow screens. Composed
-  works (`format: verse`) instead center their `.work-section` blocks and use
-  `white-space: pre-line`. Italic titles mark verse apart from prose at a glance.
-- **Responsive:** on narrow screens the home list stacks dates above titles
-  rather than crushing them into a column.
+  variables, following the reader's system setting. No toggle — a toggle needs
+  JavaScript.
+- **Typography:** a system serif stack (no web font, no external dependency, no
+  load cost) for body; a monospace face for dates, meta, and tags. Measure
+  capped near 66 characters.
+- **Poetry** gets its own rhythm: `white-space: pre-wrap` preserves line breaks
+  — tight within a stanza, a gap between stanzas — and long lines still wrap on
+  narrow screens. The same rule serves posts (`type: poetry`) and works
+  (`format: poetry`), so a poem renders identically either way.
+- **Responsive:** on narrow screens the home list stacks dates above titles.
 
 ---
 
 ## Navigation, footer, icons
 
-- **Nav** is data-driven from a `nav:` list in `_config.yml` — one place to
-  edit. Order: Home · About · Books · Works · Blogroll.
-- **Footer** carries icon-only social links (inline SVG, so no icon font or
-  library; they inherit text colour and adapt to dark mode automatically),
-  driven by a `social:` list in `_config.yml`, plus the copyright and license
-  line.
-- **Icons** are a serif monogram on warm paper — favicon (multi-resolution
-  .ico) and a 180×180 apple-touch-icon. Kept simple because favicons render as
+- **Nav** is data-driven from `nav:` in `_config.yml`. Order: Home · Browse ·
+  About · Books · Works · Blogroll.
+- **Footer** carries icon-only social links (inline SVG — no icon font, they
+  inherit text colour and adapt to dark mode), driven by `social:` in
+  `_config.yml`, plus copyright and license.
+- **Icons** are a serif monogram on warm paper. Kept simple: favicons render as
   small as 16px, where simpler always wins.
 
 ---
 
 ## Discoverability & anti-scraping
 
-The goal: findable by a human searching by name, not mined by machines. This
-is about *discovery*, not *access* — a public static site cannot truly prevent
-scraping, so these are consent signals that compliant crawlers honour, not a
-wall.
+Findable by a human searching by name; not mined by machines. These are consent
+signals compliant crawlers honour, not a wall — a public static site cannot
+truly prevent scraping.
 
-- **`robots.txt`** disallows ~20 named AI training/scraping crawlers (GPTBot,
-  ClaudeBot, Google-Extended, CCBot, PerplexityBot, Bytespider, etc.) while
-  allowing normal search engines. The list is plain text — add a new
-  `User-agent` / `Disallow: /` block whenever a new crawler appears.
-- **`<meta name="robots" content="noai, noimageai">`** in the head — an
-  emerging "don't train on this" signal, separate from search indexing, so it
-  does not affect being findable by name.
-- **No sitemap** (see plugins) — nothing advertises a full content inventory.
-- **RSS is kept** — deliberate human following, not algorithmic discovery. The
-  feed carries full post content (no excerpt separators) and a complete Atom
-  author element: `author` in `_config.yml` is a map (`name` + `email` + `uri`)
-  so `jekyll-feed` can emit all three. A `<meta name="author">` tag and a
-  `<link rel="author" href="/humans.txt">` reinforce name attribution.
-- **`humans.txt`** — the small-web tradition of crediting the human behind the
-  site, and a plain statement of the no-JS / no-tracking / findable-by-name
-  ethos.
+- **`robots.txt`** disallows ~20 named AI crawlers (GPTBot, ClaudeBot,
+  Google-Extended, CCBot, PerplexityBot, Bytespider …) while allowing normal
+  search. Add a new `User-agent` / `Disallow: /` block as new crawlers appear.
+- **`<meta name="robots" content="noai, noimageai">`** — an emerging
+  "don't train on this" signal, separate from search indexing.
+- **No sitemap** — nothing advertises a full content inventory.
+- **RSS is kept** — deliberate human following. The feed carries full post
+  content and a complete Atom author element (`author` in `_config.yml` is a
+  map: name / email / uri).
+- **`humans.txt`** — small-web credit and a plain statement of the
+  no-JS / no-tracking / findable-by-name ethos.
 
 ---
 
 ## Licensing
 
-The **writing** is licensed **CC BY-NC-ND 4.0** (share with attribution; no
-commercial use; no derivatives) — a Creative Commons license, correct for
-creative work rather than a software license. The **site code** (layouts, CSS,
-config) is separate and freely reusable; the `LICENSE` file states this split
-explicitly so the CC terms are not accidentally applied to the templates.
+The **writing** is **CC BY-NC-ND 4.0** — a Creative Commons license, correct
+for creative work. The **site code** (layouts, CSS, config) is separate and
+freely reusable; `LICENSE` states the split explicitly so the CC terms are not
+accidentally applied to the templates.
 
 ---
 
@@ -291,155 +454,32 @@ explicitly so the CC terms are not accidentally applied to the templates.
 Writing happens mostly on mobile. The stack separates *where you write* from
 *how you publish*:
 
-- **Write** in Obsidian (a dedicated blog-only vault — kept small and separate
-  from other notes so mobile Git sync stays stable).
-- **Publish** by syncing that vault to the repo. A post template pre-fills the
-  front matter (layout, title, timezone-stamped date) so writing a post is
-  "new note from template → write → sync," never hand-typing front matter or
-  filenames.
-- **Safety habit:** the draft exists as a plain note in the vault before sync
-  touches it, so a failed sync never costs writing — at worst, publish that one
-  post via the GitHub web interface. Pull before writing; push when done; never
+- **Write** in Obsidian (a blog-only vault — kept small and separate so mobile
+  Git sync stays stable).
+- **Publish** by syncing that vault to the repo. A template pre-fills front
+  matter, so publishing is "new note from template → write → sync."
+- **Safety habit:** the draft exists as a plain note before sync touches it, so
+  a failed sync never costs writing. Pull before writing; push when done; never
   edit the same post on two devices with unsynced changes.
 
 ### Drafts
 
-`_drafts/` is Jekyll's built-in draft folder: files here **sync across every
-device but never publish** (GitHub Pages does not build drafts). No date or
-filename rules apply while a piece lives there. To start one, copy
-`_drafts/_TEMPLATE.md`; to publish, add a timezone-stamped `date:`, rename to
-`YYYY-MM-DD-slug.md`, and move it into `_posts/`. Full instructions live in
-`_drafts/README.md`. (Use `published: false` inside `_posts/` only for a
-finished, dated post you want to temporarily unpublish.)
+`_drafts/` is Jekyll's built-in draft folder: files sync across devices but
+never publish. No date or filename rules apply there. To publish: add a
+timezone-stamped `date:`, rename to `YYYY-MM-DD-slug.md`, move to `_posts/`.
+See `_drafts/README.md`.
 
----
+### Cross-platform sync (Obsidian · SilverBullet · GitHub web)
 
-# Taxonomy — canonical types & tags
+The `.md` files are the single source of truth; anything a tool derives from
+them must never sync.
 
-This is the source of truth for how posts are classified. Before inventing a new
-`type:` or `tag:`, check here. The whole point is to stop drift: a new tag is a
-deliberate decision, not something made up mid-draft.
+- **`.gitignore`** ignores build output (`_site/`, caches), per-device editor
+  state (`.obsidian/workspace*`, SilverBullet's index/`.db`), OS junk, `*.bak`.
+- **`.gitattributes`** normalises line endings to LF, so editing one file on
+  several OSes doesn't produce phantom "everything changed" diffs.
 
-Two independent axes:
-
-- **`type:`** — the *form* of the piece (what kind of writing it is). One per post.
-- **`tags:`** — the *subject* of the piece (what it's about). One or more per post.
-
-Form and subject never mix. "Is it a poem?" is a type question; "is it about
-love?" is a tag question. A love poem is `type: poetry` + `tags: [love]`.
-
----
-
-## Types (5) — the form axis
-
-Exactly one per post. Decision order (take the first that applies):
-
-1. **`poetry`** — stanza-based, rhythmic, lyrical. Lineated verse, whatever its
-   length. A three-line image and a 500-word lyric are both poetry.
-2. **`fiction`** — invented. Characters, events, or worlds that aren't your own
-   lived experience. Narrative told about someone who isn't you. (If it happened
-   to *you* but is told story-style, it is **not** fiction — it's journal.)
-3. **`fragments`** — a set-down, not a finished thing. The test is **intent, not
-   length**: did you consider it done, or just jot it and leave it? A raw thought,
-   a seed, a note-to-self. Length doesn't decide this — a long unpolished scribble
-   is a fragment; a tight finished couplet is poetry.
-4. **`journal`** — true, personal, time-bound. The record of a day, a meal, a
-   mood, an experience. Stays close to lived life. Restaurants, dating, worklife,
-   daily texture. *Records* rather than *reflects outward.*
-5. **`essay`** — true and personal, but travels outward. Starts from experience
-   and reaches for the broader concept — philosophical dives, social commentary,
-   polished thought. The distinction from journal is **record vs. reflect**: if it
-   mostly *thinks*, it's an essay; if it mostly *recounts*, it's a journal.
-
-The `journal` ↔ `essay` line is the only fuzzy one. Rule of thumb: if you could
-remove the personal anecdote and still have a piece, it's an essay; if the anecdote
-*is* the piece, it's a journal.
-
----
-
-## Tags (11) — the subject axis
-
-One or more per post. Grouped into families below for the tag page, but the tag
-value itself is just the flat name (e.g. `tags: [love, mortality]`). Families are
-presentation only — do not write the family name into front matter.
-
-### Love & intimacy
-- **`love`** — affection, attachment, longing, devotion, the beginning and middle
-  of the love arc. (Endings go to `heartbreak`.)
-- **`desire`** — physical intimacy, passion, lust, intense wanting.
-- **`heartbreak`** — endings, loss of love, the grief of a relationship's close.
-
-### Inner life
-- **`struggle`** — the dark thread: depression, fear, feeling lost, numbness,
-  the fight to heal. The broad umbrella for mental battles.
-- **`mortality`** — death, time passing, human limits, the existential.
-- **`neurodivergence`** — autism, time-blindness, the texture of a differently
-  wired mind.
-
-### Mind & meaning
-- **`philosophy`** — human nature, society, rules, the examined life. Your
-  reflective/commentary thread.
-- **`faith`** — religion, belief, doubt, the sacred. (Split from philosophy so
-  neither becomes a catch-all.)
-
-### Living & growth
-- **`growth`** — discipline, consistency, progress, work, moving forward. The
-  logs and the getting-better.
-- **`life`** — everyday lived experience: food, places, the body, daily texture.
-  The everyday-journal subject thread. Built to grow.
-
-### Mode
-- **`satire`** — the comic/critical register: send-ups, fake-deep, the Red Pill
-  pieces. A mode more than a subject, kept because it's a coherent thread.
-
----
-
-## What was removed, and why
-
-Deleted tags fell into three groups (see `tag-consolidation-map.csv` for the full
-old→new table):
-
-- **Type-leak** — `poetry`, `prose`, `blackout-poetry` described *form*, now the
-  job of `type:`. Removed to keep the axes clean.
-- **Metadata** — `archive` is handled by the Archive/date page, not a subject.
-- **Non-thematic noise** — `random`, `musings`, `humor` told a visitor nothing;
-  the long tail of one-off tags (`fashion`, `pictures`, `filters`, `french`…)
-  was fly-made drift, absorbed upward into a durable parent or dropped.
-
-The result: 64 drifting tags → 11 canonical ones, each populated enough to browse
-and readable at a glance on the tag page.
-
----
-
-## Adding to the taxonomy later
-
-- A new **subject** you'll write about **repeatedly** can become a new tag — but
-  only if you expect ≥3–4 posts. One-offs go to the nearest existing tag. Record
-  the new tag here first.
-- New **types** should be rare. Five forms cover the writing; add a sixth only if
-  a genuinely new *form* appears (not a new subject — that's a tag).
-- When unsure, prefer an existing tag over a new one. Drift is the enemy.
-
----
-
-## Cross-platform sync (Obsidian · SilverBullet · GitHub web)
-
-The repo is edited from several places — Obsidian on mobile, a self-hosted
-SilverBullet instance, and the GitHub web UI. The `.md` files are the single
-source of truth; everything a tool derives from them is not, and must never
-sync. Two files enforce this:
-
-- **`.gitignore`** decides what travels between devices. It ignores build
-  output (`_site/`, caches), per-device editor state (`.obsidian/workspace*`,
-  SilverBullet's index/`.db`), OS junk, and `*.bak`. Content, layouts, config,
-  and assets are tracked.
-- **`.gitattributes`** normalises line endings to LF across Windows / macOS /
-  iOS / Linux, so editing one file on several OSes does not produce phantom
-  "everything changed" diffs.
-
-**One-writer discipline** is the real failsafe: pull/sync before writing, push
-after. Git handles different files on different devices cleanly; the same file
-edited concurrently is what causes conflicts. Keep publish-bound Markdown
+**One-writer discipline** is the real failsafe. Keep publish-bound Markdown
 portable — SilverBullet `[[wikilinks]]` and `#inline-tags` render as literal
 text on the site, so keep them to notes that stay in `_drafts/`.
 
@@ -447,106 +487,89 @@ text on the site, so keep them to notes that stay in `_drafts/`.
 
 ## Automated tooling (`.github/`)
 
-Two GitHub Actions look after quality and longevity. Both are dependency-light
-Python (standard library only) so they cannot rot from a package change, and
-both are readable/editable from the GitHub web UI.
+Two Actions look after quality and longevity. Both are standard-library Python
+(no dependencies to rot) and readable from the GitHub web UI.
 
-### Integrity gate — `integrity.yml` (every push, **hard fail**)
+### Integrity gate — `integrity.yml` (every push)
 
-Runs on every push and pull request; a failure marks the commit failed
-(visible in the GitHub mobile app) so problems are caught before they rot. Two
-jobs, both must pass:
+Two severities, deliberately:
 
-1. **Structural checks** (`check_integrity.py`) — validates post filename
-   format, required `title` + timezone-stamped `date`, `type`/`format` values
-   against the known vocabulary, and that works have a `.md` extension. Internal
-   links are reported as non-blocking notes.
-2. **Jekyll build** — builds the site with the same `github-pages` gem
-   production uses, with `--strict_front_matter`. If it does not build, the
-   check fails.
+- **Errors (blocking)** — things that *silently break publishing*: a bad
+  filename, a missing title, a date without a timezone offset, a work file
+  Jekyll won't process. Not matters of taste; the post simply won't appear.
+- **Warnings (non-blocking)** — chiefly an unrecognised or missing `type:`, or
+  an unknown work `format:`. A vocabulary in flux must never block a publish:
+  you may be mid-migration or trying a new form. The warning is a nudge, not a
+  gate.
 
-This *validates*; it does not deploy. GitHub Pages still builds and deploys the
-site itself, so a failed check does not take the live site down — it flags the
-offending commit. **When you add a new `type:` or `format:` value, update the
-vocabulary sets at the top of `check_integrity.py` and add the matching CSS
-rule** — the checker is the enforcement, the CSS is the rendering.
+That split is the design. Blocking on genuine breakage is protection; blocking
+on a judgement call punishes the work you were in the middle of.
 
-### Maintenance reports — `maintenance.yml` (weekly, **non-blocking**)
+It *validates*; it does not deploy. A failed check flags the commit but does
+not take the live site down.
 
-Runs Monday 06:00 UTC and on demand from the Actions tab. These inform, never
-gate — a dead third-party link or a messy tag is a to-do, not a build error.
-Results appear in the run's Step Summary (readable from mobile).
+**When you add a new `type:` or `format:`, update the vocabulary sets at the
+top of `check_integrity.py` and add the matching CSS rule** — the checker is
+the enforcement, the CSS is the rendering, this README is the record.
 
-- **`tag_report.py`** — frequency table, tag-style inconsistencies (inline
-  `[a, b]` vs block `- a`), likely near-duplicates, tags that duplicate the
-  `type:` field (e.g. a `poetry` tag), and single-use tags.
-- **`link_check.py`** — checks every outbound link and reports dead, moved, and
-  bot-hostile-host results. Non-blocking by default; `--strict` makes dead
-  links fail if ever wanted.
+### Maintenance reports — `maintenance.yml` (weekly, non-blocking)
 
-Note: scheduled Actions only fire from the default branch.
+Monday 06:00 UTC and on demand. These inform, never gate. Results appear in the
+run's Step Summary (readable from mobile).
 
----
+- **`tag_report.py`** — frequency table, style inconsistencies, near-duplicates,
+  tags duplicating the `type:` field, single-use tags.
+- **`link_check.py`** — dead, moved, and bot-hostile outbound links.
 
-## Migrating content in (how the archive was built)
+Scheduled Actions only fire from the default branch.
 
-The existing archive was migrated from Bear blog and a Google Docs poetry
-collection. The reusable lessons:
+### The one maintenance habit worth keeping
 
-- **Bear → Jekyll:** remap front matter (`published_date` → `date` with a
-  timezone offset; comma tags → a YAML list; drop Bear-only fields). Rename
-  files to `YYYY-MM-DD-slug.md`. Convert CRLF to LF. Insert blank lines between
-  run-together paragraphs so kramdown renders them — **but** preserve poems and
-  lists (never blindly reflow). Never edit the words themselves; migrations
-  surface typos, but fixing them is a separate, deliberate pass.
-- **Titles with colons** must be quoted in YAML or the build breaks.
-- **Duplicate slugs** must be disambiguated (append a number) or files collide.
-- **Detecting structure in a Word doc** (e.g. splitting a poetry collection):
-  read the raw formatting XML, not the extracted text — font size and
-  alignment are the only reliable boundary markers, and they are lost in a
-  plain-text export. Export as `.docx`, not `.txt` or `.pdf`.
-- **Approximate dates:** when original dates are unknown, assign sequential
-  dates backward from a known cutoff purely for stable ordering, and add a
-  visible `date_note` so the imprecision is honest.
+Everything above runs itself. The single thing that needs a human is an
+occasional audit of `philosophy` and of the deliberately thin tags (`life`,
+`neurodivergence`, `craft`) — the first for re-bloat, the others because they
+were kept as anchors for writing yet to come. If a thin tag is still thin after
+a couple of years, merge or retire it. That one discipline keeps the taxonomy
+honest at near-zero cost.
 
 ---
 
-## Hard-won gotchas (things that cost time to discover)
+## Hard-won gotchas
 
-- `{% feed_meta %}` (a `jekyll-feed` Liquid tag) can fail the build on GitHub
-  Pages. Use a plain `<link rel="alternate" type="application/rss+xml">` in the
-  head instead — it needs no plugin at parse time and cannot break the build.
+- `{% feed_meta %}` can fail the build on GitHub Pages. Use a plain
+  `<link rel="alternate" type="application/rss+xml">` in the head instead.
 - `jekyll-paginate-v2` is not allowed on GitHub Pages. Use `jekyll-paginate`.
-- `jekyll-paginate` only paginates an `.html` file (hence `index.html`, not
-  `index.md`).
-- A filename with a space or capital letters (e.g. from a bad upload) produces
-  a broken URL — keep post filenames strictly `YYYY-MM-DD-lowercase-slug.md`.
-- "Deployment failed, try again later" at the `deploy-pages` step is almost
-  always a transient GitHub-side issue, not a repo problem — re-run the job;
-  check githubstatus.com if it persists.
-- Hand-drawn SVG brand icons read fine at footer size but are approximations;
-  swap in official paths (e.g. Simple Icons) if exactness is ever needed.
-- Never hotlink images from a host you do not control — store them in
-  `assets/images/` so they cannot vanish.
+- `jekyll-paginate` only paginates an `.html` file (hence `index.html`).
+- A filename with a space or capitals produces a broken URL.
+- **Matching a post by slug in Liquid:** compare the last URL segment exactly
+  (`p.url | split: '/' | last`). Using `contains` false-matches — `contains
+  'love'` also hits `love-costs` and `run-love-run`.
+- **Rendering a post inside a work:** pass `{{ ref.content }}` raw. Jekyll has
+  already converted post markdown to HTML; running `markdownify` on it again
+  mangles the output.
+- A collection needs `output: true` for its items to have a `url` — without it,
+  work pages don't exist and backlinks point nowhere.
+- "Deployment failed, try again later" at `deploy-pages` is almost always a
+  transient GitHub issue — re-run the job.
+- Never hotlink images from a host you don't control — store them in `assets/`.
+- Titles containing a colon must be quoted in YAML.
 
 ---
 
 ## Rebuild checklist (from zero)
 
 1. New repo; enable GitHub Pages (Settings → Pages → branch, root).
-2. `CNAME` + DNS CNAME record → `USERNAME.github.io`; set `url` in `_config.yml`.
-3. `_config.yml`: title, `author` (a map: name / email / uri), nav,
-   `paginate: 25`, the two plugins, the `works` collection, and the `social:`
-   list.
-4. `_layouts/default.html` (head with icons + RSS link + `rel="author"` +
-   author/noai meta; nav; footer with social SVGs), `post.html` (adaptive),
-   `work.html`.
+2. `CNAME` + DNS CNAME → `USERNAME.github.io`; set `url` in `_config.yml`.
+3. `_config.yml`: title, `author` (map: name / email / uri), nav, `paginate: 25`,
+   the two plugins, the `works` collection (`output: true`), `social:`.
+4. `_layouts/`: `default.html` (head with icons + RSS link + `rel="author"` +
+   author/noai meta; nav; footer SVGs), `post.html` (adaptive + work backlink),
+   `work.html` (unified).
 5. `assets/style.css` — the token system and dark-mode override.
-6. `index.html`, `about.md` (+ now section), `books.md`, `blogroll.md`,
-   `works.md`.
-7. `robots.txt`, `humans.txt`, `404.html`, `LICENSE`, favicon +
+6. `_data/tags.yml` — the canonical tag descriptors.
+7. `index.html`, `browse.md`, `tags.html`, `types.html`, `archive.html`,
+   `about.md`, `books.md`, `blogroll.md`, `works.md`.
+8. `robots.txt`, `humans.txt`, `404.html`, `LICENSE`, favicon +
    apple-touch-icon, `.gitignore`, `.gitattributes`, `Gemfile`.
-8. `.github/workflows/` (`integrity.yml`, `maintenance.yml`) and
-   `.github/scripts/` (the three `.py` checkers); `_drafts/` with its template.
-9. Add posts to `_posts/`, works to `_works/`. Push. It builds itself — and the
-   integrity gate checks it on every push thereafter.
+9. `.github/workflows/` + `.github/scripts/`; `_drafts/` with its template.
+10. Add posts to `_posts/`, works to `_works/`. Push. It builds itself.
