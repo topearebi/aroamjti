@@ -3,7 +3,7 @@ layout: post
 title: "Too Big, Too Bright, Too Beautiful"
 date: 2016-11-29 12:00:00 +0000
 type: poetry
-tags: [love, 10000-days-of-the-sun]
+tags: [love]
 ---
 Sometimes I wish
 You weren't so big
