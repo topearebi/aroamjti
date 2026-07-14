@@ -1,1 +1,0 @@
-The whites of your eyes are the only thing you need. There's darkness enough in everything you see
