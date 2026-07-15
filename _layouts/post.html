@@ -3,6 +3,42 @@ layout: default
 ---
 <article class="post post--{{ page.type | default: 'prose' }}">
   <header class="post-header">
+    {%- comment -%}
+      Type kicker with an ascending per-type number, computed at build time —
+      nothing is stored on the post.
+
+      COUNTING FROM THE OLDEST is deliberate. site.posts is newest-first, so it
+      is reversed and same-type posts are counted until this one is reached.
+      № 1 therefore means "the first of this type I ever wrote" — a fact about
+      the archive, not about today.
+
+      Counting from the newest was rejected: every new post would shift every
+      existing number, permanently and by design. Ascending converges instead —
+      inserting a rediscovered old post only shifts the posts after it, and
+      since the pre-2014 archive is finite and closing, that shifted set shrinks
+      with every piece found. Recent posts, which is where readers land, never
+      move.
+
+      Cost is an O(n) loop per post (~40k iterations at 200 posts). Fine at this
+      scale; it grows quadratically, so revisit if the archive reaches thousands.
+    {%- endcomment -%}
+    {%- assign type_now = page.type | default: 'prose' -%}
+    {%- assign type_number = 0 -%}
+    {%- assign counter = 0 -%}
+    {%- assign ordered = site.posts | reverse -%}
+    {%- for p in ordered -%}
+      {%- assign p_type = p.type | default: 'prose' -%}
+      {%- if p_type == type_now -%}
+        {%- assign counter = counter | plus: 1 -%}
+        {%- if p.url == page.url -%}
+          {%- assign type_number = counter -%}
+          {%- break -%}
+        {%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
+    <p class="post-kicker">
+      {{ type_now | capitalize }}{% if type_number > 0 %} <span class="post-kicker-num">&#8470;&nbsp;{{ type_number }}</span>{% endif %}
+    </p>
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
