@@ -108,42 +108,60 @@ hr { border: none; border-top: 1px solid var(--hairline); margin: calc(var(--spa
 .post-content li { margin: 0.3rem 0; }
 /* Poetry.
 
-   pre-wrap preserves the single line breaks between verse lines (which normal
-   HTML rendering would collapse into a space) while still letting long lines
-   wrap on narrow screens. kramdown splits stanzas into separate <p> elements
-   on the blank source lines. Applies to both blog posts (type: poetry) and
-   works (format: poetry).
+   THE CENTRAL RULE: `white-space: pre-wrap` goes on the TEXT BLOCKS (p, li),
+   never on the container.
 
-   Three things markdown does to verse that must be undone here — all fixed in
-   CSS so the source stays clean, portable plain text:
+   Why this matters — it is the whole bug this rule exists to avoid. Verse needs
+   its single line breaks preserved (normal HTML collapses them into spaces).
+   The obvious move is pre-wrap on .post-content, but that container holds the
+   HTML *source formatting* too: the newlines kramdown emits between </p> and
+   <p>, around <ul>, around each <li>. Normal HTML collapses that inter-tag
+   whitespace to nothing; pre-wrap renders every bit of it as a real line break.
+   Stanza gaps then become: the paragraph margin PLUS a line for the newline
+   after </p> PLUS a line for the newline before <p> — three or four blank
+   lines where one belongs, and worse around lists, which carry more tags and
+   so more newlines. Scoping pre-wrap to p/li fixes it at the mechanism: the
+   container collapses inter-tag whitespace like normal HTML, while each text
+   block still preserves the line breaks the poem depends on.
 
-   1. STANZA SPACING. A prose paragraph margin (--space) is far too large
-      between stanzas when the line-height is already 1.7 — it reads as three
-      or four blank lines. The gap should be exactly one line: 1.7em.
-   2. INDENTED LINES BECOME CODE. Markdown turns any line indented 4+ spaces
-      into a <pre><code> block. Concrete/spatial poems (Tears For Bread, My
-      Dreams Aren't Big Enough) trip this. Rather than mangle the source with
-      escapes, the code block is styled back into verse: inherit the poem's
-      face and size, drop the grey chrome, keep `pre` so the spatial layout
-      survives, and allow horizontal scroll rather than reflowing the shape.
-   3. A LEADING "- " BECOMES A BULLET. Attribution lines like
+   Two further things markdown does to verse, both undone here in CSS so the
+   source stays clean, portable plain text:
+
+   1. INDENTED LINES BECOME CODE. Markdown turns any line indented 4+ spaces
+      into <pre><code>. The concrete poems (Tears For Bread, My Dreams Aren't
+      Big Enough) trip this. The code block is styled back into verse: inherit
+      the poem's face and size, drop the grey chrome, keep `pre` so the spatial
+      layout cannot reflow, and scroll horizontally rather than break the shape.
+   2. A LEADING "- " BECOMES A BULLET. Attribution lines like
       "- there are 10000 forms of pleasure" are list syntax to markdown.
       The marker is suppressed and the indent removed.
+
+   Applies to both blog posts (type: poetry) and works (format: poetry), so a
+   poem renders identically whether read as a post or inside a work.
 */
 .post--poetry .post-content,
 .work-body--poetry {
   font-size: var(--step-1);
   line-height: 1.7;
-  white-space: pre-wrap;   /* keep single line breaks within a stanza */
+  /* NO white-space here — see above. */
 }
+
+/* the text blocks that hold verse: these preserve their own line breaks */
+.post--poetry .post-content p,
+.post--poetry .post-content li,
+.work-body--poetry p,
+.work-body--poetry li {
+  white-space: pre-wrap;   /* keep line breaks within a stanza; still wraps */
+}
+
 .post--poetry .post-content p,
 .work-body--poetry p { margin: 0 0 1.7em; max-width: 32rem; }
-.post--poetry .post-content p:last-child,
-.work-body--poetry p:last-child { margin-bottom: 0; }
 .post--poetry .post-content > :first-child,
 .work-body--poetry > :first-child { margin-top: 0; }
+.post--poetry .post-content > :last-child,
+.work-body--poetry > :last-child { margin-bottom: 0; }
 
-/* (2) indented verse that markdown made into a code block */
+/* (1) indented verse that markdown made into a code block */
 .post--poetry .post-content pre,
 .work-body--poetry pre {
   background: none;
@@ -167,7 +185,7 @@ hr { border: none; border-top: 1px solid var(--hairline); margin: calc(var(--spa
   white-space: pre;
 }
 
-/* (3) attribution lines markdown mistook for a list */
+/* (2) attribution lines markdown mistook for a list */
 .post--poetry .post-content ul,
 .work-body--poetry ul {
   list-style: none;
@@ -506,23 +524,4 @@ hr { border: none; border-top: 1px solid var(--hairline); margin: calc(var(--spa
   color: var(--ink-faint); font-weight: 400;
 }
 .tag-index-unsorted { color: var(--ink-faint); font-style: italic; }
-.tag-group--unsorted { opacity: 0.85; }
-.tag-group--unsorted .tag-group-title { color: var(--ink-muted); }
-.tag-subgroup-title {
-  font-size: var(--step-0); margin: 1.25rem 0 0.25rem;
-  color: var(--ink-muted); scroll-margin-top: 1.5rem;
-}
-
-/* ------------------------------------------------------------------
-   Composed works — parts pulled from posts, inline text, and headings.
-   A work with no `parts:` still renders via {{ content }} and uses the
-   .work-body--* rules above; these styles are additive only.
-   ------------------------------------------------------------------ */
-.work-part { margin: calc(var(--space) * 2.5) 0; }
-.work-part:first-child { margin-top: 0; }
-
-.work-part-heading {
-  font-family: var(--mono);
-  font-size: var(--step--1);
-  font-weight: 400;
-  letter-spacing
+.tag-group--unsorted { o
