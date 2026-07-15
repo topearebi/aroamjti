@@ -94,6 +94,19 @@ hr { border: none; border-top: 1px solid var(--hairline); margin: calc(var(--spa
   text-decoration-color: color-mix(in srgb, var(--accent) 45%, transparent);
 }
 .post-header { margin-bottom: calc(var(--space) * 1.5); }
+/* Type kicker — names the form before the title, so the reader knows which
+   weather they are entering before they read a word. The number is computed at
+   build time and counts from the oldest of that type; see _layouts/post.html. */
+.post-kicker {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 0.4rem;
+}
+.post-kicker-num { color: var(--ink-faint); }
+
 .post-title { font-size: var(--step-3); margin: 0 0 0.4rem; }
 .post-meta { color: var(--ink-muted); font-family: var(--mono); font-size: var(--step--1); letter-spacing: -0.01em; margin: 0; }
 .post-updated { margin-left: 0.5rem; color: var(--ink-faint); }
@@ -101,6 +114,16 @@ hr { border: none; border-top: 1px solid var(--hairline); margin: calc(var(--spa
 .post-content > :first-child { margin-top: 0; }
 .post-content img { max-width: 100%; height: auto; display: block; margin: calc(var(--space) * 1.5) auto; }
 .post-content blockquote { border-left: 2px solid var(--accent); margin: var(--space) 0; padding-left: 1.25rem; color: var(--ink-muted); font-style: italic; }
+/* A quoted passage may be verse even inside prose (an essay quoting a poem,
+   a journal quoting a saying set out in lines). Preserve the line breaks the
+   quote was written with, in ANY post type, so a stanza quoted mid-essay reads
+   as a stanza rather than collapsing into one run-on paragraph. Same mechanism
+   as the poetry rule below: pre-wrap on the text block, never the container.
+   Write these as a real markdown blockquote — `> ` on each line — not as bare
+   quote marks on their own lines, which markdown renders as a stray paragraph
+   containing one character. */
+.post-content blockquote p { white-space: pre-wrap; margin: 0 0 1.7em; }
+.post-content blockquote > :last-child { margin-bottom: 0; }
 .post-content pre { background: color-mix(in srgb, var(--ink) 5%, var(--paper)); padding: 1rem 1.25rem; overflow-x: auto; border-radius: 3px; font-family: var(--mono); font-size: var(--step--1); line-height: 1.55; }
 .post-content code { font-family: var(--mono); font-size: 0.875em; }
 .post-content :not(pre) > code { background: color-mix(in srgb, var(--ink) 6%, var(--paper)); padding: 0.1em 0.35em; border-radius: 3px; }
@@ -195,8 +218,15 @@ hr { border: none; border-top: 1px solid var(--hairline); margin: calc(var(--spa
 .post--poetry .post-content li,
 .work-body--poetry li { margin: 0; }
 
-.post--poetry .post-title { font-style: italic; }
+/* Poetry titles are set roman, like every other type. Italic conventionally
+   marks a title-of-a-work or emphasis, not a genre — using it to mean "this is
+   a poem" is a private code the reader has to learn, and with poetry being two
+   thirds of the archive it marked the norm rather than the exception. Type is
+   carried by /types/ and by the shape of the poem itself. */
 .post-tags { margin-top: calc(var(--space) * 1.5); padding-top: var(--space); border-top: 1px solid var(--hairline); display: flex; flex-wrap: wrap; gap: 0.75rem; }
+/* If the work backlink sits directly above, it has already drawn the rule —
+   a second hairline a line later just looks like a mistake. */
+.post-work + .post-tags { border-top: 0; padding-top: 0; margin-top: var(--space); }
 .post-tags .tag { color: var(--ink-muted); font-family: var(--mono); font-size: var(--step--1); }
 .pagination { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin-top: calc(var(--space) * 2); padding-top: var(--space); border-top: 1px solid var(--hairline); font-family: var(--mono); font-size: var(--step--1); }
 .pagination a { color: var(--accent); text-decoration: none; }
@@ -482,46 +512,4 @@ hr { border: none; border-top: 1px solid var(--hairline); margin: calc(var(--spa
   display: flex; flex-wrap: wrap; gap: 0.5rem 1rem;
   margin: 1.25rem 0 2.5rem; padding-bottom: 1.5rem;
   border-bottom: 1px solid var(--hairline);
-  font-family: var(--mono); font-size: var(--step--1);
-}
-.tag-index a { text-decoration: none; color: var(--ink-muted); }
-.tag-index a:hover { color: var(--accent); }
-.tag-group { margin: 0 0 calc(var(--space) * 2); scroll-margin-top: 1.5rem; }
-.tag-group-title {
-  font-size: var(--step-1); margin: 0 0 0.5rem;
-  padding-bottom: 0.35rem; border-bottom: 1px solid var(--hairline);
-  display: flex; align-items: baseline; justify-content: space-between; gap: 1rem;
-}
-.tag-group-top {
-  font-family: var(--mono); font-size: var(--step--1); font-weight: 400;
-  text-decoration: none; color: var(--ink-faint); flex: none;
-}
-.tag-group-top:hover { color: var(--accent); }
-.tag-group .post-list { margin-top: 0.5rem; }
-
-/* Browse hub */
-.browse-intro { color: var(--ink-muted); margin-top: 1.5rem; }
-.browse-hub-list { list-style: none; padding: 0; margin: 2rem 0 0; }
-.browse-hub-list li {
-  padding: 0.85rem 0; border-top: 1px solid var(--hairline);
-  display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5rem 1rem;
-}
-.browse-hub-list li:last-child { border-bottom: 1px solid var(--hairline); }
-.browse-hub-link {
-  text-decoration: none; color: var(--ink);
-  font-size: var(--step-1); font-weight: 700; letter-spacing: -0.01em;
-}
-.browse-hub-link:hover { color: var(--accent); }
-.browse-hub-note { color: var(--ink-muted); font-size: var(--step--1); }
-
-/* Browse pages — descriptors, counts, and migration (unsorted) styling */
-.tag-group-desc {
-  color: var(--ink-muted); font-size: var(--step--1);
-  margin: 0 0 0.75rem; max-width: 34rem;
-}
-.tag-group-count {
-  font-family: var(--mono); font-size: var(--step--1);
-  color: var(--ink-faint); font-weight: 400;
-}
-.tag-index-unsorted { color: var(--ink-faint); font-style: italic; }
-.tag-group--unsorted { o
+  font-family: var(--mono); font-size: 
