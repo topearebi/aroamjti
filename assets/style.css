@@ -106,12 +106,30 @@ hr { border: none; border-top: 1px solid var(--hairline); margin: calc(var(--spa
 .post-content :not(pre) > code { background: color-mix(in srgb, var(--ink) 6%, var(--paper)); padding: 0.1em 0.35em; border-radius: 3px; }
 .post-content ul, .post-content ol { padding-left: 1.4rem; margin: 0 0 var(--space); }
 .post-content li { margin: 0.3rem 0; }
-/* Poetry: pre-wrap preserves the single line breaks between verse lines
-   (which normal HTML rendering would collapse into a space) while still
-   letting long lines wrap on narrow screens. kramdown splits stanzas into
-   separate <p> elements on the blank source lines; stanza spacing is set
-   on those paragraphs just below. Applies to both blog posts
-   (type: poetry) and works (format: poetry). */
+/* Poetry.
+
+   pre-wrap preserves the single line breaks between verse lines (which normal
+   HTML rendering would collapse into a space) while still letting long lines
+   wrap on narrow screens. kramdown splits stanzas into separate <p> elements
+   on the blank source lines. Applies to both blog posts (type: poetry) and
+   works (format: poetry).
+
+   Three things markdown does to verse that must be undone here — all fixed in
+   CSS so the source stays clean, portable plain text:
+
+   1. STANZA SPACING. A prose paragraph margin (--space) is far too large
+      between stanzas when the line-height is already 1.7 — it reads as three
+      or four blank lines. The gap should be exactly one line: 1.7em.
+   2. INDENTED LINES BECOME CODE. Markdown turns any line indented 4+ spaces
+      into a <pre><code> block. Concrete/spatial poems (Tears For Bread, My
+      Dreams Aren't Big Enough) trip this. Rather than mangle the source with
+      escapes, the code block is styled back into verse: inherit the poem's
+      face and size, drop the grey chrome, keep `pre` so the spatial layout
+      survives, and allow horizontal scroll rather than reflowing the shape.
+   3. A LEADING "- " BECOMES A BULLET. Attribution lines like
+      "- there are 10000 forms of pleasure" are list syntax to markdown.
+      The marker is suppressed and the indent removed.
+*/
 .post--poetry .post-content,
 .work-body--poetry {
   font-size: var(--step-1);
@@ -119,9 +137,46 @@ hr { border: none; border-top: 1px solid var(--hairline); margin: calc(var(--spa
   white-space: pre-wrap;   /* keep single line breaks within a stanza */
 }
 .post--poetry .post-content p,
-.work-body--poetry p { margin: 0 0 var(--space); max-width: 32rem; }
+.work-body--poetry p { margin: 0 0 1.7em; max-width: 32rem; }
 .post--poetry .post-content p:last-child,
 .work-body--poetry p:last-child { margin-bottom: 0; }
+.post--poetry .post-content > :first-child,
+.work-body--poetry > :first-child { margin-top: 0; }
+
+/* (2) indented verse that markdown made into a code block */
+.post--poetry .post-content pre,
+.work-body--poetry pre {
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0 0 1.7em;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  white-space: pre;        /* spatial layout must NOT reflow */
+  overflow-x: auto;        /* scroll instead, on narrow screens */
+}
+.post--poetry .post-content pre code,
+.work-body--poetry pre code {
+  background: none;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  white-space: pre;
+}
+
+/* (3) attribution lines markdown mistook for a list */
+.post--poetry .post-content ul,
+.work-body--poetry ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 1.7em;
+}
+.post--poetry .post-content li,
+.work-body--poetry li { margin: 0; }
+
 .post--poetry .post-title { font-style: italic; }
 .post-tags { margin-top: calc(var(--space) * 1.5); padding-top: var(--space); border-top: 1px solid var(--hairline); display: flex; flex-wrap: wrap; gap: 0.75rem; }
 .post-tags .tag { color: var(--ink-muted); font-family: var(--mono); font-size: var(--step--1); }
@@ -470,65 +525,4 @@ hr { border: none; border-top: 1px solid var(--hairline); margin: calc(var(--spa
   font-family: var(--mono);
   font-size: var(--step--1);
   font-weight: 400;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--ink-faint);
-  text-align: center;
-  margin: calc(var(--space) * 3) 0 calc(var(--space) * 1.5);
-}
-.work-part-heading:first-child { margin-top: 0; }
-
-.work-part-title {
-  font-size: var(--step-0);
-  margin: 0 0 var(--space);
-}
-.work-part-title a {
-  color: inherit;
-  text-decoration: none;
-  border-bottom: 1px solid var(--hairline);
-}
-.work-part-title a:hover { color: var(--accent); border-bottom-color: var(--accent); }
-
-.work-part-body > :first-child { margin-top: 0; }
-.work-part-body > :last-child { margin-bottom: 0; }
-
-.work-part--missing p {
-  color: var(--ink-faint);
-  font-size: var(--step--1);
-}
-
-/* .work-part--inline is deliberately unstyled. Inline parts must look
-   identical to post-referenced parts — a reader should never be able to tell
-   which chapters are pulled from posts and which are transcribed in the work
-   file. The class exists only as a semantic hook; give it rules and you break
-   that seam. */
-
-/* "Beyond the book" — post-referenced poems appended after a work's body. */
-.work-beyond {
-  margin: calc(var(--space) * 4) 0 0;
-  padding-top: calc(var(--space) * 2);
-  border-top: 1px solid var(--hairline);
-}
-.work-beyond-title {
-  font-size: var(--step-1);
-  text-align: center;
-  margin: 0 0 0.4rem;
-}
-.work-beyond-note {
-  text-align: center;
-  color: var(--ink-muted);
-  font-size: var(--step--1);
-  margin: 0 0 calc(var(--space) * 2);
-}
-
-/* Work backlink on a post — derived at build time by scanning works for this
-   post's slug, so nothing is stored on the post itself. */
-.post-work {
-  margin-top: calc(var(--space) * 1.5);
-  font-family: var(--mono);
-  font-size: var(--step--1);
-  color: var(--ink-muted);
-}
-.post-work a { color: inherit; text-decoration-color: var(--hairline); }
-.post-work a:hover { color: var(--accent); text-decoration-color: var(--accent); }
-.post-work cite { font-style: italic; }
+  letter-spacing
