@@ -8,25 +8,14 @@ tags: [struggle]
 
 The other day I saw this thing which seemed to be a Chinese saying of sorts about stubborn people and the futility of attempting to convince someone who's mind is made up
 
-"
-
-I tell you but you don't listen
-
-You listen but you don't understand
-
-You understand but you don't act
-
-You act but you do it wrong
-
-You do it wrong but you won't admit it
-
-You admit it but you won't change
-
-You change, but you're not convinced
-
-So tell me what I'm supposed to do
-
-"
+> I tell you but you don't listen
+> You listen but you don't understand
+> You understand but you don't act
+> You act but you do it wrong
+> You do it wrong but you won't admit it
+> You admit it but you won't change
+> You change, but you're not convinced
+> So tell me what I'm supposed to do
 
 By the end of it, we realise the futility of our actions. Each step is met by resistance and even outright resistance to change till we are out of options. Lost and unsure. Despite each step having oved the needle or the line just a little bit further off, it is somehow never enough. There is still something left to do to tip it off the edge.
 
