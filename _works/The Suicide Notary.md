@@ -1,9 +1,11 @@
 ---
+layout: work
 title: "The Suicide Notary"
+subtitle: "A suicide note a day, keeps the good times away"
 year: 2015
+order: 3
 format: poetry
-context: |
-  A brief record of fragments, notes, and spilled ink from June 2015.
+blurb: "A brief record of fragments, notes, and spilled ink from June 2015."
 parts:
   - post: suicide-note-1
   - post: suicide-note-2
