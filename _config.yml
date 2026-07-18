@@ -19,16 +19,18 @@ baseurl: ""
 social:
   - name: Instagram
     url: "https://instagram.com/topearebi"
-  - name: Threads
-    url: "https://threads.net/@topearebi"
+  # - name: Threads
+  #  url: "https://threads.net/@topearebi"
   - name: Bluesky
     url: "https://bsky.app/profile/social.topearebi.com"
-  - name: LinkedIn
-    url: "https://linkedin.com/in/topearebi"
-  - name: Tumblr
-    url: "https://lostrous.tumblr.com"
+  # - name: LinkedIn
+  #   url: "https://linkedin.com/in/topearebi"
+  # - name: Tumblr
+  #   url: "https://lostrous.tumblr.com"
   # - name: Discord
   #   url: "https://discord.gg/YOUR_INVITE"
+  - name: Hardcover
+    url: "https://hardcover.app/@tope"
   - name: Email
     url: "mailto:hi@topearebi.com"
   - name: RSS
