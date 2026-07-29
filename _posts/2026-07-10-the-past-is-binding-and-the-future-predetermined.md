@@ -6,9 +6,12 @@ type: essay
 tags: [philosophy, existential]
 ---
 I watched free solo today and right around the middle of the show, it made me think about growing up. In it, Alex talks about how his mother's favourite phrases while he was growing up were .... and good enough isnt. ....in french. And how that sort of language and approach is one of the things that led him to free soloing and ultimately, you could say, drove him to be the first person to solo el capitan.
+
 And that made me think about all the interesting ways that our environmental conditions, the people we grow up around, their beliefs and their language are ultimately the things that shape not just who we are, but to some extent, our entire life potential.
+
 I thought about my mother's favourite phrases and her beliefs and attitudes. The way they have affected my behaviour and outlook on life.
 I think I am a little less risk averse. A little unlike to push comfort. My mother is deeply religious and faithful, and while I have not inherited that faith in a god above all, I have somehow come full circle in the sense that I tend to find comfort in situations. I fight for a little scrap of work, of position, of status, of love. And then I just hold on tight to it to keep it. Always a little more each time I think I need to reach or make a grab, but it is never quite enough. Or rather, it is always just enough.
+
 Back to the philosophy of it. It is easy to fall into this trap of being the sum of  our experiences. I have been reading Serge Khalil Khan's book on Huna and its principles. I have been particularly interested in the practice of questioning the subconscious. Interrogating it of the little beliefs it has accumulated and intentionally shaping them so that we are better equipped on a fundamental level to just, be better. To be defined and driven by our conscious ideals and desires rather than limited by our subconscious beliefs. And that I think, is a potentially powerful thing
 
 I think the term free solo is quite interesting. Like maybe to be free and to be solo are two different things. And you could sort of maximise your freedom or change it someone fundamentally by doing it solo. Of course it refers to rock climbing and maybe this is an overcomplication of the term, but in many ways, many things if taken fine enough become allegories for life and living.
