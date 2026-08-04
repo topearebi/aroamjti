@@ -10,5 +10,3 @@ In many ways, our self image and the tone of it, whether that is positive or neg
 Our experience of their experience of us. A perception of a perception. Never mind that they do not understand us. Our intents and motivations. Our desires. Never mind that we do not understand their.
 
 Yet despite these filters and half untruths and untruths, we are driven by them. A perception of derision may lead us to anger or shame. Interest may lead to bravery. Love may lead to courage, or folly.
-
-![image](/assets/820116130129723392_0.jpg)
