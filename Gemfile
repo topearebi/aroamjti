@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
-gem "minitest", "~> 5.25"
+# Pin ActiveSupport to 7.1.x to avoid the Rails 8 / minitest 6 build bug
+gem "activesupport", "~> 7.1.3"
 
 # Mirrors the GitHub Pages build environment so local preview matches production.
 gem "github-pages", group: :jekyll_plugins
