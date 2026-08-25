@@ -52,7 +52,7 @@ collections:
 # Paginates the home page (index.html) only. Change `paginate` to adjust
 # how many posts appear per page. `paginate_path` controls the URL of pages
 # 2, 3, 4 ... (page 1 stays at "/").
-paginate: 25
+paginate: 50
 paginate_path: "/page:num/"
 
 # --- Plugins (all GitHub Pages-supported) ---
