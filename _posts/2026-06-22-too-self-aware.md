@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Too Self-Aware
-date: 2026-07-13 15:00:00 +0000
+date: 2026-06-22 15:00:00 +0000
 type: essay
 tags: [philosophy]
 ---

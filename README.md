@@ -111,7 +111,6 @@ achieve any of it.
 ├── types.html             All types, curated order, with descriptions
 ├── archive.html           Every post by year
 ├── about.md               About + a "now" section
-├── books.md               Reading log
 ├── blogroll.md            Curated outbound links
 ├── works.md               Index of the _works collection
 ├── 404.html
@@ -329,8 +328,6 @@ scale; it grows quadratically, so revisit if the archive reaches thousands.
     hidden; untyped posts collect under **Unclassified**.
   - **`/archive/`** — every post by year, newest first.
 - **About** — includes a periodically-updated "now" section.
-- **Books** — a curation-first reading log; recent years dated, older grouped by
-  series or author. Bold marks standouts.
 - **Blogroll** — curated outbound links, newest first.
 - **Works** — see below.
 
@@ -504,7 +501,7 @@ alike, so a poem renders identically either way.
 ## Navigation, footer, icons
 
 - **Nav** is data-driven from `nav:` in `_config.yml`. Order: Home · Browse ·
-  About · Books · Works · Blogroll.
+  About · Works · Blogroll.
 - **Footer** carries icon-only social links (inline SVG — no icon font, they
   inherit text colour and adapt to dark mode), driven by `social:` in
   `_config.yml`, plus copyright and license.
@@ -674,7 +671,7 @@ honest at near-zero cost.
    rules. Commit it as a file; do not paste it.
 6. `_data/tags.yml` — the canonical tag descriptors.
 7. `index.html`, `browse.md`, `tags.html`, `types.html`, `archive.html`,
-   `about.md`, `books.md`, `blogroll.md`, `works.md`.
+   `about.md`, `blogroll.md`, `works.md`.
 8. `robots.txt`, `humans.txt`, `404.html`, `LICENSE`, favicon +
    apple-touch-icon, `.gitignore`, `.gitattributes`, `Gemfile`.
 9. `.github/workflows/` + `.github/scripts/`; `_drafts/` with its template.

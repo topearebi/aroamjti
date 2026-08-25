@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Disorderly Avoidant"
-date: 2015-06-08 19:04:00 +0000
+date: 2026-08-23 19:04:00 +0000
 type: journal
 tags: [life]
 ---
