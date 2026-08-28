@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Sleep is a science not an art"
-date: 2026-08-28 19:04:00 +0000
+date: 2026-08-28 08:30:00 +0000
 type: journal
 tags: [life]
 ---
