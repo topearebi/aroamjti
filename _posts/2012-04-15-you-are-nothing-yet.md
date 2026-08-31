@@ -1,10 +1,9 @@
 ---
 layout: post
-title: "You Are Ugly, Yet"
-date: 2014-07-24 12:00:00 +0000
+title: "You Are Nothing, Yet"
+date: 2012-04-15 12:00:00 +0000
 type: poetry
 tags: [love]
-date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
 You are ugly
 Inferior in every way

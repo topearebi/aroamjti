@@ -28,15 +28,15 @@ If I manage to leave enough pieces of me here, then I will continue to exist as 
   <dl class="now-list">
     <div>
       <dt>Reading</dt>
-      <dd>Mastering your hidden self - Serge Khalil King.</dd>
+      <dd>Piranesi - Susanna Clarke.</dd>
     </div>
     <div>
       <dt>Building</dt>
-      <dd>This very site</dd>
+      <dd>A writing habit, again</dd>
     </div>
     <div>
       <dt>Where</dt>
-      <dd>Currently in Manchester, in between jobs literally. As I write this, I start a new job monday and I'm waiting to here from another interview.</dd>
+      <dd>Currently in Manchester, but the last 6 weeks have been spent in trains crossing all over the U.K.</dd>
     </div>
   </dl>
 </section>

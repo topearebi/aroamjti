@@ -1,10 +1,9 @@
 ---
 layout: post
 title: "Life After Death"
-date: 2014-06-21 12:00:00 +0000
+date: 2012-03-20 12:00:00 +0000
 type: poetry
 tags: [existential]
-date_note: "Written before 2014; exact date unknown. Date shown is approximate, for ordering only."
 ---
 At times
 I sit around and think:
