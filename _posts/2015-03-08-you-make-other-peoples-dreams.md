@@ -7,4 +7,4 @@ tags: [struggle]
 ---
 You make other people’s dreams come true and yet your nights are spent with dark thoughts only yourself are privy to
 
-- You help others but don’t need help yourself even though you’re so obviously falling apart it’s ridiculous the way you act // A.A
+- You help others but don’t need help yourself even though you’re so obviously falling apart it’s ridiculous the way you act

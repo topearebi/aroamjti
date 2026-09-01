@@ -10,5 +10,3 @@ So it went to the river to drink
 But the river kept running away
 The sun chased the river a long way
 But everywhere it stepped the water disappeared
-
-- A.A

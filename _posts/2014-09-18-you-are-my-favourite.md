@@ -10,5 +10,3 @@ I love it when you come on
 
 You are my favourite radio song
 I’ll never download you to my iPod
-
-- A.A

@@ -12,5 +12,3 @@ I want to write your eyes and spell your mind
 Draw your lips and trace your thighs
 I want to write you to life
 And draw you out before my eyes
-
-- A.A

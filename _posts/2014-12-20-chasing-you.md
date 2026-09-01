@@ -11,5 +11,3 @@ I’ll follow you to forever
 Follow you wherever you go
 I’ll follow you till the end of the road
 Till time withers your bones
-
-- A.A

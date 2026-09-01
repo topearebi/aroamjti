@@ -7,4 +7,4 @@ tags: [struggle]
 ---
 And you used to think superman was so stupid with that kryptonite shit but look at you now even worse than he usually is all because she came around you’re crushed by the weight of your memories
 
-- Maybe she is your punishment for ever making fun of other people’s strength // A.A
+- Maybe she is your punishment for ever making fun of other people’s strength.

@@ -6,5 +6,3 @@ type: fragments
 tags: []
 ---
 You live on love and hope and a 1970s romance movie and you don’t even realize they’re all the same thing
-
-- A.A

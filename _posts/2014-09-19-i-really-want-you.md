@@ -8,5 +8,3 @@ tags: [desire]
 I really want you
 I promise this will stay true
 So please want me too
-
-- A.A

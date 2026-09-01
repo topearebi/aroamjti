@@ -30,5 +30,3 @@ An eyesore a bed sore
 And now I’m just sore
 
 -me walking to class way too early in the morning
-
-- A.A

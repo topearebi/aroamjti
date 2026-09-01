@@ -8,5 +8,3 @@ tags: [struggle]
 You breathe me in and breathe out smoke
 In foreign creatures you put all your hope
 Now that you’ve lost everything that once was your own
-
-- A.A

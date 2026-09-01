@@ -5,8 +5,6 @@ date: 2015-11-07 13:26:00 +0000
 type: poetry
 tags: [struggle]
 ---
-A.A -
-
 Everyday he comes back in with more than he took with him
 See he’s a collector he likes to collect things
 It’s the only way he knows how to live
@@ -17,5 +15,3 @@ He liked to see part and part of what he had done
 Jars for fingers, glasses for tongues, shelves for skulls, boxes for guns
 this was no ordinary collector you see
 This is who you heard ghost stories about
-
-- O.F

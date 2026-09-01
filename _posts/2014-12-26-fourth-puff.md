@@ -8,5 +8,3 @@ tags: [struggle]
 You breathe me in and breathe out smoke
 You feel as sturdy as an oak
 Though you were but a windblown leaf when first we spoke
-
-- A.A
