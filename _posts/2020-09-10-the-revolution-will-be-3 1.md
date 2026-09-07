@@ -3,7 +3,7 @@ layout: post
 title: "Smile More"
 date: 2020-09-10 23:00:00 +0000
 type: poetry
-tags: [life, struggle]
+tags: [struggle]
 ---
 She does not listen when I,
 tell her
