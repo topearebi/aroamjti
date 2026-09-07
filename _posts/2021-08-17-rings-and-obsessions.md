@@ -5,8 +5,6 @@ date: 2021-08-17 11:00:00 +0000
 type: journal 
 tags: [life]
 ---
-[
-
 I got my first ring two years ago as a birthday gift. From me to me. Before then, I had a long history of not getting birthday gifts until I met a partner that wasn't shy about wanting and indulging and believed I deserved to the same. I am glad some of that has rubbed off on me.
 
 Anyways, I loved wearing this first ring so much that I decided I was going to get one on each of my fingers. Unfortunately, Co-Vid happened and life did what it does. I ended up not being able to grow my collection until recenty.
