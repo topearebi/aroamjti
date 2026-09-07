@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "The Revolution Will Be 3"
-date: 2020-10-19 18:52:00 +0000
-type: journal
+title: "Smile More"
+date: 2020-09-10 23:00:00 +0000
+type: poetry
 tags: [life, struggle]
 ---
 She does not listen when I,
