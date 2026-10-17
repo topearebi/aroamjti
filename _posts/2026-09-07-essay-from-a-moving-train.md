@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Witness"
-date: 2026-09-07 07:30:00 +0000
+date: 2026-09-30 07:30:00 +0000
 type: journal
 tags: [existential]
 ---
