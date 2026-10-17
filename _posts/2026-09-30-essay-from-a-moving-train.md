@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Witness"
+title: "Essay From A Moving Train"
 date: 2026-09-30 07:30:00 +0000
 type: journal
 tags: [existential]
